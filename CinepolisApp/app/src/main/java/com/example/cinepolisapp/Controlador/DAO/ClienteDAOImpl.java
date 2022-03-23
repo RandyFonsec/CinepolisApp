@@ -2,6 +2,7 @@ package com.example.cinepolisapp.Controlador.DAO;
 
 import com.example.cinepolisapp.Modelo.Cliente;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -30,31 +31,22 @@ public class ClienteDAOImpl implements DAORetrofit, DAO {
                 user.getFechaNacimiento(),
                 user.getCantidadVacunas(),
                 user.getContrasenna());
-        call.enqueue(new Callback<Cliente>() {
-            @Override
-            public void onResponse(Call<Cliente> call, Response<Cliente> response) {
-                //Do something (asignar user)
-                userSalida[0] = response.body();
 
-            }
 
-            @Override
-            public void onFailure(Call<Cliente> call, Throwable t) {
-                //Do something (asignar failure)
-                failure[0] = true;
-            }
-        });
-
-        //Esperar respuesta
-        while(userSalida[0] == null && !failure[0]){
-            try {
-                Thread.sleep(250);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        Cliente respuesta = null;
+        try {
+            Response<Cliente> response = null;
+            response = call.execute();
+            respuesta = response.body();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
-        return userSalida[0];
+
+
+
+
+        return respuesta;
     }
 
     @Override
@@ -74,30 +66,17 @@ public class ClienteDAOImpl implements DAORetrofit, DAO {
                 user.getCantidadVacunas(),
                 user.isEliminado(),
                 user.getContrasenna());
-        call.enqueue(new Callback<Cliente>() {
-            @Override
-            public void onResponse(Call<Cliente> call, Response<Cliente> response) {
-                //Do something (asignar user)
-                userSalida[0] = response.body();
 
-            }
+        Cliente respuesta = null;
+        try {
+            Response<Cliente> response = null;
+            response = call.execute();
+            respuesta = response.body();
 
-            @Override
-            public void onFailure(Call<Cliente> call, Throwable t) {
-                //Do something (asignar failure)
-                failure[0] = true;
-
-            }
-        });
-
-        //Esperar respuesta
-        while(userSalida[0] == null && !failure[0]){
-            try {
-                Thread.sleep(250);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+
 
         return userSalida[0];
     }
