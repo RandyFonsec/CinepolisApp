@@ -3,6 +3,7 @@ package com.example.cinepolisapp.Controlador.DAO;
 import com.example.cinepolisapp.Modelo.Cliente;
 import com.example.cinepolisapp.Modelo.Pelicula;
 
+import java.io.IOException;
 import java.util.List;
 
 import retrofit2.Call;
@@ -17,9 +18,6 @@ public class PeliculaDAOImplementation implements DAORetrofit, DAO {
 
         Pelicula pelicula = (Pelicula) object;
 
-        Pelicula[] peliculaSalida = {null};
-        boolean[] failure = {false};
-        System.out.println(pelicula);
         Call<Pelicula> call = retrofit.create(PeliculaRFInterface.class).create(
                 pelicula.getTitulo(),
                 pelicula.getAnnoPublicacion(),
@@ -27,40 +25,26 @@ public class PeliculaDAOImplementation implements DAORetrofit, DAO {
                 pelicula.getEdadRequerida(),
                 pelicula.getPrecioEntrada(),
                 pelicula.getIdDirector());
-        call.enqueue(new Callback<Pelicula>() {
-            @Override
-            public void onResponse(Call<Pelicula> call, Response<Pelicula> response) {
-                //Do something (asignar user)
-                peliculaSalida[0] = response.body();
-                System.out.println("Exito");
+        Pelicula respuesta = null;
+        try {
+            Response<Pelicula> response = null;
+            response = call.execute();
+            if(response.isSuccessful()){
+                respuesta = response.body();
             }
 
-            @Override
-            public void onFailure(Call<Pelicula> call, Throwable t) {
-                //Do something (asignar failure)
-                failure[0] = true;
-                System.out.println("Fracaso");
-            }
-        });
 
-        //Esperar respuesta
-        while(peliculaSalida[0] == null && !failure[0]){
-            try {
-                Thread.sleep(250);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
-        return peliculaSalida[0];
+
+        return respuesta;
     }
 
     @Override
     public Object update(Object object) {
         Pelicula pelicula = (Pelicula) object;
-
-        Pelicula[] peliculaSalida = {null};
-        boolean[] failure = {false};
 
         Call<Pelicula> call = retrofit.create(PeliculaRFInterface.class).update(
                 pelicula.getIdPelicula(),
@@ -71,129 +55,86 @@ public class PeliculaDAOImplementation implements DAORetrofit, DAO {
                 pelicula.getPrecioEntrada(),
                 pelicula.getEliminada(),
                 pelicula.getIdDirector());
-        call.enqueue(new Callback<Pelicula>() {
-            @Override
-            public void onResponse(Call<Pelicula> call, Response<Pelicula> response) {
-                //Do something (asignar user)
-                peliculaSalida[0] = response.body();
-
+        Pelicula respuesta = null;
+        try {
+            Response<Pelicula> response = null;
+            response = call.execute();
+            if(response.isSuccessful()){
+                respuesta = response.body();
             }
 
-            @Override
-            public void onFailure(Call<Pelicula> call, Throwable t) {
-                //Do something (asignar failure)
-                failure[0] = true;
 
-            }
-        });
-
-        //Esperar respuesta
-        while(peliculaSalida[0] == null && !failure[0]){
-            try {
-                Thread.sleep(250);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
-        return peliculaSalida[0];
+
+        return respuesta;
     }
 
     @Override
     public Object get(Object key) {
 
-        Pelicula[] peliculaSalida = {null};
-        boolean[] failure = {false};
 
         Call<Pelicula> call = retrofit.create(PeliculaRFInterface.class).get((int) key);
-        call.enqueue(new Callback<Pelicula>() {
-            @Override
-            public void onResponse(Call<Pelicula> call, Response<Pelicula> response) {
-                //Do something (asignar user)
-                peliculaSalida[0] = response.body();
+        Pelicula respuesta = null;
+        try {
+            Response<Pelicula> response = null;
+            response = call.execute();
+            if(response.isSuccessful()){
+                respuesta = response.body();
             }
 
-            @Override
-            public void onFailure(Call<Pelicula> call, Throwable t) {
-                //Do something (asignar failure)
-                failure[0] = true;
-            }
-        });
 
-        //Esperar respuesta
-        while(peliculaSalida[0] == null && !failure[0]){
-            try {
-                Thread.sleep(250);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
-        return peliculaSalida[0];
+
+        return respuesta;
     }
 
     @Override
     public List<Pelicula> getAll() {
 
-        final List<Pelicula>[] peliculas = new List[]{null};
-        boolean[] failure = {false};
-
         Call<List<Pelicula>> call = retrofit.create(PeliculaRFInterface.class).getAll();
-        call.enqueue(new Callback<List<Pelicula>>() {
-            @Override
-            public void onResponse(Call<List<Pelicula>> call, Response<List<Pelicula>> response) {
-                peliculas[0] = response.body();
+        List<Pelicula> respuesta = null;
+        try {
+            Response<List<Pelicula>> response = null;
+            response = call.execute();
+            if(response.isSuccessful()){
+                respuesta = response.body();
             }
 
-            @Override
-            public void onFailure(Call<List<Pelicula>> call, Throwable t) {
-                failure[0] = true;
-            }
-        });
 
-        //Esperar respuesta
-        while(peliculas[0] == null && !failure[0]){
-            try {
-                Thread.sleep(250);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
-        return peliculas[0];
+
+        return respuesta;
     }
 
     @Override
     public Object delete(Object key) {
 
 
-        Pelicula[] peliculaSalida = {null};
-        boolean[] failure = {false};
         Call<Pelicula> call = retrofit.create(PeliculaRFInterface.class).delete((int)key);
-        call.enqueue(new Callback<Pelicula>() {
-            @Override
-            public void onResponse(Call<Pelicula> call, Response<Pelicula> response) {
-                //Do something (asignar user)
-                peliculaSalida[0] = response.body();
+        Pelicula respuesta = null;
+        try {
+            Response<Pelicula> response = null;
+            response = call.execute();
+            if(response.isSuccessful()){
+                respuesta = response.body();
             }
 
-            @Override
-            public void onFailure(Call<Pelicula> call, Throwable t) {
-                //Do something (asignar failure)
-                failure[0] = true;
-            }
-        });
 
-        //Esperar respuesta
-        while(peliculaSalida[0] == null && !failure[0]){
-            try {
-                Thread.sleep(250);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
-        return peliculaSalida[0];
+
+        return respuesta;
     }
 
 
