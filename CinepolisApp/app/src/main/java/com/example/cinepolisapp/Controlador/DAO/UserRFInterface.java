@@ -1,6 +1,6 @@
 package com.example.cinepolisapp.Controlador.DAO;
 
-import com.example.cinepolisapp.Modelo.User;
+import com.example.cinepolisapp.Modelo.Cliente;
 
 import java.util.List;
 
@@ -12,24 +12,42 @@ import retrofit2.http.POST;
 import retrofit2.http.Query;
 
 public interface UserRFInterface {
+
     //TODO: Implementar de forma correcta, queda a modo de ejemplo
     @FormUrlEncoded
-    @POST("save.php")
-    public Call<User> create(@Field("id") int id, @Field("name") String name, @Field("email") String email);
+    @POST("saveCliente.php")
+    public Call<Cliente> create(@Field("numeroCedula") int numeroCedula,
+                                @Field("nombre") String nombre,
+                                @Field("apellido1") String apellido1,
+                                @Field("apellido2") String apellido2,
+                                @Field("correo") String correo,
+                                @Field("edad")int edad,
+                                @Field("fecha")String fechaNacimiento,
+                                @Field("vacunas")int cantidadVacunas,
+                                @Field("contrasenna")String contrasenna);
 
     //Encoding
     @FormUrlEncoded
     //URL del servicio php
-    @POST("edit.php")
-    public Call<User> update(@Field("name") String name, @Field("email") String email);
+    @POST("editCliente.php")
+    public Call<Cliente> update(@Field("numeroCedula") int numeroCedula,
+                                @Field("nombre") String nombre,
+                                @Field("apellido1") String apellido1,
+                                @Field("apellido2") String apellido2,
+                                @Field("correo") String correo,
+                                @Field("edad")int edad,
+                                @Field("fecha")String fechaNacimiento,
+                                @Field("vacunas")int cantidadVacunas,
+                                @Field("eliminado") boolean eliminado,
+                                @Field("contrasenna")String contrasenna);
 
     @FormUrlEncoded
-    @POST("delete.php")
-    public Call<User> delete(@Field("name") String name, @Field("email") String email);
+    @POST("deleteCliente.php")
+    public Call<Cliente> delete(@Field("numeroCedula") int numeroCedula);
 
-    @GET("fetch.php")
-    public Call<User> get(@Query("name") String name);
+    @GET("fetchCliente.php")
+    public Call<Cliente> get(@Query("numeroCedula") int numeroCedula);
 
-    @GET("fetchAll.php")
-    public Call<List<User>> getAll();
+    @GET("fetchAllCliente.php")
+    public Call<List<Cliente>> getAll();
 }
