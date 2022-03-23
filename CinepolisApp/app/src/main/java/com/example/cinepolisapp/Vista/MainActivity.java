@@ -11,7 +11,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.cinepolisapp.Controlador.DAO.ClienteDAOImpl;
+import com.example.cinepolisapp.Controlador.DAO.PeliculaDAOImplementation;
 import com.example.cinepolisapp.Modelo.Cliente;
+import com.example.cinepolisapp.Modelo.Pelicula;
 import com.example.cinepolisapp.R;
 
 import java.util.List;
@@ -39,7 +41,8 @@ public class MainActivity extends AppCompatActivity {
                 cont++;
                 String text= "Boton presionado "+String.valueOf(cont)+" veces";
                 Toast.makeText(context, text, duration).show();
-                tests();
+                testPelicula();
+                //tests();
 
             }
         });
@@ -47,11 +50,53 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void testPelicula() {
+        Pelicula p;
+        p = new Pelicula();
+        p.setTitulo("Marcelenda y la niña");
+        p.setAnnoPublicacion(2022);
+        p.setDuracion(2.5);
+        p.setEdadRequerida(18);
+        p.setPrecioEntrada(100000);
+        p.setEliminada(0);
+        p.setIdDirector(4);
+
+        new AsyncTask<String, String, Pelicula>() {
+            @Override
+            protected Pelicula doInBackground(String... strings) {
+                PeliculaDAOImplementation i = new PeliculaDAOImplementation();
+                 //return (Pelicula)i.create(p);
+                //return (Pelicula)i.delete(2);
+                Pelicula peli = (Pelicula)i.get(2);
+                System.out.println(peli.toString());
+                return peli;
+
+
+            }
+            @Override
+            protected void onPostExecute(Pelicula result) {
+                if(result != null) {
+                    //idT.setText(result.getId());
+                    //eM.setText(result.getEmail());
+                    System.out.println(result.getTitulo());
+                }
+                else{
+                    cambiarTexto("No hay resultados\n.");
+                }
+
+            }
+            @Override
+            protected void onPreExecute(){
+                Toast.makeText(getApplicationContext(),"Iniciando consulta",Toast.LENGTH_SHORT).show();
+            }
+        }.execute();
+    }
+
     public void tests() {
         //Para pruebas
         Cliente a,b,c ;
         a = new Cliente();
-        a.setNumeroCedula(111);
+        a.setNumeroCedula(456894);
         a.setNombre("Maria");
         a.setApellido1("AP2");
         a.setApellido2("AP3");
@@ -67,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             protected Cliente doInBackground(String... strings) {
                 ClienteDAOImpl i = new ClienteDAOImpl();
-                return (Cliente)i.delete(111);
+                return (Cliente)i.delete(11111111);
 
             }
             @Override
