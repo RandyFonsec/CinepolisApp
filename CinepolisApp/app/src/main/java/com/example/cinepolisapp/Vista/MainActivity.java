@@ -96,25 +96,27 @@ public class MainActivity extends AppCompatActivity {
         //Para pruebas
         Cliente a,b,c ;
         a = new Cliente();
-        a.setNumeroCedula(456894);
-        a.setNombre("Maria");
-        a.setApellido1("AP2");
-        a.setApellido2("AP3");
-        a.setFechaNacimiento("2001/12/10");
-        a.setCantidadVacunas(3);
-        a.setContrasenna("qqq");
-        a.setEdad(22);
+
+        a.setNumeroCedula(333);
+        a.setNombre("Ivannia");
+        a.setApellido1("Cerdas");
+        a.setApellido2("Quesada");
+        a.setFechaNacimiento("1979/07/15");
+        a.setCantidadVacunas(1);
+        a.setContrasenna("vvv");
+        a.setEdad(67);
         a.setEliminado(false);
-        a.setCorreo("ad@sda.com");
+        a.setCorreo("estrtucturasmm.com");
         a.setIdCliente(1);
 
         new AsyncTask<String, String, Cliente>() {
             @Override
             protected Cliente doInBackground(String... strings) {
                 ClienteDAOImpl i = new ClienteDAOImpl();
-                return (Cliente)i.delete(11111111);
 
-            }
+
+                return (Cliente)i.create(a);
+        }
             @Override
             protected void onPostExecute(Cliente result) {
                 if(result != null) {

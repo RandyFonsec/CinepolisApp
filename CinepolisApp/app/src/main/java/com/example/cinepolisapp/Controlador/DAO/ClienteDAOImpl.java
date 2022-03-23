@@ -2,6 +2,7 @@ package com.example.cinepolisapp.Controlador.DAO;
 
 import com.example.cinepolisapp.Modelo.Cliente;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -17,89 +18,65 @@ public class ClienteDAOImpl implements DAORetrofit, DAO {
     @Override
     public Object create(Object object) {
 
-        Cliente u = (Cliente) object;
+        Cliente user = (Cliente) object;
 
         Cliente[] userSalida = {null};
         boolean[] failure = {false};
-        System.out.println(u);
-        Call<Cliente> call = retrofit.create(UserRFInterface.class).create(u.getNumeroCedula(),
-                u.getNombre(),
-                u.getApellido1(),
-                u.getApellido2(),
-                u.getCorreo(),
-                u.getEdad(),
-                u.getFechaNacimiento(),
-                u.getCantidadVacunas(),
-                u.getContrasenna());
-        call.enqueue(new Callback<Cliente>() {
-            @Override
-            public void onResponse(Call<Cliente> call, Response<Cliente> response) {
-                //Do something (asignar user)
-                userSalida[0] = response.body();
-                System.out.println("Exito");
-            }
+        Call<Cliente> call = retrofit.create(UserRFInterface.class).create(user.getNumeroCedula(),
+                user.getNombre(),
+                user.getApellido1(),
+                user.getApellido2(),
+                user.getCorreo(),
+                user.getEdad(),
+                user.getFechaNacimiento(),
+                user.getCantidadVacunas(),
+                user.getContrasenna());
 
-            @Override
-            public void onFailure(Call<Cliente> call, Throwable t) {
-                //Do something (asignar failure)
-                failure[0] = true;
-                System.out.println("fracaso");
-            }
-        });
 
-        //Esperar respuesta
-        while(userSalida[0] == null && !failure[0]){
-            try {
-                Thread.sleep(250);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        Cliente respuesta = null;
+        try {
+            Response<Cliente> response = null;
+            response = call.execute();
+            respuesta = response.body();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
-        return userSalida[0];
+
+
+
+
+        return respuesta;
     }
 
     @Override
     public Object update(Object object) {
-        Cliente u = (Cliente) object;
+        Cliente user = (Cliente) object;
 
         Cliente[] userSalida = {null};
         boolean[] failure = {false};
 
-        Call<Cliente> call = retrofit.create(UserRFInterface.class).update(u.getNumeroCedula(),
-                u.getNombre(),
-                u.getApellido1(),
-                u.getApellido2(),
-                u.getCorreo(),
-                u.getEdad(),
-                u.getFechaNacimiento(),
-                u.getCantidadVacunas(),
-                u.isEliminado(),
-                u.getContrasenna());
-        call.enqueue(new Callback<Cliente>() {
-            @Override
-            public void onResponse(Call<Cliente> call, Response<Cliente> response) {
-                //Do something (asignar user)
-                userSalida[0] = response.body();
+        Call<Cliente> call = retrofit.create(UserRFInterface.class).update(user.getNumeroCedula(),
+                user.getNombre(),
+                user.getApellido1(),
+                user.getApellido2(),
+                user.getCorreo(),
+                user.getEdad(),
+                user.getFechaNacimiento(),
+                user.getCantidadVacunas(),
+                user.isEliminado(),
+                user.getContrasenna());
 
-            }
+        Cliente respuesta = null;
+        try {
+            Response<Cliente> response = null;
+            response = call.execute();
+            respuesta = response.body();
 
-            @Override
-            public void onFailure(Call<Cliente> call, Throwable t) {
-                //Do something (asignar failure)
-                failure[0] = true;
-
-            }
-        });
-
-        //Esperar respuesta
-        while(userSalida[0] == null && !failure[0]){
-            try {
-                Thread.sleep(250);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+
 
         return userSalida[0];
     }
