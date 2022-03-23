@@ -17,33 +17,31 @@ public class ClienteDAOImpl implements DAORetrofit, DAO {
     @Override
     public Object create(Object object) {
 
-        Cliente u = (Cliente) object;
+        Cliente user = (Cliente) object;
 
         Cliente[] userSalida = {null};
         boolean[] failure = {false};
-        System.out.println(u);
-        Call<Cliente> call = retrofit.create(UserRFInterface.class).create(u.getNumeroCedula(),
-                u.getNombre(),
-                u.getApellido1(),
-                u.getApellido2(),
-                u.getCorreo(),
-                u.getEdad(),
-                u.getFechaNacimiento(),
-                u.getCantidadVacunas(),
-                u.getContrasenna());
+        Call<Cliente> call = retrofit.create(UserRFInterface.class).create(user.getNumeroCedula(),
+                user.getNombre(),
+                user.getApellido1(),
+                user.getApellido2(),
+                user.getCorreo(),
+                user.getEdad(),
+                user.getFechaNacimiento(),
+                user.getCantidadVacunas(),
+                user.getContrasenna());
         call.enqueue(new Callback<Cliente>() {
             @Override
             public void onResponse(Call<Cliente> call, Response<Cliente> response) {
                 //Do something (asignar user)
                 userSalida[0] = response.body();
-                System.out.println("Exito");
+
             }
 
             @Override
             public void onFailure(Call<Cliente> call, Throwable t) {
                 //Do something (asignar failure)
                 failure[0] = true;
-                System.out.println("fracaso");
             }
         });
 
@@ -61,21 +59,21 @@ public class ClienteDAOImpl implements DAORetrofit, DAO {
 
     @Override
     public Object update(Object object) {
-        Cliente u = (Cliente) object;
+        Cliente user = (Cliente) object;
 
         Cliente[] userSalida = {null};
         boolean[] failure = {false};
 
-        Call<Cliente> call = retrofit.create(UserRFInterface.class).update(u.getNumeroCedula(),
-                u.getNombre(),
-                u.getApellido1(),
-                u.getApellido2(),
-                u.getCorreo(),
-                u.getEdad(),
-                u.getFechaNacimiento(),
-                u.getCantidadVacunas(),
-                u.isEliminado(),
-                u.getContrasenna());
+        Call<Cliente> call = retrofit.create(UserRFInterface.class).update(user.getNumeroCedula(),
+                user.getNombre(),
+                user.getApellido1(),
+                user.getApellido2(),
+                user.getCorreo(),
+                user.getEdad(),
+                user.getFechaNacimiento(),
+                user.getCantidadVacunas(),
+                user.isEliminado(),
+                user.getContrasenna());
         call.enqueue(new Callback<Cliente>() {
             @Override
             public void onResponse(Call<Cliente> call, Response<Cliente> response) {
