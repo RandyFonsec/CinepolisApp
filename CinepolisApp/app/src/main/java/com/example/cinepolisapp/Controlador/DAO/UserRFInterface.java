@@ -13,8 +13,9 @@ import retrofit2.http.Query;
 
 public interface UserRFInterface {
 
-    //TODO: Implementar de forma correcta, queda a modo de ejemplo
+    // Encoding
     @FormUrlEncoded
+    // URL del servicio php
     @POST("saveCliente.php")
     public Call<Cliente> create(@Field("numeroCedula") int numeroCedula,
                                 @Field("nombre") String nombre,
@@ -22,13 +23,11 @@ public interface UserRFInterface {
                                 @Field("apellido2") String apellido2,
                                 @Field("correo") String correo,
                                 @Field("edad")int edad,
-                                @Field("fecha")String fechaNacimiento,
+                                @Field("fecha") String fechaNacimiento,
                                 @Field("vacunas")int cantidadVacunas,
                                 @Field("contrasenna")String contrasenna);
 
-    //Encoding
     @FormUrlEncoded
-    //URL del servicio php
     @POST("editCliente.php")
     public Call<Cliente> update(@Field("numeroCedula") int numeroCedula,
                                 @Field("nombre") String nombre,
