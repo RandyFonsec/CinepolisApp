@@ -14,7 +14,7 @@ public class PeliculaDAOImplementation implements DAORetrofit, DAO {
 
     private static PeliculaDAOImplementation singletonInstancePelicula;
 
-    private PeliculaDAOImplementation() {}
+    private PeliculaDAOImplementation(){}
 
     public static PeliculaDAOImplementation getInstance() {
         if (singletonInstancePelicula == null)
@@ -24,31 +24,37 @@ public class PeliculaDAOImplementation implements DAORetrofit, DAO {
 
     @Override
     public Object create(Object object) {
+
         Pelicula pelicula = (Pelicula) object;
+
         Call<Pelicula> call = retrofit.create(PeliculaRFInterface.class).create(
                 pelicula.getTitulo(),
                 pelicula.getAnnoPublicacion(),
                 pelicula.getDuracion(),
                 pelicula.getEdadRequerida(),
                 pelicula.getPrecioEntrada(),
-                pelicula.getIdDirector()
-        );
+                pelicula.getIdDirector());
         Pelicula respuesta = null;
         try {
             Response<Pelicula> response = null;
             response = call.execute();
-            if(response.isSuccessful()) {
+            if(response.isSuccessful()){
                 respuesta = response.body();
             }
+
+
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
         return respuesta;
     }
 
     @Override
     public Object update(Object object) {
         Pelicula pelicula = (Pelicula) object;
+
         Call<Pelicula> call = retrofit.create(PeliculaRFInterface.class).update(
                 pelicula.getIdPelicula(),
                 pelicula.getTitulo(),
@@ -56,67 +62,89 @@ public class PeliculaDAOImplementation implements DAORetrofit, DAO {
                 pelicula.getDuracion(),
                 pelicula.getEdadRequerida(),
                 pelicula.getPrecioEntrada(),
-                pelicula.isEliminada(),
+                pelicula.getEliminada(),
                 pelicula.getIdDirector());
         Pelicula respuesta = null;
         try {
             Response<Pelicula> response = null;
             response = call.execute();
-            if(response.isSuccessful()) {
+            if(response.isSuccessful()){
                 respuesta = response.body();
             }
+
+
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
         return respuesta;
     }
 
     @Override
     public Object get(Object key) {
+
+
         Call<Pelicula> call = retrofit.create(PeliculaRFInterface.class).get((int) key);
         Pelicula respuesta = null;
         try {
             Response<Pelicula> response = null;
             response = call.execute();
-            if(response.isSuccessful()) {
+            if(response.isSuccessful()){
                 respuesta = response.body();
             }
+
+
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
         return respuesta;
     }
 
     @Override
     public List<Pelicula> getAll() {
+
         Call<List<Pelicula>> call = retrofit.create(PeliculaRFInterface.class).getAll();
         List<Pelicula> respuesta = null;
         try {
             Response<List<Pelicula>> response = null;
             response = call.execute();
-            if(response.isSuccessful()) {
+            if(response.isSuccessful()){
                 respuesta = response.body();
             }
+
+
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
         return respuesta;
     }
 
     @Override
     public Object delete(Object key) {
+
+
         Call<Pelicula> call = retrofit.create(PeliculaRFInterface.class).delete((int)key);
         Pelicula respuesta = null;
         try {
             Response<Pelicula> response = null;
             response = call.execute();
-            if(response.isSuccessful()) {
+            if(response.isSuccessful()){
                 respuesta = response.body();
             }
+
+
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
         return respuesta;
     }
+
 
 }

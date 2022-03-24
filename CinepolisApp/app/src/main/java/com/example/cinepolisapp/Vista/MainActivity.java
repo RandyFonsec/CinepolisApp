@@ -10,7 +10,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.cinepolisapp.Controlador.ControladorAplicacion;
 import com.example.cinepolisapp.Controlador.DAO.ClienteDAOImpl;
 import com.example.cinepolisapp.Controlador.DAO.PeliculaDAOImplementation;
 import com.example.cinepolisapp.Modelo.Cliente;
@@ -22,7 +21,6 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     int cont;
-    static ControladorAplicacion control = ControladorAplicacion.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,57 +41,13 @@ public class MainActivity extends AppCompatActivity {
                 cont++;
                 String text= "Boton presionado "+String.valueOf(cont)+" veces";
                 Toast.makeText(context, text, duration).show();
-                //testPelicula();
+                testPelicula();
                 //tests();
-                probar();
+
             }
         });
 
 
-    }
-
-    public void probar() {
-        Cliente c = new Cliente();
-
-        c.setNumeroCedula(10101010);
-        c.setNombre("Gabriel");
-        c.setApellido1("Cascante");
-        c.setApellido2("García");
-        c.setFechaNacimiento("2030/12/01");
-        c.setCantidadVacunas(0);
-        c.setContrasenna("password123");
-        c.setEdad(1);
-        // c.setEliminado(false);
-        c.setCorreo("gcascanteg@gmail.com");
-        // c.setIdCliente(1);
-        new AsyncTask<String, String, Cliente>() {
-            @Override
-            protected Cliente doInBackground(String... strings) {
-                //ClienteDAOImpl i = ClienteDAOImpl.getInstance();
-
-
-                //return (Cliente)i.create(c);
-                boolean res = control.registrarCliente(c);
-                System.out.println("r "+res);
-                return c;
-            }
-            @Override
-            protected void onPostExecute(Cliente result) {
-                if(result != null) {
-                    //idT.setText(result.getId());
-                    //eM.setText(result.getEmail());
-                    System.out.println(result.getNombre());
-                }
-                else{
-                    cambiarTexto("No hay resultados\n.");
-                }
-
-            }
-            @Override
-            protected void onPreExecute(){
-                Toast.makeText(getApplicationContext(),"Iniciando consulta",Toast.LENGTH_SHORT).show();
-            }
-        }.execute();
     }
 
     public void testPelicula() {
@@ -104,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         p.setDuracion(2.5);
         p.setEdadRequerida(18);
         p.setPrecioEntrada(100000);
-        p.setEliminada(false);
+        p.setEliminada(0);
         p.setIdDirector(4);
 
         new AsyncTask<String, String, Pelicula>() {
@@ -142,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
         //Para pruebas
         Cliente a,b,c ;
         a = new Cliente();
-        c = new Cliente();
 
         a.setNumeroCedula(333);
         a.setNombre("Ivannia");
@@ -156,25 +109,13 @@ public class MainActivity extends AppCompatActivity {
         a.setCorreo("estrtucturasmm.com");
         a.setIdCliente(1);
 
-        c.setNumeroCedula(303330333);
-        c.setNombre("Sebastián");
-        c.setApellido1("Cascante");
-        c.setApellido2("García");
-        c.setFechaNacimiento("2025/12/01");
-        c.setCantidadVacunas(2);
-        c.setContrasenna("password");
-        c.setEdad(5);
-        // c.setEliminado(false);
-        c.setCorreo("scascanteg@gmail.com");
-        // c.setIdCliente(1);
-
         new AsyncTask<String, String, Cliente>() {
             @Override
             protected Cliente doInBackground(String... strings) {
                 ClienteDAOImpl i = ClienteDAOImpl.getInstance();
 
 
-                return (Cliente)i.create(c);
+                return (Cliente)i.create(a);
         }
             @Override
             protected void onPostExecute(Cliente result) {
