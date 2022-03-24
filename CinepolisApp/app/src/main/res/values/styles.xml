@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="all_right_r">
+
+        <item name="android:textSize">
+            11sp
+        </item>
+
+        <item name="android:textColor">
+            #003DA5
+        </item>
+
+    </style>
+    <style name="crear_cuent">
+
+        <item name="android:textSize">
+            20sp
+        </item>
+
+        <item name="android:textColor">
+            #003DA5
+        </item>
+
+        <item name="android:shadowColor">
+            #261B1A40
+        </item>
+
+        <item name="android:shadowDx">
+            -1
+        </item>
+
+        <item name="android:shadowDy">
+            1
+        </item>
+
+        <item name="android:shadowRadius">
+            10
+        </item>
+
+    </style>
+    <style name="login">
+        <item name="android:backgroundTint">#FFFFFF</item>
+    </style>
+
+</resources>

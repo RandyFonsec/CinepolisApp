@@ -43,8 +43,7 @@ public class PeliculaDAOImplementation implements DAORetrofit, DAO {
             }
 
 
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
         }
 
 
@@ -73,8 +72,7 @@ public class PeliculaDAOImplementation implements DAORetrofit, DAO {
             }
 
 
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
         }
 
 
@@ -95,8 +93,7 @@ public class PeliculaDAOImplementation implements DAORetrofit, DAO {
             }
 
 
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
         }
 
 
@@ -116,8 +113,7 @@ public class PeliculaDAOImplementation implements DAORetrofit, DAO {
             }
 
 
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
         }
 
 
