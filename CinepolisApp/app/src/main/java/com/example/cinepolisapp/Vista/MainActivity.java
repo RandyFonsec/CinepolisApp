@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         new AsyncTask<String, String, Pelicula>() {
             @Override
             protected Pelicula doInBackground(String... strings) {
-                PeliculaDAOImplementation i = new PeliculaDAOImplementation();
+                PeliculaDAOImplementation i = PeliculaDAOImplementation.getInstance();
                  //return (Pelicula)i.create(p);
                 //return (Pelicula)i.delete(2);
                 Pelicula peli = (Pelicula)i.get(2);
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
         new AsyncTask<String, String, Cliente>() {
             @Override
             protected Cliente doInBackground(String... strings) {
-                ClienteDAOImpl i = new ClienteDAOImpl();
+                ClienteDAOImpl i = ClienteDAOImpl.getInstance();
 
 
                 return (Cliente)i.create(a);
