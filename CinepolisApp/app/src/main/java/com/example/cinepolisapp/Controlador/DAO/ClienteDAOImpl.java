@@ -40,7 +40,8 @@ public class ClienteDAOImpl implements DAORetrofit, DAO {
             }
 
 
-        } catch (Exception e) {
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
 
@@ -74,10 +75,11 @@ public class ClienteDAOImpl implements DAORetrofit, DAO {
             }
 
 
-        } catch (Exception e) {
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
-        System.out.println(respuesta);
+
         return respuesta;
     }
 
@@ -93,7 +95,10 @@ public class ClienteDAOImpl implements DAORetrofit, DAO {
             if(response.isSuccessful()){
                 respuesta = response.body();
             }
-        } catch (Exception e) {
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
 
@@ -115,7 +120,8 @@ public class ClienteDAOImpl implements DAORetrofit, DAO {
             }
 
 
-        } catch (Exception e) {
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
 
@@ -137,7 +143,8 @@ public class ClienteDAOImpl implements DAORetrofit, DAO {
             }
 
 
-        } catch (Exception e) {
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
 

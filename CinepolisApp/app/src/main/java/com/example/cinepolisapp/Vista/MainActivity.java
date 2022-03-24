@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
                 cont++;
                 String text= "Boton presionado "+String.valueOf(cont)+" veces";
                 Toast.makeText(context, text, duration).show();
-                //testPelicula();
-                tests();
+                testPelicula();
+                //tests();
 
             }
         });
@@ -98,15 +98,15 @@ public class MainActivity extends AppCompatActivity {
         a = new Cliente();
 
         a.setNumeroCedula(333);
-        a.setNombre("Marcelino");
-        a.setApellido1("AAA");
-        a.setApellido2("BBB");
-        a.setFechaNacimiento("1999/01/12");
-        a.setCantidadVacunas(3);
-        a.setContrasenna("acacv");
-        a.setEdad(23);
+        a.setNombre("Ivannia");
+        a.setApellido1("Cerdas");
+        a.setApellido2("Quesada");
+        a.setFechaNacimiento("1979/07/15");
+        a.setCantidadVacunas(1);
+        a.setContrasenna("vvv");
+        a.setEdad(67);
         a.setEliminado(false);
-        a.setCorreo("xczc@dsa.com");
+        a.setCorreo("estrtucturasmm.com");
         a.setIdCliente(1);
 
         new AsyncTask<String, String, Cliente>() {
