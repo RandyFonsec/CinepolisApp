@@ -1,6 +1,7 @@
 package com.example.cinepolisapp.Modelo;
 
 public class Cliente {
+
     private int idCliente;
     private int numeroCedula;
     private String nombre;
@@ -13,8 +14,7 @@ public class Cliente {
     private boolean eliminado;
     private String contrasenna;
 
-    public Cliente() {
-    }
+    public Cliente() {}
 
     public int getIdCliente() {
         return idCliente;

@@ -10,7 +10,7 @@ public class RetrofitSingleton {
     private Retrofit retrofit = null;
     public static RetrofitSingleton instance = null;
     private String BASE_URL = "https://anthophilous-baseli.000webhostapp.com/";
-    private RetrofitSingleton(){
+    private RetrofitSingleton() {
         Gson gson = new GsonBuilder()
                 .setLenient()
                 .create();
@@ -19,13 +19,13 @@ public class RetrofitSingleton {
                 .build();
     }
 
-    public static RetrofitSingleton getInstance(){
+    public static RetrofitSingleton getInstance() {
         if(instance == null)
             instance = new RetrofitSingleton();
         return instance;
     }
 
-    public Retrofit getRetrofit(){
+    public Retrofit getRetrofit() {
         return this.retrofit;
     }
 }

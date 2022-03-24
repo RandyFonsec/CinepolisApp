@@ -8,6 +8,7 @@ public class GestorClientes {
     public GestorClientes() {}
 
     public boolean registrarCliente(Cliente cliente) {
+        System.out.println("GestorCliente");
         Cliente resultado = (Cliente) ClienteDAOImpl.getInstance().create(cliente);
         return resultado != null ? true : false;
     }

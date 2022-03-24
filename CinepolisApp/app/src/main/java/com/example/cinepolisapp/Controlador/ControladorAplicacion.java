@@ -1,5 +1,6 @@
 package com.example.cinepolisapp.Controlador;
 
+import com.example.cinepolisapp.Modelo.Alimento;
 import com.example.cinepolisapp.Modelo.Cliente;
 import com.example.cinepolisapp.Modelo.Pelicula;
 
@@ -19,13 +20,13 @@ public class ControladorAplicacion {
     }
 
     public static ControladorAplicacion getInstance() {
-        if (singletonControllerInstance == null) {
+        if (singletonControllerInstance == null)
             singletonControllerInstance = new ControladorAplicacion();
-        }
         return singletonControllerInstance;
     }
 
     public boolean registrarCliente(Cliente cliente) {
+        System.out.println("Controlador app");
         return gestorClientes.registrarCliente(cliente);
     }
 
@@ -37,6 +38,24 @@ public class ControladorAplicacion {
         return gestorPeliculas.agregarPelicula(pelicula);
     }
 
+    public boolean modificarPelicula(Pelicula pelicula) {
+        return gestorPeliculas.modificarPelicula(pelicula);
+    }
 
+    public boolean eliminarPelicula(int idPelicula) {
+        return gestorPeliculas.eliminarPelicula(idPelicula);
+    }
+
+    public boolean agregarAlimento(Alimento alimento) {
+        return gestorAlimentos.agregarAlimento(alimento);
+    }
+
+    public boolean modificarAlimento(Alimento alimento) {
+        return gestorAlimentos.modificarAlimento(alimento);
+    }
+
+    public boolean eliminarAlimento(int idAlimento) {
+        return gestorAlimentos.eliminarAlimento(idAlimento);
+    }
 
 }
