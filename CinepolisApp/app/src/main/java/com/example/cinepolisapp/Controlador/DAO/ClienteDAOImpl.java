@@ -13,7 +13,16 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class ClienteDAOImpl implements DAORetrofit, DAO {
-    public ClienteDAOImpl(){}
+
+    private static ClienteDAOImpl singletonInstanceCliente;
+
+    private ClienteDAOImpl(){}
+
+    public static ClienteDAOImpl getInstance() {
+        if (singletonInstanceCliente == null)
+            singletonInstanceCliente = new ClienteDAOImpl();
+        return singletonInstanceCliente;
+    }
 
     @Override
     public Object create(Object object) {
@@ -98,6 +107,26 @@ public class ClienteDAOImpl implements DAORetrofit, DAO {
 
 
         return respuesta;
+    }
+
+    public Object get(Object correoElectronico, Object contrasenna) {
+
+        Call<Cliente> call = retrofit.create(UserRFInterface.class).get((String) correoElectronico, (String) contrasenna );
+        Cliente respuesta = null;
+        try {
+            Response<Cliente> response = null;
+            response = call.execute();
+            if(response.isSuccessful()){
+                respuesta = response.body();
+            }
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return respuesta;
+
     }
 
     @Override

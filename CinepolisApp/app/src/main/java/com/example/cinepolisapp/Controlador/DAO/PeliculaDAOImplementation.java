@@ -11,7 +11,16 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class PeliculaDAOImplementation implements DAORetrofit, DAO {
-    public PeliculaDAOImplementation(){}
+
+    private static PeliculaDAOImplementation singletonInstancePelicula;
+
+    private PeliculaDAOImplementation(){}
+
+    public static PeliculaDAOImplementation getInstance() {
+        if (singletonInstancePelicula == null)
+            singletonInstancePelicula = new PeliculaDAOImplementation();
+        return singletonInstancePelicula;
+    }
 
     @Override
     public Object create(Object object) {

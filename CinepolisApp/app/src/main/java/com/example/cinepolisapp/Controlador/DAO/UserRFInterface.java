@@ -48,6 +48,10 @@ public interface UserRFInterface {
     @GET("fetchCliente.php")
     public Call<Cliente> get(@Query("numeroCedula") int numeroCedula);
 
+    @GET("fetchClienteLogin.php")
+    public Call<Cliente> get(@Query("correo") String correo,
+                             @Query("contrasenna") String contrasenna);
+
     @GET("fetchAllCliente.php")
     public Call<List<Cliente>> getAll();
 }
