@@ -12,6 +12,7 @@
         </item>
 
     </style>
+
     <style name="crear_cuent">
 
         <item name="android:textSize">
@@ -39,8 +40,14 @@
         </item>
 
     </style>
+
     <style name="login">
         <item name="android:backgroundTint">#FFFFFF</item>
+    </style>
+
+    <style name="Widget.Theme.CinepolisApp.MyView" parent="">
+        <item name="android:background">@color/gray_400</item>
+        <item name="exampleColor">@color/light_blue_400</item>
     </style>
 
 </resources>

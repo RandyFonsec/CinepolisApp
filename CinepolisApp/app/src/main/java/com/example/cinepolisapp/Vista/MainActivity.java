@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(context, text, duration).show();
 
 
+            }
+        });
+    }
 
-}
 }
