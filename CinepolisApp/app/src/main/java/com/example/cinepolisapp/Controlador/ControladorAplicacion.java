@@ -26,7 +26,6 @@ public class ControladorAplicacion {
     }
 
     public boolean registrarCliente(Cliente cliente) {
-        System.out.println("Controlador app");
         return gestorClientes.registrarCliente(cliente);
     }
 
@@ -56,6 +55,14 @@ public class ControladorAplicacion {
 
     public boolean eliminarAlimento(int idAlimento) {
         return gestorAlimentos.eliminarAlimento(idAlimento);
+    }
+
+    public boolean modificarCliente(Cliente cliente) {
+        return gestorClientes.modificarCliente(cliente);
+    }
+
+    public boolean eliminarCliente(int numeroCedula) {
+        return gestorClientes.eliminarCliente(numeroCedula);
     }
 
 }

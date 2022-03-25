@@ -62,7 +62,7 @@ public class PeliculaDAOImplementation implements DAORetrofit, DAO {
                 pelicula.getDuracion(),
                 pelicula.getEdadRequerida(),
                 pelicula.getPrecioEntrada(),
-                pelicula.getEliminada(),
+                pelicula.isEliminada(),
                 pelicula.getIdDirector());
         Pelicula respuesta = null;
         try {

@@ -33,7 +33,7 @@ public interface PeliculaRFInterface {
                                  @Field("duracion") double duracion,
                                  @Field("edadRequerida") int edadRequerida,
                                  @Field("precioEntrada") double precioEntrada,
-                                 @Field("eliminada") boolean eliminada,
+                                 @Field("eliminada") int eliminada,
                                  @Field("idDirector") int idDirector);
 
     @FormUrlEncoded

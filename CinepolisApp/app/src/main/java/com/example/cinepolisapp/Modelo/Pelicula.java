@@ -8,7 +8,7 @@ public class Pelicula {
     private double duracion;
     private int edadRequerida;
     private double precioEntrada;
-    private boolean eliminada;
+    private int eliminada;
     private int idDirector;
 
     public Pelicula() {}
@@ -37,11 +37,11 @@ public class Pelicula {
 
     public void setPrecioEntrada(double precioEntrada) { this.precioEntrada = precioEntrada; }
 
-    public boolean isEliminada() {
+    public int isEliminada() {
         return eliminada;
     }
 
-    public void setEliminada(boolean eliminada) {
+    public void setEliminada(int eliminada) {
         this.eliminada = eliminada;
     }
 

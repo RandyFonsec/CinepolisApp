@@ -27,7 +27,10 @@ public class ClienteDAOImpl implements DAORetrofit, DAO {
     @Override
     public Object create(Object object) {
         Cliente user = (Cliente) object;
+        System.out.println("LOOKING FOR");
         System.out.println(user.toString());
+        System.out.println(user.getCorreo());
+        System.out.println(user.isEliminado());
         Call<Cliente> call = retrofit.create(UserRFInterface.class).create(
                 user.getNumeroCedula(),
                 user.getNombre(),
@@ -40,12 +43,15 @@ public class ClienteDAOImpl implements DAORetrofit, DAO {
                 user.getContrasenna()
         );
         System.out.println("Call " + call);
+        System.out.println(user.getCorreo());
+        System.out.println(user.isEliminado());
         Cliente respuesta = null;
         try {
             Response<Cliente> response = null;
             response = call.execute();
             if(response.isSuccessful()) {
                 respuesta = response.body();
+                System.out.println("Resp on create 54 " + respuesta);
             }
         } catch (IOException e) {
             System.out.println("Error");
@@ -89,8 +95,9 @@ public class ClienteDAOImpl implements DAORetrofit, DAO {
         try {
             Response<Cliente> response = null;
             response = call.execute();
-            if(response.isSuccessful()){
+            if(response.isSuccessful()) {
                 respuesta = response.body();
+                System.out.println("Body response resp on get 100 " + respuesta);
             }
         } catch (IOException e) {
             e.printStackTrace();
