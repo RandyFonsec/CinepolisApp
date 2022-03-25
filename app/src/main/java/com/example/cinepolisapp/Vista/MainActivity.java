@@ -5,11 +5,15 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.PagerAdapter;
 
 import com.example.cinepolisapp.R;
+import com.google.android.material.tabs.TabLayout;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -26,16 +30,14 @@ public class MainActivity extends AppCompatActivity {
 
         Context context = getApplicationContext();
         int duration = Toast.LENGTH_SHORT;
-
-        Button btn = findViewById(R.id.createaccou);
+        TabLayout tabLayoutGestion = findViewById(R.id.tabLayout);
+        TabLayout.Tab TabMovies = tabLayoutGestion.getTabAt(0);
+        FrameLayout FrameLayoutGestion = findViewById(R.id.frameLayoutGestion);
+        Button btn = findViewById(R.id.login_btn);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cont++;
-                String text= "Boton presionado "+String.valueOf(cont)+" veces";
-                Toast.makeText(context, text, duration).show();
-
-
+                setContentView(R.layout.view_gestor);
             }
         });
     }
