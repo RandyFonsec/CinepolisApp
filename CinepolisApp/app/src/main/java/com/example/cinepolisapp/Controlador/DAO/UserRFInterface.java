@@ -17,7 +17,7 @@ public interface UserRFInterface {
     @FormUrlEncoded
     // URL del servicio php
     @POST("saveCliente.php")
-    public Call<Cliente> create(@Field("numeroCedula") int numeroCedula,
+    public Call<Cliente> create(@Field("numeroCedula") long numeroCedula,
                                 @Field("nombre") String nombre,
                                 @Field("apellido1") String apellido1,
                                 @Field("apellido2") String apellido2,
@@ -29,7 +29,7 @@ public interface UserRFInterface {
 
     @FormUrlEncoded
     @POST("editCliente.php")
-    public Call<Cliente> update(@Field("numeroCedula") int numeroCedula,
+    public Call<Cliente> update(@Field("numeroCedula") long numeroCedula,
                                 @Field("nombre") String nombre,
                                 @Field("apellido1") String apellido1,
                                 @Field("apellido2") String apellido2,
@@ -37,15 +37,15 @@ public interface UserRFInterface {
                                 @Field("edad")int edad,
                                 @Field("fecha")String fechaNacimiento,
                                 @Field("vacunas")int cantidadVacunas,
-                                @Field("eliminado") boolean eliminado,
+                                @Field("eliminado") int eliminado,
                                 @Field("contrasenna")String contrasenna);
 
     @FormUrlEncoded
     @POST("deleteCliente.php")
-    public Call<Cliente> delete(@Field("numeroCedula") int numeroCedula);
+    public Call<Cliente> delete(@Field("numeroCedula") long numeroCedula);
 
     @GET("fetchCliente.php")
-    public Call<Cliente> get(@Query("numeroCedula") int numeroCedula);
+    public Call<Cliente> get(@Query("numeroCedula") long numeroCedula);
 
     @GET("fetchClienteLogin.php")
     public Call<Cliente> get(@Query("correo") String correo,

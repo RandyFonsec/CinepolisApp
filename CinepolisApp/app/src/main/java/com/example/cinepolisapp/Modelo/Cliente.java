@@ -1,17 +1,20 @@
 package com.example.cinepolisapp.Modelo;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Cliente {
 
     private int idCliente;
-    private int numeroCedula;
+    private long numeroCedula;
     private String nombre;
     private String apellido1;
     private String apellido2;
+    @SerializedName("correoElectronico")
     private String correo;
     private int edad;
     private String fechaNacimiento;
     private int cantidadVacunas;
-    private boolean eliminado;
+    private int eliminado;
     private String contrasenna;
 
     public Cliente() {}
@@ -24,11 +27,11 @@ public class Cliente {
         this.idCliente = idCliente;
     }
 
-    public int getNumeroCedula() {
+    public long getNumeroCedula() {
         return numeroCedula;
     }
 
-    public void setNumeroCedula(int numeroCedula) {
+    public void setNumeroCedula(long numeroCedula) {
         this.numeroCedula = numeroCedula;
     }
 
@@ -88,11 +91,11 @@ public class Cliente {
         this.cantidadVacunas = cantidadVacunas;
     }
 
-    public boolean isEliminado() {
+    public int isEliminado() {
         return eliminado;
     }
 
-    public void setEliminado(boolean eliminado) {
+    public void setEliminado(int eliminado) {
         this.eliminado = eliminado;
     }
 
