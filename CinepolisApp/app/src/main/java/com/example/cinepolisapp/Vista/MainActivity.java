@@ -14,6 +14,12 @@ import com.example.cinepolisapp.Controlador.DAO.AlimentoDAOImplementation;
 import com.example.cinepolisapp.Controlador.DAO.ClienteDAOImpl;
 import com.example.cinepolisapp.Controlador.DAO.PeliculaDAOImplementation;
 import com.example.cinepolisapp.Modelo.Alimento;
+
+import com.example.cinepolisapp.Controlador.ControladorAplicacion;
+import com.example.cinepolisapp.Controlador.DAO.ClienteDAOImpl;
+import com.example.cinepolisapp.Controlador.DAO.PeliculaDAOImplementation;
+import com.example.cinepolisapp.Modelo.Asiento;
+
 import com.example.cinepolisapp.Modelo.Cliente;
 import com.example.cinepolisapp.Modelo.Pelicula;
 import com.example.cinepolisapp.R;
@@ -182,7 +188,26 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else{
                     cambiarTexto("No hay resultados\n.");
+
+        test();
+        }
+        public void test(){
+
+            new AsyncTask<String, String, List<Asiento>>() {
+                @Override
+                protected List<Asiento> doInBackground(String... strings) {
+                    ControladorAplicacion c = ControladorAplicacion.getInstance();
+                    List<Asiento>pelis = c.getAsientosDeFuncion(1);
+                    return pelis;
+
                 }
+                @Override
+                protected void onPostExecute(List<Asiento> result) {
+                    if(result!=null){
+                        for (Asiento peli: result) {
+                            System.out.println(peli);
+                        }
+                    }
 
             }
             @Override
@@ -229,110 +254,13 @@ public class MainActivity extends AppCompatActivity {
                     //idT.setText(result.getId());
                     //eM.setText(result.getEmail());
                     System.out.println(result.toString());
+
                 }
-                else{
-                    cambiarTexto("No hay resultados\n.");
+                @Override
+                protected void onPreExecute(){
+                    Toast.makeText(getApplicationContext(),"Iniciando consulta",Toast.LENGTH_SHORT).show();
                 }
-
-            }
-            @Override
-            protected void onPreExecute(){
-                Toast.makeText(getApplicationContext(),"Iniciando consulta",Toast.LENGTH_SHORT).show();
-            }
-        }.execute();
-
-    }
-
-    public void testPelicula() {
-        Pelicula p;
-        p = new Pelicula();
-        p.setTitulo("Marcelenda y la niña");
-        p.setAnnoPublicacion(2022);
-        p.setDuracion(2.5);
-        p.setEdadRequerida(18);
-        p.setPrecioEntrada(100000);
-        p.setEliminada(0);
-        p.setIdDirector(4);
-
-        new AsyncTask<String, String, ArrayList<Pelicula>>() {
-            @Override
-            protected ArrayList<Pelicula> doInBackground(String... strings) {
-                PeliculaDAOImplementation i = PeliculaDAOImplementation.getInstance();
-                 //return (Pelicula)i.create(p);
-                //return (Pelicula)i.delete(2);
-                //Pelicula peli = (Pelicula)i.get(2);
-                ArrayList<Pelicula> peliculas = (ArrayList<Pelicula>)i.getAll();
-                for (Pelicula pelicula : peliculas)
-                    System.out.println(pelicula.toString());
-                return peliculas;
-
-
-            }
-            @Override
-            protected void onPostExecute(ArrayList<Pelicula> result) {
-                if(result != null) {
-                    //idT.setText(result.getId());
-                    //eM.setText(result.getEmail());
-                    //System.out.println(result.getTitulo());
-                    System.out.println("POSTEXECUTE");
-                }
-                else{
-                    cambiarTexto("No hay resultados\n.");
-                }
-
-            }
-            @Override
-            protected void onPreExecute(){
-                Toast.makeText(getApplicationContext(),"Iniciando consulta",Toast.LENGTH_SHORT).show();
-            }
-        }.execute();
-    }
-
-    public void tests() {
-        //Para pruebas
-        Cliente a,b,c ;
-        a = new Cliente();
-
-        a.setNumeroCedula(333);
-        a.setNombre("Ivannia");
-        a.setApellido1("Cerdas");
-        a.setApellido2("Quesada");
-        a.setFechaNacimiento("1979/07/15");
-        a.setCantidadVacunas(1);
-        a.setContrasenna("vvv");
-        a.setEdad(67);
-        //a.setEliminado(0);
-        a.setCorreo("estrtucturasmm.com");
-        a.setIdCliente(1);
-
-        new AsyncTask<String, String, Cliente>() {
-            @Override
-            protected Cliente doInBackground(String... strings) {
-                ClienteDAOImpl i = ClienteDAOImpl.getInstance();
-
-
-                return (Cliente)i.create(a);
+            }.execute();
         }
-            @Override
-            protected void onPostExecute(Cliente result) {
-                if(result != null) {
-                    //idT.setText(result.getId());
-                    //eM.setText(result.getEmail());
-                    System.out.println(result.getNombre());
-                }
-                else{
-                    cambiarTexto("No hay resultados\n.");
-                }
 
-            }
-            @Override
-            protected void onPreExecute(){
-                Toast.makeText(getApplicationContext(),"Iniciando consulta",Toast.LENGTH_SHORT).show();
-            }
-        }.execute();
-    }
-
-    public void cambiarTexto(String text){
-        System.out.println(text);
-    }
-}
+        }
