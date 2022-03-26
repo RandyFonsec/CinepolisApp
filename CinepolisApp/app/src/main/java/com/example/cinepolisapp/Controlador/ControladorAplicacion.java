@@ -1,8 +1,11 @@
 package com.example.cinepolisapp.Controlador;
 
 import com.example.cinepolisapp.Modelo.Alimento;
+import com.example.cinepolisapp.Modelo.Asiento;
 import com.example.cinepolisapp.Modelo.Cliente;
 import com.example.cinepolisapp.Modelo.Pelicula;
+
+import java.util.List;
 
 public class ControladorAplicacion {
 
@@ -11,12 +14,14 @@ public class ControladorAplicacion {
     private GestorPeliculas gestorPeliculas;
     private GestorAlimentos gestorAlimentos;
     private GestorCartelera gestorCartelera;
+    private GestorAsientos gestorAsientos;
 
     private ControladorAplicacion() {
         gestorClientes = new GestorClientes();
         gestorPeliculas = new GestorPeliculas();
         gestorAlimentos = new GestorAlimentos();
         gestorCartelera = new GestorCartelera();
+        gestorAsientos = new GestorAsientos();
     }
 
     public static ControladorAplicacion getInstance() {
@@ -63,6 +68,14 @@ public class ControladorAplicacion {
 
     public boolean eliminarCliente(int numeroCedula) {
         return gestorClientes.eliminarCliente(numeroCedula);
+    }
+
+    public List<Pelicula> getPeliculasEnCartelera(){
+        return gestorPeliculas.getPeliculasEnCartelera();
+    }
+
+    public List<Asiento> getAsientosDeFuncion(int idFuncion){
+        return gestorAsientos.getAsientosDeFuncion(idFuncion);
     }
 
 }

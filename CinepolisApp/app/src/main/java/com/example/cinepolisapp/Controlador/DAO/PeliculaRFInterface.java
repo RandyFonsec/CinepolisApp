@@ -46,4 +46,6 @@ public interface PeliculaRFInterface {
     @GET("fetchAllPelicula.php")
     public Call<List<Pelicula>> getAll();
 
+    @GET("fetchPeliculaFromCartelera.php")
+    public Call<List<Pelicula>> getPeliculasEnCartelera();
 }
