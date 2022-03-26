@@ -8,7 +8,7 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.Response;
 
-public class AlimentoDAOImplementation implements DAORetrofit, DAO {
+public class AlimentoDAOImplementation implements DAORetrofit, DAO, FilteredFoodInterface {
 
     private static AlimentoDAOImplementation singletonInstanceAlimento;
 
@@ -99,6 +99,38 @@ public class AlimentoDAOImplementation implements DAORetrofit, DAO {
     }
 
     @Override
+    public List getAllAvailableFood() {
+        Call<List<Alimento>> call = retrofit.create(AlimentoRFInterface.class).getAllAvailableFood();
+        List<Alimento> respuesta = null;
+        try {
+            Response<List<Alimento>> response = null;
+            response = call.execute();
+            if(response.isSuccessful()) {
+                respuesta = response.body();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return respuesta;
+    }
+
+    @Override
+    public List getAllAvailableFoodFiltered(Object key) {
+        Call<List<Alimento>> call = retrofit.create(AlimentoRFInterface.class).getAllAvailableFoodFiltered((int) key);
+        List<Alimento> respuesta = null;
+        try {
+            Response<List<Alimento>> response = null;
+            response = call.execute();
+            if(response.isSuccessful()) {
+                respuesta = response.body();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return respuesta;
+    }
+
+    @Override
     public Object delete(Object key) {
         Call<Alimento> call = retrofit.create(AlimentoRFInterface.class).delete((int)key);
         Alimento respuesta = null;
@@ -113,5 +145,7 @@ public class AlimentoDAOImplementation implements DAORetrofit, DAO {
         }
         return respuesta;
     }
+
+
 
 }

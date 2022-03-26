@@ -70,12 +70,20 @@ public class ControladorAplicacion {
         return gestorClientes.eliminarCliente(numeroCedula);
     }
 
+    public List obtenerAlimentosDisponibles() {
+        return gestorAlimentos.obtenerAlimentosDisponibles();
+    }
+
+    public List obtenerAlimentosDisponiblesFiltrados(int idTipoAlimento) {
+        return gestorAlimentos.obtenerAlimentosDisponiblesFiltrados(idTipoAlimento);
+
     public List<Pelicula> getPeliculasEnCartelera(){
         return gestorPeliculas.getPeliculasEnCartelera();
     }
 
     public List<Asiento> getAsientosDeFuncion(int idFuncion){
         return gestorAsientos.getAsientosDeFuncion(idFuncion);
+
     }
 
 }

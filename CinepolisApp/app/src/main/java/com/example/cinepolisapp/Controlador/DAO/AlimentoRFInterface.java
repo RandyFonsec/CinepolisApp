@@ -27,7 +27,7 @@ public interface AlimentoRFInterface {
                                  @Field("nombre") String nombre,
                                  @Field("cantidadDisponible") int cantidadDisponible,
                                  @Field("precio") double precio,
-                                 @Field("eliminado") boolean eliminado,
+                                 @Field("eliminado") int eliminado,
                                  @Field("idTipoAlimento") int idTipoAlimento);
 
     @FormUrlEncoded
@@ -39,5 +39,11 @@ public interface AlimentoRFInterface {
 
     @GET("fetchAllAlimento.php")
     public Call<List<Alimento>> getAll();
+
+    @GET("fetchAllAvailableFood.php")
+    public Call<List<Alimento>> getAllAvailableFood();
+
+    @GET("fetchAllAvailableFoodFiltered.php")
+    public Call<List<Alimento>> getAllAvailableFoodFiltered(@Query("idTipoAlimento") int idTipoAlimento);
 
 }
