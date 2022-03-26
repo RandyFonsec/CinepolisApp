@@ -1,0 +1,15 @@
+com/example/cinepolisapp/MyView.java
+ com.example.cinepolisapp.MyView
+com/example/cinepolisapp/databinding/ViewGestorBinding.java
+ com.example.cinepolisapp.databinding.ViewGestorBinding
+com/example/cinepolisapp/Vista/MainActivity.java
+ com.example.cinepolisapp.Vista.MainActivity
+ com.example.cinepolisapp.Vista.MainActivity$1
+com/example/cinepolisapp/Controlador/Blank.java
+ com.example.cinepolisapp.Controlador.Blank
+com/example/cinepolisapp/databinding/ActivityMainBinding.java
+ com.example.cinepolisapp.databinding.ActivityMainBinding
+com/example/cinepolisapp/BuildConfig.java
+ com.example.cinepolisapp.BuildConfig
+com/example/cinepolisapp/Modelo/Blank.java
+ com.example.cinepolisapp.Modelo.Blank

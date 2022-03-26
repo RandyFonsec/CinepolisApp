@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">CinepolisApp</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="all_right_r">All Right Reserved @2022</string>
+    <string name="movies">Movies</string>
+    <string name="billboard">Billboard</string>
+    <string name="foods">Foods</string>
+    <string name="users">Users</string>
+    <string name="location_te">Películas disponibles</string>
+    <string name="location_ce">Gestión de carteleras</string>
+    <string name="location_usu">Gestión de clientes</string>
+    <string name="location_alim">Gestión de alimentos</string>
+    <string name="alimento_agre">Agregar alimento</string>
+    <string name="alimento_editar">Editar/eliminar alimento</string>
+    <string name="cliente_editar">Editar/eliminar cliente</string>
+    <string name="gesti_n_de_pel_culas">Gestión de películas</string>
+    <string name="gesti_n_de_alimentos">Gestión de alimentos</string>
+    <string name="modificar_eliminar_cliente">Modificar / eliminar cliente</string>
+    <string name="gesti_n_de_clientes">Gestión de clientes</string>
+    <string name="agregar_pel_cula">Agregar película</string>
+    <string name="modificar_eliminar_pel_cula">Modificar / eliminar película</string>
+    <string name="seleccionar_pel_culas">Seleccionar películas</string>
+    <string name="agregar_alimento">Agregar alimento</string>
+    <string name="modificar_eliminar_alimento">Modificar / eliminar alimento</string>
+</resources>
