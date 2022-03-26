@@ -4,6 +4,8 @@ import com.example.cinepolisapp.Modelo.Alimento;
 import com.example.cinepolisapp.Modelo.Cliente;
 import com.example.cinepolisapp.Modelo.Pelicula;
 
+import java.util.List;
+
 public class ControladorAplicacion {
 
     private static ControladorAplicacion singletonControllerInstance;
@@ -63,6 +65,14 @@ public class ControladorAplicacion {
 
     public boolean eliminarCliente(int numeroCedula) {
         return gestorClientes.eliminarCliente(numeroCedula);
+    }
+
+    public List obtenerAlimentosDisponibles() {
+        return gestorAlimentos.obtenerAlimentosDisponibles();
+    }
+
+    public List obtenerAlimentosDisponiblesFiltrados(int idTipoAlimento) {
+        return gestorAlimentos.obtenerAlimentosDisponiblesFiltrados(idTipoAlimento);
     }
 
 }

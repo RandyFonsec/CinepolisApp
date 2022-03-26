@@ -6,7 +6,7 @@ public class Alimento {
     private String nombre;
     private int cantidadDisponible;
     private double precio;
-    private boolean eliminado;
+    private int eliminado;
     private int idTipoAlimento;
 
     public Alimento() {}
@@ -43,11 +43,11 @@ public class Alimento {
         this.precio = precio;
     }
 
-    public boolean isEliminado() {
+    public int isEliminado() {
         return eliminado;
     }
 
-    public void setEliminado(boolean eliminado) {
+    public void setEliminado(int eliminado) {
         this.eliminado = eliminado;
     }
 
@@ -59,4 +59,15 @@ public class Alimento {
         this.idTipoAlimento = idTipoAlimento;
     }
 
+    @Override
+    public String toString() {
+        return "Alimento{" +
+                "idAlimento=" + idAlimento +
+                ", nombre='" + nombre + '\'' +
+                ", cantidadDisponible=" + cantidadDisponible +
+                ", precio=" + precio +
+                ", eliminado=" + eliminado +
+                ", idTipoAlimento=" + idTipoAlimento +
+                '}';
+    }
 }
