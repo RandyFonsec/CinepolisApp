@@ -14,8 +14,9 @@ import retrofit2.http.Query;
 
 public interface PeliculaRFInterface {
 
-    //TODO: Implementar de forma correcta, queda a modo de ejemplo
+    // Encoding
     @FormUrlEncoded
+    // URL del servicio php
     @POST("savePelicula.php")
     public Call<Pelicula> create(@Field("titulo") String titulo,
                                  @Field("annoPublicacion") int annoPublicacion,
@@ -24,9 +25,7 @@ public interface PeliculaRFInterface {
                                  @Field("precioEntrada") double precioEntrada,
                                  @Field("idDirector") int idDirector);
 
-    //Encoding
     @FormUrlEncoded
-    //URL del servicio php
     @POST("editPelicula.php")
     public Call<Pelicula> update(@Field("idPelicula") int idPelicula,
                                  @Field("titulo") String titulo,
@@ -47,4 +46,6 @@ public interface PeliculaRFInterface {
     @GET("fetchAllPelicula.php")
     public Call<List<Pelicula>> getAll();
 
+    @GET("fetchPeliculaFromCartelera.php")
+    public Call<List<Pelicula>> getPeliculasEnCartelera();
 }

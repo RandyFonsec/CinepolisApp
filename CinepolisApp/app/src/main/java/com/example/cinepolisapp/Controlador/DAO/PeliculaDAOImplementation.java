@@ -10,7 +10,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class PeliculaDAOImplementation implements DAORetrofit, DAO {
+public class PeliculaDAOImplementation implements DAORetrofit, DAO,PeliculaEspecialInterface {
 
     private static PeliculaDAOImplementation singletonInstancePelicula;
 
@@ -43,7 +43,8 @@ public class PeliculaDAOImplementation implements DAORetrofit, DAO {
             }
 
 
-        } catch (Exception e) {
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
 
@@ -61,7 +62,7 @@ public class PeliculaDAOImplementation implements DAORetrofit, DAO {
                 pelicula.getDuracion(),
                 pelicula.getEdadRequerida(),
                 pelicula.getPrecioEntrada(),
-                pelicula.getEliminada(),
+                pelicula.isEliminada(),
                 pelicula.getIdDirector());
         Pelicula respuesta = null;
         try {
@@ -72,7 +73,8 @@ public class PeliculaDAOImplementation implements DAORetrofit, DAO {
             }
 
 
-        } catch (Exception e) {
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
 
@@ -93,7 +95,8 @@ public class PeliculaDAOImplementation implements DAORetrofit, DAO {
             }
 
 
-        } catch (Exception e) {
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
 
@@ -113,7 +116,8 @@ public class PeliculaDAOImplementation implements DAORetrofit, DAO {
             }
 
 
-        } catch (Exception e) {
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
 
@@ -143,4 +147,23 @@ public class PeliculaDAOImplementation implements DAORetrofit, DAO {
     }
 
 
+    @Override
+    public List<Pelicula> getPeliculasFromCartelera() {
+        Call<List<Pelicula>> call = retrofit.create(PeliculaRFInterface.class).getPeliculasEnCartelera();
+        List<Pelicula> respuesta = null;
+        try {
+            Response<List<Pelicula>> response = null;
+            response = call.execute();
+            if(response.isSuccessful()){
+                respuesta = response.body();
+            }
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        return respuesta;
+    }
 }
