@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/josh/Documents/Code/ProyectoBD/CinepolisApp/CinepolisApp/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/josh/Documents/Code/ProyectoBD/CinepolisApp/CinepolisApp/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/josh/Documents/Code/ProyectoBD/CinepolisApp/CinepolisApp/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_gestor.xml",
+        "source": "/Users/josh/Documents/Code/ProyectoBD/CinepolisApp/CinepolisApp/app/src/main/res/layout/view_gestor.xml"
+    }
+]
