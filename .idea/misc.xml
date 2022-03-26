@@ -15,6 +15,12 @@
         <entry key="..\:/Uni/AP/CinepolisApp/app/src/main/res/layout/sample_my_view.xml" value="0.31354166666666666" />
         <entry key="..\:/Uni/AP/CinepolisApp/app/src/main/res/menu/menu_main.xml" value="0.4041666666666667" />
         <entry key="..\:/Users/Randy/Documents/AndroidStudioProjects/CinepolisApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_gestor_alimento.xml" value="0.1171875" />
+        <entry key="app/src/main/res/layout/fragment_gestor_billboard.xml" value="0.1171875" />
+        <entry key="app/src/main/res/layout/fragment_gestor_peliculas.xml" value="0.1171875" />
+        <entry key="app/src/main/res/layout/fragment_gestor_users.xml" value="0.1171875" />
+        <entry key="app/src/main/res/layout/view_gestor.xml" value="0.1171875" />
+        <entry key="app/src/main/res/layout/view_usuario.xml" value="0.13697916666666668" />
       </map>
     </option>
   </component>
