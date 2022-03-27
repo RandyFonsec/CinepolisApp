@@ -33,7 +33,7 @@
                 android:textColor="@color/Amarillo_Cinepolis" />
 
             <EditText
-                android:id="@+id/UsuarioLoginText"
+                android:id="@+id/ApellidoText2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#003DA5"

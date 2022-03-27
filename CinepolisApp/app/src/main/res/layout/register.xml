@@ -37,12 +37,12 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/Amarillo_Cinepolis"
                 android:ems="10"
-                android:hint="Número de cédula"
+                android:hint="Ingrese su número de cédula"
                 android:importantForAutofill="no"
                 android:inputType="number"
                 android:minHeight="48dp"
-                android:textColor="@color/Amarillo_Cinepolis"
-                android:textColorHint="@color/Amarillo_Cinepolis"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
                 tools:ignore="DuplicateSpeakableTextCheck" />
 
             <TextView
@@ -60,12 +60,12 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/Amarillo_Cinepolis"
                 android:ems="10"
-                android:hint="Nombre"
+                android:hint="Ingrese su nombre"
                 android:importantForAutofill="no"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
-                android:textColor="@color/Amarillo_Cinepolis"
-                android:textColorHint="@color/Amarillo_Cinepolis"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
                 tools:ignore="DuplicateSpeakableTextCheck" />
 
             <TextView
@@ -83,12 +83,12 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/Amarillo_Cinepolis"
                 android:ems="10"
-                android:hint="Primer apellido"
+                android:hint="Ingrese su primer apellido"
                 android:importantForAutofill="no"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
-                android:textColor="@color/Amarillo_Cinepolis"
-                android:textColorHint="@color/Amarillo_Cinepolis"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
                 tools:ignore="DuplicateSpeakableTextCheck" />
 
             <TextView
@@ -101,17 +101,17 @@
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/UsuarioLoginText"
+                android:id="@+id/ApellidoText2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/Amarillo_Cinepolis"
                 android:ems="10"
-                android:hint="Segundo apellido"
+                android:hint="Ingrese su segundo apellido"
                 android:importantForAutofill="no"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
-                android:textColor="@color/Amarillo_Cinepolis"
-                android:textColorHint="@color/Amarillo_Cinepolis" />
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -128,12 +128,12 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/Amarillo_Cinepolis"
                 android:ems="10"
-                android:hint="Correo electrónico"
+                android:hint="Ingrese su correo electrónico"
                 android:importantForAutofill="no"
                 android:inputType="textEmailAddress"
                 android:minHeight="48dp"
-                android:textColor="@color/Amarillo_Cinepolis"
-                android:textColorHint="@color/Amarillo_Cinepolis"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
                 tools:ignore="DuplicateSpeakableTextCheck" />
 
             <TextView
@@ -150,11 +150,12 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/Amarillo_Cinepolis"
                 android:ems="10"
+                android:hint="Ingrese su edad"
                 android:importantForAutofill="no"
                 android:inputType="number"
                 android:minHeight="48dp"
-                android:text="Edad"
-                android:textColor="@color/Amarillo_Cinepolis"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
                 tools:ignore="DuplicateSpeakableTextCheck" />
 
             <TextView
@@ -174,9 +175,11 @@
                 android:hint="Fecha de nacimiento"
                 android:importantForAutofill="no"
                 android:inputType="date"
+                android:focusable="false"
+                android:clickable="true"
                 android:minHeight="48dp"
-                android:textColor="@color/Amarillo_Cinepolis"
-                android:textColorHint="@color/Amarillo_Cinepolis"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
                 tools:ignore="DuplicateSpeakableTextCheck" />
 
             <TextView
@@ -196,21 +199,6 @@
                 android:textColor="@color/Amarillo_Cinepolis" />
 
 
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Contraseña"
-                android:textColor="@color/Amarillo_Cinepolis"
-                android:textSize="18sp" />
-
-            <EditText
-                android:id="@+id/PasswordLoginText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPassword"
-                tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>
     </ScrollView>
 

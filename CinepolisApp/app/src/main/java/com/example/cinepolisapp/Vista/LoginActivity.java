@@ -1,19 +1,14 @@
 package com.example.cinepolisapp.Vista;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.cinepolisapp.Controlador.ControladorAplicacion;
-import com.example.cinepolisapp.Controlador.DAO.AlimentoDAOImplementation;
-import com.example.cinepolisapp.Modelo.Alimento;
 import com.example.cinepolisapp.Modelo.Cliente;
 import com.example.cinepolisapp.R;
 import com.example.cinepolisapp.Utils.LoadingDialog;
@@ -32,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         }
         // TODO : Mostrar advertencias
         private void initUI(){
-            eTNombreUsuario = findViewById(R.id.UsuarioLoginText);
+            eTNombreUsuario = findViewById(R.id.ApellidoText2);
             eTContrasenna = findViewById(R.id.PasswordLoginText);
             btnInicio = findViewById(R.id.LoginButton);
             btnInicio.setOnClickListener(new View.OnClickListener() {
