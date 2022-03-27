@@ -4,6 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="412dp"
+        android:layout_height="84dp"
+        android:background="#28ACFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo_cinepolis" />
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="0dp"
@@ -25,25 +36,25 @@
             android:id="@+id/TabMovies"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/movies" />
+            android:text="Películas" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/TabBillboard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/billboard" />
+            android:text="Cartelera" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/TabFoods"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/foods" />
+            android:text="Comida" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/TabUsers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/users" />
+            android:text="Usuarios" />
     </com.google.android.material.tabs.TabLayout>
 
     <TextView
@@ -58,9 +69,10 @@
         android:textAppearance="@style/location_te"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.081" />
+        app:layout_constraintVertical_bias="0.197" />
 
     <Button
         android:id="@+id/button2"
