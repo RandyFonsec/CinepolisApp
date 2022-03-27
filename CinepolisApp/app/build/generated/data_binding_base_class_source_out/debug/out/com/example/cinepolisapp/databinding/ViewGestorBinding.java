@@ -4,6 +4,7 @@ package com.example.cinepolisapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,38 +23,42 @@ public final class ViewGestorBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TabItem TabBillboard;
+  public final TabItem TabCarrito;
 
   @NonNull
-  public final TabItem TabFoods;
+  public final TabItem TabCartelera;
 
   @NonNull
-  public final TabItem TabMovies;
+  public final TabItem TabComida;
 
   @NonNull
   public final TabItem TabUsers;
 
   @NonNull
-  public final ConstraintLayout frameLayout;
+  public final Button button;
+
+  @NonNull
+  public final ConstraintLayout frameLayoutGestion;
+
+  @NonNull
+  public final TextView locationTe;
 
   @NonNull
   public final TabLayout tabLayout;
 
-  @NonNull
-  public final TextView textView2;
-
-  private ViewGestorBinding(@NonNull ConstraintLayout rootView, @NonNull TabItem TabBillboard,
-      @NonNull TabItem TabFoods, @NonNull TabItem TabMovies, @NonNull TabItem TabUsers,
-      @NonNull ConstraintLayout frameLayout, @NonNull TabLayout tabLayout,
-      @NonNull TextView textView2) {
+  private ViewGestorBinding(@NonNull ConstraintLayout rootView, @NonNull TabItem TabCarrito,
+      @NonNull TabItem TabCartelera, @NonNull TabItem TabComida, @NonNull TabItem TabUsers,
+      @NonNull Button button, @NonNull ConstraintLayout frameLayoutGestion,
+      @NonNull TextView locationTe, @NonNull TabLayout tabLayout) {
     this.rootView = rootView;
-    this.TabBillboard = TabBillboard;
-    this.TabFoods = TabFoods;
-    this.TabMovies = TabMovies;
+    this.TabCarrito = TabCarrito;
+    this.TabCartelera = TabCartelera;
+    this.TabComida = TabComida;
     this.TabUsers = TabUsers;
-    this.frameLayout = frameLayout;
+    this.button = button;
+    this.frameLayoutGestion = frameLayoutGestion;
+    this.locationTe = locationTe;
     this.tabLayout = tabLayout;
-    this.textView2 = textView2;
   }
 
   @Override
@@ -83,21 +88,21 @@ public final class ViewGestorBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.TabBillboard;
-      TabItem TabBillboard = ViewBindings.findChildViewById(rootView, id);
-      if (TabBillboard == null) {
+      id = R.id.TabCarrito;
+      TabItem TabCarrito = ViewBindings.findChildViewById(rootView, id);
+      if (TabCarrito == null) {
         break missingId;
       }
 
-      id = R.id.TabFoods;
-      TabItem TabFoods = ViewBindings.findChildViewById(rootView, id);
-      if (TabFoods == null) {
+      id = R.id.TabCartelera;
+      TabItem TabCartelera = ViewBindings.findChildViewById(rootView, id);
+      if (TabCartelera == null) {
         break missingId;
       }
 
-      id = R.id.TabMovies;
-      TabItem TabMovies = ViewBindings.findChildViewById(rootView, id);
-      if (TabMovies == null) {
+      id = R.id.TabComida;
+      TabItem TabComida = ViewBindings.findChildViewById(rootView, id);
+      if (TabComida == null) {
         break missingId;
       }
 
@@ -107,7 +112,19 @@ public final class ViewGestorBinding implements ViewBinding {
         break missingId;
       }
 
-      ConstraintLayout frameLayout = (ConstraintLayout) rootView;
+      id = R.id.button;
+      Button button = ViewBindings.findChildViewById(rootView, id);
+      if (button == null) {
+        break missingId;
+      }
+
+      ConstraintLayout frameLayoutGestion = (ConstraintLayout) rootView;
+
+      id = R.id.location_te;
+      TextView locationTe = ViewBindings.findChildViewById(rootView, id);
+      if (locationTe == null) {
+        break missingId;
+      }
 
       id = R.id.tabLayout;
       TabLayout tabLayout = ViewBindings.findChildViewById(rootView, id);
@@ -115,14 +132,8 @@ public final class ViewGestorBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView2;
-      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
-      if (textView2 == null) {
-        break missingId;
-      }
-
-      return new ViewGestorBinding((ConstraintLayout) rootView, TabBillboard, TabFoods, TabMovies,
-          TabUsers, frameLayout, tabLayout, textView2);
+      return new ViewGestorBinding((ConstraintLayout) rootView, TabCarrito, TabCartelera, TabComida,
+          TabUsers, button, frameLayoutGestion, locationTe, tabLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

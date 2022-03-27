@@ -1,15 +1,75 @@
+com/example/cinepolisapp/Controlador/GestorClientes.java
+ com.example.cinepolisapp.Controlador.GestorClientes
+com/example/cinepolisapp/Controlador/DAO/ClienteDAOImpl.java
+ com.example.cinepolisapp.Controlador.DAO.ClienteDAOImpl
+com/example/cinepolisapp/Controlador/Blank.java
+ com.example.cinepolisapp.Controlador.Blank
+com/example/cinepolisapp/Utils/RetrofitSingleton.java
+ com.example.cinepolisapp.Utils.RetrofitSingleton
+com/example/cinepolisapp/Modelo/Asiento.java
+ com.example.cinepolisapp.Modelo.Asiento
+com/example/cinepolisapp/Controlador/GestorPeliculas.java
+ com.example.cinepolisapp.Controlador.GestorPeliculas
+com/example/cinepolisapp/Controlador/DAO/UtilRFInterface.java
+ com.example.cinepolisapp.Controlador.DAO.UtilRFInterface
+com/example/cinepolisapp/Controlador/DAO/DAORetrofit.java
+ com.example.cinepolisapp.Controlador.DAO.DAORetrofit
+com/example/cinepolisapp/Controlador/ControladorAplicacion.java
+ com.example.cinepolisapp.Controlador.ControladorAplicacion
+com/example/cinepolisapp/Controlador/DAO/UserRFInterface.java
+ com.example.cinepolisapp.Controlador.DAO.UserRFInterface
+com/example/cinepolisapp/Controlador/DAO/FilteredFoodInterface.java
+ com.example.cinepolisapp.Controlador.DAO.FilteredFoodInterface
+com/example/cinepolisapp/Controlador/DAO/PeliculaRFInterface.java
+ com.example.cinepolisapp.Controlador.DAO.PeliculaRFInterface
+com/example/cinepolisapp/Controlador/DAO/DAO.java
+ com.example.cinepolisapp.Controlador.DAO.DAO
+com/example/cinepolisapp/Controlador/GestorAsientos.java
+ com.example.cinepolisapp.Controlador.GestorAsientos
+com/example/cinepolisapp/Modelo/Cliente.java
+ com.example.cinepolisapp.Modelo.Cliente
+com/example/cinepolisapp/Modelo/Blank.java
+ com.example.cinepolisapp.Modelo.Blank
+com/example/cinepolisapp/Controlador/DAO/PeliculaDAOImplementation.java
+ com.example.cinepolisapp.Controlador.DAO.PeliculaDAOImplementation
+com/example/cinepolisapp/Controlador/GestorAlimentos.java
+ com.example.cinepolisapp.Controlador.GestorAlimentos
+com/example/cinepolisapp/BuildConfig.java
+ com.example.cinepolisapp.BuildConfig
+com/example/cinepolisapp/Controlador/DAO/AlimentoDAOImplementation.java
+ com.example.cinepolisapp.Controlador.DAO.AlimentoDAOImplementation
+com/example/cinepolisapp/Controlador/DAO/AlimentoRFInterface.java
+ com.example.cinepolisapp.Controlador.DAO.AlimentoRFInterface
+com/example/cinepolisapp/Controlador/GestorCartelera.java
+ com.example.cinepolisapp.Controlador.GestorCartelera
+com/example/cinepolisapp/Modelo/Pelicula.java
+ com.example.cinepolisapp.Modelo.Pelicula
+com/example/cinepolisapp/Modelo/Alimento.java
+ com.example.cinepolisapp.Modelo.Alimento
+com/example/cinepolisapp/Controlador/DAO/PeliculaEspecialInterface.java
+ com.example.cinepolisapp.Controlador.DAO.PeliculaEspecialInterface
+com/example/cinepolisapp/Controlador/DAO/AsientosDAOImplementation.java
+ com.example.cinepolisapp.Controlador.DAO.AsientosDAOImplementation
+com/example/cinepolisapp/databinding/FragmentGestorUsersBinding.java
+ com.example.cinepolisapp.databinding.FragmentGestorUsersBinding
+com/example/cinepolisapp/databinding/LoginBinding.java
+ com.example.cinepolisapp.databinding.LoginBinding
+com/example/cinepolisapp/databinding/FragmentGestorBillboardBinding.java
+ com.example.cinepolisapp.databinding.FragmentGestorBillboardBinding
 com/example/cinepolisapp/MyView.java
  com.example.cinepolisapp.MyView
 com/example/cinepolisapp/databinding/ViewGestorBinding.java
  com.example.cinepolisapp.databinding.ViewGestorBinding
+com/example/cinepolisapp/databinding/ActivityMainBinding.java
+ com.example.cinepolisapp.databinding.ActivityMainBinding
+com/example/cinepolisapp/databinding/ViewUsuarioBinding.java
+ com.example.cinepolisapp.databinding.ViewUsuarioBinding
+com/example/cinepolisapp/databinding/FragmentGestorPeliculasBinding.java
+ com.example.cinepolisapp.databinding.FragmentGestorPeliculasBinding
+com/example/cinepolisapp/databinding/FragmentGestorAlimentoBinding.java
+ com.example.cinepolisapp.databinding.FragmentGestorAlimentoBinding
+com/example/cinepolisapp/databinding/RegisterBinding.java
+ com.example.cinepolisapp.databinding.RegisterBinding
 com/example/cinepolisapp/Vista/MainActivity.java
  com.example.cinepolisapp.Vista.MainActivity
  com.example.cinepolisapp.Vista.MainActivity$1
-com/example/cinepolisapp/Controlador/Blank.java
- com.example.cinepolisapp.Controlador.Blank
-com/example/cinepolisapp/databinding/ActivityMainBinding.java
- com.example.cinepolisapp.databinding.ActivityMainBinding
-com/example/cinepolisapp/BuildConfig.java
- com.example.cinepolisapp.BuildConfig
-com/example/cinepolisapp/Modelo/Blank.java
- com.example.cinepolisapp.Modelo.Blank

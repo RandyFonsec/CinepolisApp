@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/josh/Documents/Code/ProyectoBD/CinepolisApp/CinepolisApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "outputFile": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/Users/josh/.gradle/caches/transforms-3/a06c81e6ffb969b4426b69d8425e8e77/transformed/material-1.5.0/res/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+                    "source": "C:\\Users\\Randy\\.gradle\\caches\\transforms-3\\a06c81e6ffb969b4426b69d8425e8e77\\transformed\\material-1.5.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
