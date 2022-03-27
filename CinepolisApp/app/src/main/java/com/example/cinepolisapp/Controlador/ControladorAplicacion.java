@@ -78,7 +78,7 @@ public class ControladorAplicacion {
         return gestorAlimentos.obtenerAlimentosDisponiblesFiltrados(idTipoAlimento);
     }
 
-    public List<Pelicula> getPeliculasEnCartelera() {
+    public List<Pelicula> getPeliculasEnCartelera(){
         return gestorPeliculas.getPeliculasEnCartelera();
     }
 
@@ -86,5 +86,6 @@ public class ControladorAplicacion {
         return gestorAsientos.getAsientosDeFuncion(idFuncion);
 
     }
+
 
 }
