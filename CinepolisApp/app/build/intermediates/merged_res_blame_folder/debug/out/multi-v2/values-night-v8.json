@@ -1,0 +1,81 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "19",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "218"
+                    },
+                    "to": {
+                        "startLines": "62",
+                        "startColumns": "4",
+                        "startOffsets": "5629",
+                        "endLines": "65",
+                        "endColumns": "12",
+                        "endOffsets": "5825"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Randy\\.gradle\\caches\\transforms-3\\3fa0fe92d846f5c8ae89ebc20cb4fd9e\\transformed\\appcompat-1.4.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,53",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "100,170,254,338,434,536,638,4539",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "165,249,333,429,531,633,727,4623"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "from": {
+                        "startLines": "2,22,17,24",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "102,1089,923,1193",
+                        "endLines": "15,22,20,24",
+                        "endColumns": "12,100,12,90",
+                        "endOffsets": "915,1185,1081,1279"
+                    },
+                    "to": {
+                        "startLines": "9,23,24,28",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "732,1535,1635,1795",
+                        "endLines": "22,23,27,28",
+                        "endColumns": "12,99,12,89",
+                        "endOffsets": "1530,1630,1790,1880"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Randy\\.gradle\\caches\\transforms-3\\a06c81e6ffb969b4426b69d8425e8e77\\transformed\\material-1.5.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,130,241,330,431,538,645,744,847,935,1059,1161,1263,1379,1481,1595,1723,1839,1961,2097,2217,2351,2471,2583,2709,2826,2950,3080,3202,3340,3474,3590",
+                        "endColumns": "74,110,88,100,106,106,98,102,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
+                        "endOffsets": "125,236,325,426,533,640,739,842,930,1054,1156,1258,1374,1476,1590,1718,1834,1956,2092,2212,2346,2466,2578,2704,2821,2945,3075,3197,3335,3469,3585,3705"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,54,55,56,57,58,59,60,61",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1885,1960,2071,2160,2261,2368,2475,2574,2677,2765,2889,2991,3093,3209,3311,3425,3553,3669,3791,3927,4047,4181,4301,4413,4628,4745,4869,4999,5121,5259,5393,5509",
+                        "endColumns": "74,110,88,100,106,106,98,102,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
+                        "endOffsets": "1955,2066,2155,2256,2363,2470,2569,2672,2760,2884,2986,3088,3204,3306,3420,3548,3664,3786,3922,4042,4176,4296,4408,4534,4740,4864,4994,5116,5254,5388,5504,5624"
+                    }
+                }
+            ]
+        }
+    ]
+}
