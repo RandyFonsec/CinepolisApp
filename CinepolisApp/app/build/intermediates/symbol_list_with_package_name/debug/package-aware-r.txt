@@ -2583,6 +2583,7 @@ id FUNCTION
 id FechaNacimientoText
 id FirstFragment
 id LoginButton
+id LoginToRegisterButton
 id META
 id NO_DEBUG
 id NombreText
@@ -2948,6 +2949,7 @@ id percent
 id pin
 id position
 id postLayout
+id progressBar
 id progress_circular
 id progress_horizontal
 id radio
@@ -3052,6 +3054,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView10
 id textView11
 id textView12
 id textView13
@@ -3217,6 +3220,7 @@ layout fragment_gestor_alimento
 layout fragment_gestor_billboard
 layout fragment_gestor_peliculas
 layout fragment_gestor_users
+layout loading_box
 layout login
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

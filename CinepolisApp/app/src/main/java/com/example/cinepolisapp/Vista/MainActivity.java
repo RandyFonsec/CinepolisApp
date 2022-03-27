@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.register);
-
+        setContentView(R.layout.login);
+/*
         Spinner spinner = findViewById(R.id.EsquemaVacunacionSpinner);
         ArrayList<Integer> arrayList = new ArrayList<>();
         arrayList.add(0);
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         int duration = Toast.LENGTH_SHORT;
 
 
-        //probarAlimentos();
+        //probarAlimentos();*/
 
 
     }
