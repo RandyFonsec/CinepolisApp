@@ -76,8 +76,9 @@ public class ControladorAplicacion {
 
     public List obtenerAlimentosDisponiblesFiltrados(int idTipoAlimento) {
         return gestorAlimentos.obtenerAlimentosDisponiblesFiltrados(idTipoAlimento);
+    }
 
-    public List<Pelicula> getPeliculasEnCartelera(){
+    public List<Pelicula> getPeliculasEnCartelera() {
         return gestorPeliculas.getPeliculasEnCartelera();
     }
 
