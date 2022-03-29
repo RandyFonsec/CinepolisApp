@@ -110,7 +110,7 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\kenda\.gradle\cach
 		ADDED from C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:7:9-35
 	android:theme
 		ADDED from C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:12:9-50
-activity#com.example.cinepolisapp.Vista.RegisterActivity
+activity#com.example.cinepolisapp.Vista.LoginActivity
 ADDED from C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:13:9-23:20
 	android:label
 		ADDED from C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:16:13-45
@@ -119,7 +119,7 @@ ADDED from C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\mai
 	android:theme
 		ADDED from C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:17:13-66
 	android:name
-		ADDED from C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:14:13-51
+		ADDED from C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:14:13-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN
