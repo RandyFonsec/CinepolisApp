@@ -5,23 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/location_te"
-        android:layout_width="375dp"
-        android:layout_height="52dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:backgroundTint="#FFFFFF"
-        android:gravity="center_horizontal|top"
-        android:text="@string/location_te"
-        android:textAppearance="@style/location_te"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.081"
-        />
-
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="0dp"
@@ -40,29 +23,46 @@
         app:tabTextColor="#ffffff">
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/TabCartelera"
+            android:id="@+id/TabMovies"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/movies" />
+            android:text="Películas" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/TabComida"
+            android:id="@+id/TabBillboard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/billboard" />
+            android:text="Cartelera" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/TabCarrito"
+            android:id="@+id/TabFoods"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/foods" />
+            android:text="Comida" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/TabUsers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/users" />
+            android:text="Usuarios" />
     </com.google.android.material.tabs.TabLayout>
+
+    <TextView
+        android:id="@+id/location_te"
+        android:layout_width="375dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center_horizontal|top"
+        android:text="@string/location_te"
+        android:textAppearance="@style/location_te"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081"
+        />
 
     <Button
         android:id="@+id/button"
