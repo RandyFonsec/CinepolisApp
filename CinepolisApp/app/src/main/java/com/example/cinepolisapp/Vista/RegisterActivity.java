@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.cinepolisapp.Controlador.ControladorAplicacion;
 import com.example.cinepolisapp.Modelo.Cliente;
 import com.example.cinepolisapp.R;
+import com.example.cinepolisapp.Utils.Alerta;
 import com.example.cinepolisapp.Utils.LoadingDialog;
 
 import java.util.ArrayList;
