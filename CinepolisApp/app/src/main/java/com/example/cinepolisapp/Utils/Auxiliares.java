@@ -22,6 +22,7 @@ public class Auxiliares {
                 intent.putExtras(bundle);
                 appCompat.startActivity(intent);
                 appCompat.finish();
+                appCompat.overridePendingTransition(0, 0);
             }
         });
         appCompat.findViewById(R.id.button13).setOnClickListener(new View.OnClickListener() {
@@ -32,6 +33,8 @@ public class Auxiliares {
                 intent.putExtras(bundle);
                 appCompat.startActivity(intent);
                 appCompat.finish();
+
+                appCompat.overridePendingTransition(0, 0);
             }
         });
         appCompat.findViewById(R.id.button14).setOnClickListener(new View.OnClickListener() {
@@ -42,6 +45,7 @@ public class Auxiliares {
                 intent.putExtras(bundle);
                 appCompat.startActivity(intent);
                 appCompat.finish();
+                appCompat.overridePendingTransition(0, 0);
             }
         });
         appCompat.findViewById(R.id.button15).setOnClickListener(new View.OnClickListener() {
@@ -52,6 +56,7 @@ public class Auxiliares {
                 intent.putExtras(bundle);
                 appCompat.startActivity(intent);
                 appCompat.finish();
+                appCompat.overridePendingTransition(0, 0);
             }
         });
 
