@@ -1,14 +1,11 @@
 package com.example.cinepolisapp.Vista;
 
 import android.os.Bundle;
-import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.cinepolisapp.R;
-import com.example.cinepolisapp.Utils.Alerta;
 import com.example.cinepolisapp.Utils.Auxiliares;
-import com.google.android.material.tabs.TabLayout;
 
 
 

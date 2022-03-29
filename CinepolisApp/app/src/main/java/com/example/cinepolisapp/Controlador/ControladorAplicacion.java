@@ -91,4 +91,8 @@ public class ControladorAplicacion {
 
     }
 
+    public List<Cliente> getClientes(){
+        return gestorClientes.getClientes();
+    }
+
 }

@@ -3,6 +3,8 @@ package com.example.cinepolisapp.Controlador;
 import com.example.cinepolisapp.Controlador.DAO.ClienteDAOImpl;
 import com.example.cinepolisapp.Modelo.Cliente;
 
+import java.util.List;
+
 public class GestorClientes {
 
     public GestorClientes() {}
@@ -28,6 +30,10 @@ public class GestorClientes {
     public boolean eliminarCliente(int numeroCedula) {
         Cliente resultado = (Cliente) ClienteDAOImpl.getInstance().delete(numeroCedula);
         return resultado != null ? true : false;
+    }
+
+    public List<Cliente> getClientes(){
+        return ClienteDAOImpl.getInstance().getAll();
     }
 
 }
