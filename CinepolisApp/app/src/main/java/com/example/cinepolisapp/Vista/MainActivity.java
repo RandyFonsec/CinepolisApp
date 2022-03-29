@@ -25,6 +25,8 @@ import com.example.cinepolisapp.Modelo.Asiento;
 import com.example.cinepolisapp.Modelo.Cliente;
 import com.example.cinepolisapp.Modelo.Pelicula;
 import com.example.cinepolisapp.R;
+import com.example.cinepolisapp.Utils.Alerta;
+import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +37,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.fragment_gestor_alimento);
+        Alerta.showAlert(MainActivity.this, "Hola","Esto es una alerta");
+        TabLayout t ;
+        t.
 /*
         Spinner spinner = findViewById(R.id.EsquemaVacunacionSpinner);
         ArrayList<Integer> arrayList = new ArrayList<>();

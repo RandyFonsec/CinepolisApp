@@ -23,13 +23,13 @@ public final class ViewGestorBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TabItem TabCarrito;
+  public final TabItem TabBillboard;
 
   @NonNull
-  public final TabItem TabCartelera;
+  public final TabItem TabFoods;
 
   @NonNull
-  public final TabItem TabComida;
+  public final TabItem TabMovies;
 
   @NonNull
   public final TabItem TabUsers;
@@ -46,14 +46,14 @@ public final class ViewGestorBinding implements ViewBinding {
   @NonNull
   public final TabLayout tabLayout;
 
-  private ViewGestorBinding(@NonNull ConstraintLayout rootView, @NonNull TabItem TabCarrito,
-      @NonNull TabItem TabCartelera, @NonNull TabItem TabComida, @NonNull TabItem TabUsers,
+  private ViewGestorBinding(@NonNull ConstraintLayout rootView, @NonNull TabItem TabBillboard,
+      @NonNull TabItem TabFoods, @NonNull TabItem TabMovies, @NonNull TabItem TabUsers,
       @NonNull Button button, @NonNull ConstraintLayout frameLayoutGestion,
       @NonNull TextView locationTe, @NonNull TabLayout tabLayout) {
     this.rootView = rootView;
-    this.TabCarrito = TabCarrito;
-    this.TabCartelera = TabCartelera;
-    this.TabComida = TabComida;
+    this.TabBillboard = TabBillboard;
+    this.TabFoods = TabFoods;
+    this.TabMovies = TabMovies;
     this.TabUsers = TabUsers;
     this.button = button;
     this.frameLayoutGestion = frameLayoutGestion;
@@ -88,21 +88,21 @@ public final class ViewGestorBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.TabCarrito;
-      TabItem TabCarrito = ViewBindings.findChildViewById(rootView, id);
-      if (TabCarrito == null) {
+      id = R.id.TabBillboard;
+      TabItem TabBillboard = ViewBindings.findChildViewById(rootView, id);
+      if (TabBillboard == null) {
         break missingId;
       }
 
-      id = R.id.TabCartelera;
-      TabItem TabCartelera = ViewBindings.findChildViewById(rootView, id);
-      if (TabCartelera == null) {
+      id = R.id.TabFoods;
+      TabItem TabFoods = ViewBindings.findChildViewById(rootView, id);
+      if (TabFoods == null) {
         break missingId;
       }
 
-      id = R.id.TabComida;
-      TabItem TabComida = ViewBindings.findChildViewById(rootView, id);
-      if (TabComida == null) {
+      id = R.id.TabMovies;
+      TabItem TabMovies = ViewBindings.findChildViewById(rootView, id);
+      if (TabMovies == null) {
         break missingId;
       }
 
@@ -132,7 +132,7 @@ public final class ViewGestorBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ViewGestorBinding((ConstraintLayout) rootView, TabCarrito, TabCartelera, TabComida,
+      return new ViewGestorBinding((ConstraintLayout) rootView, TabBillboard, TabFoods, TabMovies,
           TabUsers, button, frameLayoutGestion, locationTe, tabLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
