@@ -2,7 +2,9 @@ package com.example.cinepolisapp.Modelo;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Cliente {
+import java.io.Serializable;
+
+public class Cliente implements Serializable {
 
     private int idCliente;
     private long numeroCedula;

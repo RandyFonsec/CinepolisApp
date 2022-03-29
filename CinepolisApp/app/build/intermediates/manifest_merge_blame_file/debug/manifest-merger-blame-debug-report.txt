@@ -15,7 +15,7 @@
 11-->C:\Users\Randy\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->C:\Users\Randy\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:7:5-31:19
+13-->C:\Users\Randy\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:7:5-32:19
 14        android:allowBackup="true"
 14-->C:\Users\Randy\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -68,41 +68,44 @@
 38        <activity android:name="com.example.cinepolisapp.Vista.ListaClientesActivity" />
 38-->C:\Users\Randy\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:30:9-65
 38-->C:\Users\Randy\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:30:19-62
-39
-40        <provider
-40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-41            android:name="androidx.startup.InitializationProvider"
-41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-42            android:authorities="com.example.cinepolisapp.androidx-startup"
-42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
-43            android:exported="false" >
-43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
-44            <meta-data
-44-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-45                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
-46                android:value="androidx.startup" />
-46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
-47            <meta-data
-47-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Randy\.gradle\caches\transforms-3\c761cbdefd74fb3955bd84ec83922caa\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-48                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-48-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Randy\.gradle\caches\transforms-3\c761cbdefd74fb3955bd84ec83922caa\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-49                android:value="androidx.startup" />
-49-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Randy\.gradle\caches\transforms-3\c761cbdefd74fb3955bd84ec83922caa\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-50        </provider>
-51
-52        <uses-library
-52-->[androidx.window:window:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
-53            android:name="androidx.window.extensions"
-53-->[androidx.window:window:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
-54            android:required="false" />
-54-->[androidx.window:window:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
-55        <uses-library
-55-->[androidx.window:window:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
-56            android:name="androidx.window.sidecar"
-56-->[androidx.window:window:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
-57            android:required="false" />
-57-->[androidx.window:window:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
-58    </application>
-59
-60</manifest>
+39        <activity android:name="com.example.cinepolisapp.Vista.EditarEliminarClienteActivity" />
+39-->C:\Users\Randy\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:31:9-73
+39-->C:\Users\Randy\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:31:19-70
+40
+41        <provider
+41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+42            android:name="androidx.startup.InitializationProvider"
+42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+43            android:authorities="com.example.cinepolisapp.androidx-startup"
+43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+44            android:exported="false" >
+44-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+45            <meta-data
+45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+46                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+47                android:value="androidx.startup" />
+47-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+48            <meta-data
+48-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Randy\.gradle\caches\transforms-3\c761cbdefd74fb3955bd84ec83922caa\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+49                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+49-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Randy\.gradle\caches\transforms-3\c761cbdefd74fb3955bd84ec83922caa\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+50                android:value="androidx.startup" />
+50-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Randy\.gradle\caches\transforms-3\c761cbdefd74fb3955bd84ec83922caa\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+51        </provider>
+52
+53        <uses-library
+53-->[androidx.window:window:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+54            android:name="androidx.window.extensions"
+54-->[androidx.window:window:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+55            android:required="false" />
+55-->[androidx.window:window:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+56        <uses-library
+56-->[androidx.window:window:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+57            android:name="androidx.window.sidecar"
+57-->[androidx.window:window:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+58            android:required="false" />
+58-->[androidx.window:window:1.0.0] C:\Users\Randy\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+59    </application>
+60
+61</manifest>

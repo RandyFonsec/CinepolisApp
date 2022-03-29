@@ -3,6 +3,7 @@ package com.example.cinepolisapp.Controlador.DAO;
 import com.example.cinepolisapp.Modelo.Cliente;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -12,7 +13,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class ClienteDAOImpl implements DAORetrofit, DAO {
+public class ClienteDAOImpl implements DAORetrofit, DAO{
 
     private static ClienteDAOImpl singletonInstanceCliente;
 

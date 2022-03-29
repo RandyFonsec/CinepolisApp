@@ -36,6 +36,7 @@
         <activity android:name="com.example.cinepolisapp.Vista.AlimentoAdminActivity" />
         <activity android:name="com.example.cinepolisapp.Vista.HomeAdminActivity" />
         <activity android:name="com.example.cinepolisapp.Vista.ListaClientesActivity" />
+        <activity android:name="com.example.cinepolisapp.Vista.EditarEliminarClienteActivity" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

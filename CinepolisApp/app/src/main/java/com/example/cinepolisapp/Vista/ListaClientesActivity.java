@@ -1,5 +1,6 @@
 package com.example.cinepolisapp.Vista;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -60,8 +61,13 @@ public class ListaClientesActivity extends AppCompatActivity {
         listClientes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Cliente c = clientes.get(i);
-                System.out.println(c);
+                Cliente cliente = clientes.get(i);
+                Bundle bundle = new Bundle();
+                Intent intent = new Intent(getApplicationContext(), EditarEliminarClienteActivity.class);
+                bundle.putSerializable("Cliente",cliente);
+                intent.putExtras(bundle);
+                startActivity(intent);
+                finish();
             }
         });
     }

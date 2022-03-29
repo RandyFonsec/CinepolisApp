@@ -28,6 +28,7 @@
         <activity android:name=".Vista.AlimentoAdminActivity" />
         <activity android:name=".Vista.HomeAdminActivity" />
         <activity android:name=".Vista.ListaClientesActivity" />
+        <activity android:name=".Vista.EditarEliminarClienteActivity" />
     </application>
 
 </manifest>

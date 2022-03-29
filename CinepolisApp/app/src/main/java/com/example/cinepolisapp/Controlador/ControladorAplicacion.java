@@ -95,4 +95,11 @@ public class ControladorAplicacion {
         return gestorClientes.getClientes();
     }
 
+    public boolean actualizarCliente(Cliente cliente){
+        return gestorClientes.modificarCliente(cliente);
+    }
+
+
+
+
 }

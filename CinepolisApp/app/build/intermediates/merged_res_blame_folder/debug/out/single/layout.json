@@ -8,12 +8,12 @@
         "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\login.xml"
     },
     {
-        "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\agregar_alimento.xml",
-        "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\agregar_alimento.xml"
-    },
-    {
         "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main2.xml",
         "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\activity_main2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\agregar_alimento.xml",
+        "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\agregar_alimento.xml"
     },
     {
         "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\editar_alimento.xml",
@@ -30,10 +30,6 @@
     {
         "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\editar_eliminar_clientes.xml",
         "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\editar_eliminar_clientes.xml"
-    },
-    {
-        "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_test.xml",
-        "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\activity_test.xml"
     },
     {
         "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\view_usuario.xml",
@@ -82,10 +78,6 @@
     {
         "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\register.xml",
         "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\register.xml"
-    },
-    {
-        "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_test.xml",
-        "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\fragment_test.xml"
     },
     {
         "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\view_gestor.xml",
