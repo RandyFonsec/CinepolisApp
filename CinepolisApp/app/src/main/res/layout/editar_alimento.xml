@@ -4,48 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:tabBackground="@color/Amarillo_Cinepolis"
-        app:tabIndicatorColor="#28acff"
-        app:tabIndicatorHeight="48dp"
-        app:tabSelectedTextColor="#ffffff"
-        app:tabTextColor="#ffffff">
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/TabMovies"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Películas" />
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/TabBillboard"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cartelera" />
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/TabFoods"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Comida" />
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/TabUsers"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Usuarios" />
-    </com.google.android.material.tabs.TabLayout>
-
     <TextView
         android:id="@+id/location_te9"
         android:layout_width="375dp"
@@ -72,12 +30,10 @@
         android:hint="Precio"
         android:inputType="number"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tabLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.375" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Editar_Actualizar_btn_Alimento"
@@ -128,12 +84,10 @@
         android:hint="Tipo"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tabLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/TextNombreEditar"
@@ -144,12 +98,10 @@
         android:hint="Nombre"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tabLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.002" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/TextCantidadEditar"
@@ -176,4 +128,45 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo_cinepolis" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Usuarios" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Comida" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cartelera" />
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Peliculas" />
+        </LinearLayout>
+    </HorizontalScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
