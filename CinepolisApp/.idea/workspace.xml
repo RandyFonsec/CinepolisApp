@@ -10,18 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="baf4cb0e-8e71-462d-bee0-588aa6b359a1" name="Default Changelist" comment="Añadiendo funcionalidades de alimentos">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/user_carrito.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/user_cartelera.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/user_cartelera_pelicula.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/user_cartelera_tiquetes.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/user_comida_buy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/user_comidas_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/user_comidas_sub.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/agregar_alimento.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/agregar_alimento.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/agregar_pelicula.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/agregar_pelicula.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/configuracion_funcion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/configuracion_funcion.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/editar_alimento.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/editar_alimento.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/editar_eliminar_pelicula.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/editar_eliminar_pelicula.xml" afterDir="false" />
@@ -30,6 +25,10 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_gestor_peliculas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_gestor_peliculas.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_gestor_users.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_gestor_users.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/peliculas_disponibles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/peliculas_disponibles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/user_carrito.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/user_carrito.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/user_cartelera.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/user_cartelera.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/user_comidas_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/user_comidas_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/user_comidas_sub.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/user_comidas_sub.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
