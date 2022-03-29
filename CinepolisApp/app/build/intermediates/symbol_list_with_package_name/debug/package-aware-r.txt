@@ -2570,6 +2570,7 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
 id ApellidoText1
+id ApellidoText2
 id BOTTOM_END
 id BOTTOM_START
 id BackLogin
@@ -2583,6 +2584,7 @@ id FUNCTION
 id FechaNacimientoText
 id FirstFragment
 id LoginButton
+id LoginToRegisterButton
 id META
 id NO_DEBUG
 id NombreText
@@ -2603,7 +2605,6 @@ id TabComida
 id TabFoods
 id TabMovies
 id TabUsers
-id UsuarioLoginText
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2948,6 +2949,7 @@ id percent
 id pin
 id position
 id postLayout
+id progressBar
 id progress_circular
 id progress_horizontal
 id radio
@@ -3218,6 +3220,7 @@ layout fragment_gestor_alimento
 layout fragment_gestor_billboard
 layout fragment_gestor_peliculas
 layout fragment_gestor_users
+layout loading_box
 layout login
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
