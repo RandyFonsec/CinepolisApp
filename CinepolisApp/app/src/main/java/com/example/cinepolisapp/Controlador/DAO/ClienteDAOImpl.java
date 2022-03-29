@@ -90,7 +90,7 @@ public class ClienteDAOImpl implements DAORetrofit, DAO {
 
     @Override
     public Object get(Object key) {
-        Call<Cliente> call = retrofit.create(UserRFInterface.class).get((int) key);
+        Call<Cliente> call = retrofit.create(UserRFInterface.class).get((long) key);
         Cliente respuesta = null;
         try {
             Response<Cliente> response = null;

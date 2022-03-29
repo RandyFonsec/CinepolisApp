@@ -38,6 +38,10 @@ public class ControladorAplicacion {
         return gestorClientes.buscarCliente(correoElectronico, contrasenna);
     }
 
+    public Cliente buscarCliente(long numeroCedula) {
+        return gestorClientes.buscarCliente(numeroCedula);
+    }
+
     public boolean agregarPelicula(Pelicula pelicula) {
         return gestorPeliculas.agregarPelicula(pelicula);
     }
@@ -86,6 +90,5 @@ public class ControladorAplicacion {
         return gestorAsientos.getAsientosDeFuncion(idFuncion);
 
     }
-
 
 }

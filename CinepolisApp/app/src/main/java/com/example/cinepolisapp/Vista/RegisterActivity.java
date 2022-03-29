@@ -146,7 +146,12 @@ public class RegisterActivity extends AppCompatActivity {
             editTextEdad.getText().toString().isEmpty()) {
             return false;
         }
-        // TODO: 3/26/2022 Validar tipos de datos
+        try {
+            long numeroCedula = Long.parseLong(editTextCedula.getText().toString());
+            int edad = Integer.parseInt(editTextEdad.getText().toString());
+        } catch (Exception e) {
+            return false;
+        }
         return true;
     }
 
@@ -157,7 +162,6 @@ public class RegisterActivity extends AppCompatActivity {
             protected void onPreExecute() {
                 ld.startDialog();
             }
-
             @Override
             protected Boolean doInBackground(String... strings) {
                 long numeroCedula = Long.parseLong(editTextCedula.getText().toString());
@@ -179,7 +183,13 @@ public class RegisterActivity extends AppCompatActivity {
                 cliente.setCantidadVacunas(cantidadVacunas);
                 cliente.setFechaNacimiento(fechaNacimiento);
                 cliente.setContrasenna(contrasenna);
-                Boolean registrado = ControladorAplicacion.getInstance().registrarCliente(cliente);
+                Boolean registrado;
+                Cliente clientedb = ControladorAplicacion.getInstance().buscarCliente(numeroCedula);
+                if (clientedb == null) {
+                     registrado = ControladorAplicacion.getInstance().registrarCliente(cliente);
+                } else {
+                    registrado = false;
+                }
                 return registrado;
             }
 

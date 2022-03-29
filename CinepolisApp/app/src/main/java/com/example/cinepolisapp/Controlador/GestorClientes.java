@@ -16,6 +16,10 @@ public class GestorClientes {
         return (Cliente) ClienteDAOImpl.getInstance().get(correoElectronico, contrasenna);
     }
 
+    public Cliente buscarCliente(long numeroCedula) {
+        return (Cliente) ClienteDAOImpl.getInstance().get(numeroCedula);
+    }
+
     public boolean modificarCliente(Cliente cliente) {
         Cliente resultado = (Cliente) ClienteDAOImpl.getInstance().update(cliente);
         return resultado != null ? true : false;
