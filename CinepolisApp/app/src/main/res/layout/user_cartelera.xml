@@ -11,6 +11,7 @@
         android:layout_height="84dp"
         android:background="@color/Amarillo_Cinepolis"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
@@ -25,7 +26,7 @@
         android:backgroundTint="#FFFFFF"
         android:gravity="center_horizontal|top"
         android:text="Proximamente"
-        android:textAlignment="viewStart"
+        android:textAlignment="center"
         android:textAppearance="@style/location_te"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +43,7 @@
         android:backgroundTint="#FFFFFF"
         android:gravity="center_horizontal|top"
         android:text="Prensentando"
-        android:textAlignment="viewStart"
+        android:textAlignment="center"
         android:textAppearance="@style/location_te"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,25 +56,39 @@
         android:id="@+id/imgProximamente"
         android:layout_width="363dp"
         android:layout_height="159dp"
-        app:srcCompat="@android:drawable/ic_menu_slideshow"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="183dp" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblProximamente"
+        app:srcCompat="@android:drawable/ic_menu_slideshow" />
 
     <ImageView
         android:id="@+id/imgPresentando1"
         android:layout_width="140dp"
         android:layout_height="180dp"
-        app:srcCompat="@android:drawable/ic_menu_slideshow"
-        tools:layout_editor_absoluteX="138dp"
-        tools:layout_editor_absoluteY="429dp" />
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/lblNombrePelicula1"
+        app:layout_constraintEnd_toStartOf="@+id/imgPresentando3"
+        app:layout_constraintStart_toEndOf="@+id/imgPresentando2"
+        app:layout_constraintTop_toBottomOf="@+id/lblPresentando"
+        app:srcCompat="@android:drawable/ic_menu_slideshow" />
 
     <ImageView
         android:id="@+id/imgPresentando3"
         android:layout_width="104dp"
         android:layout_height="142dp"
-        app:srcCompat="@android:drawable/ic_menu_slideshow"
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="447dp" />
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/lblNombrePelicula1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgPresentando1"
+        app:layout_constraintTop_toBottomOf="@+id/lblPresentando"
+        app:srcCompat="@android:drawable/ic_menu_slideshow" />
 
     <TextView
         android:id="@+id/lblNombrePelicula1"
@@ -97,34 +112,57 @@
         android:id="@+id/imgPresentando2"
         android:layout_width="104dp"
         android:layout_height="142dp"
-        app:srcCompat="@android:drawable/ic_menu_slideshow"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="447dp" />
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/lblNombrePelicula1"
+        app:layout_constraintEnd_toStartOf="@+id/imgPresentando1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPresentando"
+        app:srcCompat="@android:drawable/ic_menu_slideshow" />
 
     <Button
         android:id="@+id/button9"
         style="@style/Widget.Theme.CinepolisApp.MyView"
         android:layout_width="39dp"
         android:layout_height="43dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
         android:text=">"
-        tools:layout_editor_absoluteX="342dp"
-        tools:layout_editor_absoluteY="622dp" />
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lblNombrePelicula1"
+        app:layout_constraintTop_toBottomOf="@+id/imgPresentando3"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button10"
         style="@style/Widget.Theme.CinepolisApp.MyView"
         android:layout_width="39dp"
         android:layout_height="43dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="20dp"
         android:text="<"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="622dp" />
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView3"
+        app:layout_constraintEnd_toStartOf="@+id/lblNombrePelicula1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPresentando2" />
 
     <HorizontalScrollView
+        android:id="@+id/horizontalScrollView3"
         android:layout_width="wrap_content"
         android:layout_height="47dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button10">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -166,8 +204,13 @@
         android:id="@+id/divider"
         android:layout_width="409dp"
         android:layout_height="1dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="20dp"
         android:background="?android:attr/listDivider"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="356dp" />
+        app:layout_constraintBottom_toTopOf="@+id/lblPresentando"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgProximamente" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
