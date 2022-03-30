@@ -2636,7 +2636,6 @@ int id TextPrecioAgregar 0x7f08003c
 int id TextPrecioEditar 0x7f08003d
 int id TextTipoAlimentoAgregar 0x7f08003e
 int id TextTipoAlimentoEditar 0x7f08003f
-int id TiempoConfig 0x7f080040
 int id accelerate 0x7f080041
 int id accessibility_action_clickable_span 0x7f080042
 int id accessibility_custom_action_0 0x7f080043
@@ -2866,6 +2865,7 @@ int id horizontalScrollView2 0x7f080122
 int id horizontalScrollView3 0x7f080123
 int id horizontalScrollView4 0x7f080124
 int id horizontalScrollView5 0x7f080125
+int id horizontalScrollView7 0x7f080285
 int id horizontal_only 0x7f080126
 int id icon 0x7f080127
 int id icon_group 0x7f080128
@@ -3084,6 +3084,8 @@ int id south 0x7f0801fc
 int id spacer 0x7f0801fd
 int id special_effects_controller_view_tag 0x7f0801fe
 int id spinner 0x7f0801ff
+int id spinnerHorario 0x7f080286
+int id spinnerSala 0x7f080287
 int id spline 0x7f080200
 int id split_action_bar 0x7f080201
 int id spread 0x7f080202
