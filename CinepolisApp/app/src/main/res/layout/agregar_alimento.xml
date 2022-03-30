@@ -123,21 +123,21 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/btnCartelera"
+                android:id="@+id/button12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Usuarios" />
 
             <Button
-                android:id="@+id/btnComidas"
+                android:id="@+id/button13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Comida" />
 
             <Button
-                android:id="@+id/btnCarrito"
+                android:id="@+id/button14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

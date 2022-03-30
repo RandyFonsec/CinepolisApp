@@ -13,7 +13,7 @@
         android:theme="@style/Theme.CinepolisApp">
 
         <activity
-            android:name=".Vista.TestActivity"
+            android:name=".Vista.HomeAdminActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.CinepolisApp.NoActionBar">
@@ -26,9 +26,10 @@
         <activity android:name=".Vista.BillboardAdminActivity" />
         <activity android:name=".Vista.UsersAdminActivity" />
         <activity android:name=".Vista.AlimentoAdminActivity" />
-        <activity android:name=".Vista.HomeAdminActivity" />
         <activity android:name=".Vista.ListaClientesActivity" />
         <activity android:name=".Vista.EditarEliminarClienteActivity" />
+        <activity android:name=".Vista.ListaPeliculasActivity" />
+        <activity android:name=".Vista.ConfigFuncionActivity" />
     </application>
 
 </manifest>

@@ -44,6 +44,10 @@
         "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\login.xml"
     },
     {
+        "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\merged_res\\debug\\layout_item_list_peliculas.xml.flat",
+        "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\item_list_peliculas.xml"
+    },
+    {
         "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\merged_res\\debug\\layout_loading_box.xml.flat",
         "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\loading_box.xml"
     },
@@ -88,28 +92,28 @@
         "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\agregar_alimento.xml"
     },
     {
-        "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_gestor_peliculas.xml.flat",
-        "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\fragment_gestor_peliculas.xml"
+        "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\merged_res\\debug\\layout_configuracion_funcion.xml.flat",
         "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\configuracion_funcion.xml"
     },
     {
-        "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_gestor_peliculas.xml.flat",
+        "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\fragment_gestor_peliculas.xml"
     },
     {
         "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\merged_res\\debug\\layout_editar_eliminar_pelicula.xml.flat",
         "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\editar_eliminar_pelicula.xml"
     },
     {
-        "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\merged_res\\debug\\navigation_nav_graph.xml.flat",
-        "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\navigation\\nav_graph.xml"
-    },
-    {
         "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\merged_res\\debug\\layout_item_list_clientes.xml.flat",
         "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\item_list_clientes.xml"
+    },
+    {
+        "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\merged_res\\debug\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\navigation\\nav_graph.xml"
     },
     {
         "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main2.xml.flat",

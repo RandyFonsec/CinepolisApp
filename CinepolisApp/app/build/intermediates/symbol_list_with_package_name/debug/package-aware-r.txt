@@ -2619,7 +2619,6 @@ id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
-id ScrollPeliculasDisponiblesGestion
 id SecondFragment
 id TOP_END
 id TOP_START
@@ -2730,6 +2729,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnSeleccionarPelicula
 id button
 id button12
 id button13
@@ -2737,7 +2737,6 @@ id button14
 id button15
 id button2
 id button4
-id button5
 id button6
 id button7
 id button8
@@ -2867,6 +2866,7 @@ id horizontalScrollView
 id horizontalScrollView2
 id horizontalScrollView3
 id horizontalScrollView4
+id horizontalScrollView5
 id horizontal_only
 id icon
 id icon_group
@@ -2909,6 +2909,7 @@ id line3
 id linear
 id linearLayout
 id listMode
+id listViewPeliculas
 id list_item
 id listaClientes
 id locale
@@ -3192,7 +3193,9 @@ id transition_transform
 id triangle
 id tvCedulaLista
 id tvCorreoLista
+id tvDuracionPelicula
 id tvNombreLista
+id tvNombrePelicula
 id unchecked
 id uniform
 id unlabeled
@@ -3332,6 +3335,7 @@ layout fragment_gestor_billboard
 layout fragment_gestor_peliculas
 layout fragment_gestor_users
 layout item_list_clientes
+layout item_list_peliculas
 layout loading_box
 layout login
 layout m3_alert_dialog

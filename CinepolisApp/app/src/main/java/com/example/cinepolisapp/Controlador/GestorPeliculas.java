@@ -28,4 +28,9 @@ public class GestorPeliculas {
         List<Pelicula> peliculas = (List<Pelicula>) PeliculaDAOImplementation.getInstance().getPeliculasFromCartelera();
         return peliculas;
     }
+
+    public List<Pelicula> getPeliculas(){
+        List<Pelicula> peliculas = (List<Pelicula>) PeliculaDAOImplementation.getInstance().getAll();
+        return peliculas;
+    }
 }

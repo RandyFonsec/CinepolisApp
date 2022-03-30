@@ -16,7 +16,7 @@
         app:srcCompat="@drawable/logo_cinepolis" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btnSeleccionarPelicula"
         android:layout_width="202dp"
         android:layout_height="103dp"
         android:text="@string/seleccionar_pel_culas"
@@ -57,21 +57,21 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/btnCartelera"
+                android:id="@+id/button12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Usuarios" />
 
             <Button
-                android:id="@+id/btnComidas"
+                android:id="@+id/button13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Comida" />
 
             <Button
-                android:id="@+id/btnCarrito"
+                android:id="@+id/button14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
