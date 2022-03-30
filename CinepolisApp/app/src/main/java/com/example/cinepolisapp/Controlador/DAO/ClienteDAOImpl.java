@@ -28,10 +28,6 @@ public class ClienteDAOImpl implements DAORetrofit, DAO{
     @Override
     public Object create(Object object) {
         Cliente user = (Cliente) object;
-        System.out.println("LOOKING FOR");
-        System.out.println(user.toString());
-        System.out.println(user.getCorreo());
-        System.out.println(user.isEliminado());
         Call<Cliente> call = retrofit.create(UserRFInterface.class).create(
                 user.getNumeroCedula(),
                 user.getNombre(),
