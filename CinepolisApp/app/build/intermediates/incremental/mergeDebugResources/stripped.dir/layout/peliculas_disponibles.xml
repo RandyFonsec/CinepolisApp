@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="412dp"
+        android:layout_height="84dp"
+        android:background="#28ACFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo_cinepolis" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:tabBackground="@color/Amarillo_Cinepolis"
+        app:tabIndicatorColor="#28acff"
+        app:tabIndicatorHeight="48dp"
+        app:tabSelectedTextColor="#ffffff"
+        app:tabTextColor="#ffffff">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/TabMovies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Películas" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/TabBillboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cartelera" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/TabFoods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comida" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/TabUsers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuarios" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <TextView
+        android:id="@+id/location_te6"
+        android:layout_width="375dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center_horizontal|top"
+        android:text="Películas disponibles"
+        android:textAppearance="@style/location_te"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <ScrollView
+        android:id="@+id/ScrollPeliculasDisponiblesGestion"
+        android:layout_width="416dp"
+        android:layout_height="490dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

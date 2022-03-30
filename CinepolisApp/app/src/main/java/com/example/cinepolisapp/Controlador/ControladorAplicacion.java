@@ -122,4 +122,17 @@ public class ControladorAplicacion {
         return gestorUtils.agregarIdiomaXPelicula(idPelicula, idIdioma);
     }
 
+    public List<Cliente> getClientes(){
+        return gestorClientes.getClientes();
+    }
+
+    public boolean actualizarCliente(Cliente cliente){
+        return gestorClientes.modificarCliente(cliente);
+    }
+
+    public List<Pelicula> getPeliculas(){
+        return gestorPeliculas.getPeliculas();
+    }
+
+
 }

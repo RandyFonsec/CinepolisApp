@@ -1,11 +1,28 @@
 [
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\kenda\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
         "source": "C:\\Users\\kenda\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "C:\\Users\\kenda\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\editar_eliminar_clientes.xml",
         "source": "C:\\Users\\kenda\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\editar_eliminar_clientes.xml"
+=======
+        "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_list_clientes.xml",
+        "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\item_list_clientes.xml"
+    },
+    {
+        "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\login.xml",
+        "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main2.xml",
+        "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\activity_main2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\agregar_alimento.xml",
+        "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\agregar_alimento.xml"
+>>>>>>> origin/Randy2
     },
     {
         "merged": "C:\\Users\\kenda\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_gestor_users.xml",
@@ -36,8 +53,21 @@
         "source": "C:\\Users\\kenda\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\login.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\kenda\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\editar_eliminar_cliente.xml",
         "source": "C:\\Users\\kenda\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\editar_eliminar_cliente.xml"
+=======
+        "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_lista_clientes.xml",
+        "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\activity_lista_clientes.xml"
+    },
+    {
+        "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_list_peliculas.xml",
+        "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\item_list_peliculas.xml"
+    },
+    {
+        "merged": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\editar_eliminar_cliente.xml",
+        "source": "C:\\Users\\Randy\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\editar_eliminar_cliente.xml"
+>>>>>>> origin/Randy2
     },
     {
         "merged": "C:\\Users\\kenda\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\configuracion_funcion.xml",
