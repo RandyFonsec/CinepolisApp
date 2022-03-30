@@ -27,7 +27,7 @@
         android:layout_width="44dp"
         android:layout_height="39dp"
         android:layout_marginStart="13dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="123dp"
         android:layout_marginBottom="7dp"
         android:text=">"
@@ -135,9 +135,9 @@
         android:layout_width="79dp"
         android:layout_height="31dp"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="11dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="125dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="30dp"
         android:text="Tiquetes"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView6"
@@ -152,8 +152,8 @@
         android:layout_marginStart="9dp"
         android:layout_marginTop="17dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="34dp"
-        android:text="#"
+        android:layout_marginBottom="35dp"
+        android:text="0"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView6"
         app:layout_constraintEnd_toStartOf="@+id/lblTiquetes"
@@ -584,7 +584,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="40"
-                        android:text="o" />
+                        android:text="o"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a43"
@@ -746,6 +747,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="40"
                         android:text="o"
+                        android:textAlignment="center"
                         android:visibility="invisible" />
 
                     <Button

@@ -1,10 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/imgFood"
+        android:layout_width="384dp"
+        android:layout_height="206dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/lblFoodName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title5"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <TextView
+        android:id="@+id/lblFoodName"
+        android:layout_width="374dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Food Name"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFood" />
+
+    <ScrollView
+        android:id="@+id/scrollView6"
+        android:layout_width="294dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMenos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblFoodName">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textFoodDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at ipsum ornare, tincidunt tellus at, venenatis nisl. Etiam non hendrerit purus, nec pretium odio. Mauris ac feugiat nisl, eu iaculis metus. Nam aliquet facilisis ante eu ullamcorper." />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnMenos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/lblCantidad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView6" />
+
+    <TextView
+        android:id="@+id/lblCantidad"
+        android:layout_width="38dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="19dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblPrice"
+        app:layout_constraintEnd_toStartOf="@+id/btnMas"
+        app:layout_constraintStart_toEndOf="@+id/btnMenos"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView6" />
+
+    <Button
+        android:id="@+id/btnMas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblCantidad"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView6" />
+
+    <TextView
+        android:id="@+id/lblPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="10dp"
+        android:text="$ 0000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblComprar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblCantidad" />
+
+    <Button
+        android:id="@+id/lblComprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="30dp"
+        android:text="Comprar"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPrice" />
+
+    <ImageView
+        android:id="@+id/title5"
+        android:layout_width="412dp"
+        android:layout_height="84dp"
+        android:background="@color/Amarillo_Cinepolis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo_cinepolis" />
+
     <HorizontalScrollView
+        android:id="@+id/horizontalScrollView7"
         android:layout_width="wrap_content"
         android:layout_height="47dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -47,14 +183,4 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <ImageView
-        android:id="@+id/title5"
-        android:layout_width="412dp"
-        android:layout_height="84dp"
-        android:background="@color/Amarillo_Cinepolis"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logo_cinepolis" />
 </androidx.constraintlayout.widget.ConstraintLayout>
