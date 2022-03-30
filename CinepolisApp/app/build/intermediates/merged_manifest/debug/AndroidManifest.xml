@@ -21,11 +21,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.CinepolisApp" >
         <activity
-<<<<<<< HEAD
-            android:name="com.example.cinepolisapp.Vista.AddMovieActivity"
-=======
             android:name="com.example.cinepolisapp.Vista.HomeAdminActivity"
->>>>>>> origin/Randy2
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.CinepolisApp.NoActionBar" >
@@ -35,17 +31,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
-        <activity android:name="com.example.cinepolisapp.Vista.RegisterActivity" />
-=======
         <activity android:name="com.example.cinepolisapp.Vista.BillboardAdminActivity" />
         <activity android:name="com.example.cinepolisapp.Vista.UsersAdminActivity" />
+        <activity android:name="com.example.cinepolisapp.Vista.GestorPeliculasActivity" />
         <activity android:name="com.example.cinepolisapp.Vista.AlimentoAdminActivity" />
+        <activity android:name="com.example.cinepolisapp.Vista.EditDeletePelicula" />
         <activity android:name="com.example.cinepolisapp.Vista.ListaClientesActivity" />
         <activity android:name="com.example.cinepolisapp.Vista.EditarEliminarClienteActivity" />
         <activity android:name="com.example.cinepolisapp.Vista.ListaPeliculasActivity" />
         <activity android:name="com.example.cinepolisapp.Vista.ConfigFuncionActivity" />
->>>>>>> origin/Randy2
+        <activity android:name="com.example.cinepolisapp.Vista.AddMovieActivity" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

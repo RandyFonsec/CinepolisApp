@@ -15,9 +15,10 @@ public class GestorPeliculas {
         return resultado;
     }
 
-    public boolean modificarPelicula(Pelicula pelicula) {
+    public Pelicula modificarPelicula(Pelicula pelicula) {
         Pelicula resultado = (Pelicula) PeliculaDAOImplementation.getInstance().update(pelicula);
-        return resultado != null;
+        //return resultado != null;
+        return resultado;
     }
 
     public boolean eliminarPelicula(int idPelicula) {

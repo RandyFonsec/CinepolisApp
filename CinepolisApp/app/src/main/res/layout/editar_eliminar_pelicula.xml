@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/actualizar_Peliculas_btn"
+        android:id="@+id/btnActualizarPelicula"
         style="@style/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,7 +26,7 @@
         app:strokeWidth="2dp" />
 
     <Button
-        android:id="@+id/Eliminar_Peliculas_btn"
+        android:id="@+id/btnEliminarPelicula"
         style="@style/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -107,13 +108,10 @@
                 android:layout_height="wrap_content"
                 android:text="Director" />
 
-            <EditText
-                android:id="@+id/Modificar_Pelicula_director_text"
+            <Spinner
+                android:id="@+id/spinnerDirectoresEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Director"
-                android:inputType="textPersonName" />
+                android:layout_height="38dp" />
 
             <TextView
                 android:id="@+id/textView16"
@@ -121,13 +119,10 @@
                 android:layout_height="wrap_content"
                 android:text="Actores" />
 
-            <EditText
-                android:id="@+id/Modificar_Pelicula_actores_text"
+            <Spinner
+                android:id="@+id/spinnerActoresEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Actores"
-                android:inputType="textPersonName" />
+                android:layout_height="38dp" />
 
             <TextView
                 android:id="@+id/textView17"
@@ -135,13 +130,10 @@
                 android:layout_height="wrap_content"
                 android:text="Idiomas" />
 
-            <EditText
-                android:id="@+id/Modificar_Pelicula_idiomas_text"
+            <Spinner
+                android:id="@+id/spinnerIdiomasEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Idiomas"
-                android:inputType="textPersonName" />
+                android:layout_height="38dp" />
 
             <TextView
                 android:id="@+id/textView18"
@@ -149,13 +141,10 @@
                 android:layout_height="wrap_content"
                 android:text="Género" />
 
-            <EditText
-                android:id="@+id/Modificar_Pelicula_genero_text"
+            <Spinner
+                android:id="@+id/spinnerGenerosEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Género"
-                android:inputType="textPersonName" />
+                android:layout_height="38dp" />
 
             <TextView
                 android:id="@+id/textView19"
@@ -203,43 +192,16 @@
                 android:id="@+id/textView22"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Costo entrada regular" />
+                android:text="Precio de entrada" />
 
             <EditText
                 android:id="@+id/editTextPrecioEntrada"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Costo entrada regular"
+                android:hint="Precio de entrada"
                 android:inputType="number" />
 
-            <TextView
-                android:id="@+id/textView23"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Costo entrada niño" />
-
-            <EditText
-                android:id="@+id/Modificar_Pelicula_entrada_niño_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Costo entrada niño"
-                android:inputType="number" />
-
-            <TextView
-                android:id="@+id/textView24"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Costo entrada adulto mayor" />
-
-            <EditText
-                android:id="@+id/Modificar_Pelicula_entrada_adulto_mayor_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Costo entrada adulto mayor"
-                android:inputType="number" />
         </LinearLayout>
     </ScrollView>
 

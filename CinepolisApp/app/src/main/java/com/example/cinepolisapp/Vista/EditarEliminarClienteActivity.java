@@ -43,7 +43,6 @@ public class EditarEliminarClienteActivity extends AppCompatActivity {
         etCorreo = findViewById(R.id.editTextTextEmailAddress);
         etEdad = findViewById(R.id.editTextNumber2);
         etFechaNacimiento = findViewById(R.id.editTextDate);
-        //etEsquema = findViewById(R.id.);
         etCedula.setText(String.valueOf(cliente.getNumeroCedula()));
         etNombre.setText(cliente.getNombre());
         etApellido1.setText(cliente.getApellido1());
@@ -95,7 +94,6 @@ public class EditarEliminarClienteActivity extends AppCompatActivity {
         cliente.setCorreo(etCorreo.getText().toString());
         cliente.setEdad(Integer.parseInt(etEdad.getText().toString()));
         cliente.setFechaNacimiento(etFechaNacimiento.getText().toString());
-
         procesarActualizacion();
     }
 
@@ -108,13 +106,11 @@ public class EditarEliminarClienteActivity extends AppCompatActivity {
 
             @Override
             protected Boolean doInBackground(String... strings) {
-
                 return ControladorAplicacion.getInstance().actualizarCliente(cliente);
             }
 
             @Override
             protected void onPostExecute(Boolean result) {
-
                 if(result){
                     Alerta.showAlert(EditarEliminarClienteActivity.this, "Éxito","Cliente actualizado exitosamente");
                     initUI();
@@ -123,7 +119,6 @@ public class EditarEliminarClienteActivity extends AppCompatActivity {
                 }
 
             }
-
         }.execute();
     }
 
@@ -131,27 +126,22 @@ public class EditarEliminarClienteActivity extends AppCompatActivity {
         new AsyncTask<String, String, Boolean>() {
             @Override
             protected void onPreExecute() {
-
             }
 
             @Override
             protected Boolean doInBackground(String... strings) {
-
                 return ControladorAplicacion.getInstance().eliminarCliente((int) cliente.getNumeroCedula());
             }
 
             @Override
             protected void onPostExecute(Boolean result) {
-
                 if(result){
                     Alerta.showAlert(EditarEliminarClienteActivity.this, "Éxito","Cliente eliminado exitosamente");
                     initUI();
                 }else{
                     Alerta.showAlert(EditarEliminarClienteActivity.this,"Error", "No fue posible eliminar el cliente");
                 }
-
             }
-
         }.execute();
     }
 }

@@ -20,7 +20,6 @@ import com.example.cinepolisapp.Utils.LoadingDialog;
 import java.util.ArrayList;
 
 public class ListaClientesActivity extends AppCompatActivity {
-    private Button cargarClientes;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_clientes);

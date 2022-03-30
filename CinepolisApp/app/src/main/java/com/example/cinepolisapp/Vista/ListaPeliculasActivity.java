@@ -67,12 +67,12 @@ public class ListaPeliculasActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Pelicula pelicula = peliculas.get(i);
                 Bundle bundle = new Bundle();
-                Intent intent = new Intent(getApplicationContext(), ConfigFuncionActivity.class);
+                Intent intent = new Intent(getApplicationContext(), EditDeletePelicula.class);
                 bundle.putSerializable("Pelicula",pelicula);
                 intent.putExtras(bundle);
                 startActivity(intent);
                 finish();
-                overridePendingTransition(0, 0);
+                //overridePendingTransition(0, 0);
             }
         });
     }

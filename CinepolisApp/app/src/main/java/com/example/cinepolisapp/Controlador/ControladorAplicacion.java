@@ -52,7 +52,7 @@ public class ControladorAplicacion {
         return gestorPeliculas.agregarPelicula(pelicula);
     }
 
-    public boolean modificarPelicula(Pelicula pelicula) {
+    public Pelicula modificarPelicula(Pelicula pelicula) {
         return gestorPeliculas.modificarPelicula(pelicula);
     }
 

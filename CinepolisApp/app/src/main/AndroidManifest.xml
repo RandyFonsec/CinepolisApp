@@ -25,11 +25,14 @@
         </activity>
         <activity android:name=".Vista.BillboardAdminActivity" />
         <activity android:name=".Vista.UsersAdminActivity" />
+        <activity android:name=".Vista.GestorPeliculasActivity" />
         <activity android:name=".Vista.AlimentoAdminActivity" />
+        <activity android:name=".Vista.EditDeletePelicula" />
         <activity android:name=".Vista.ListaClientesActivity" />
         <activity android:name=".Vista.EditarEliminarClienteActivity" />
         <activity android:name=".Vista.ListaPeliculasActivity" />
         <activity android:name=".Vista.ConfigFuncionActivity" />
+        <activity android:name=".Vista.AddMovieActivity" />
     </application>
 
 </manifest>

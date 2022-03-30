@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,8 +15,6 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.cinepolisapp.R;
-import com.google.android.material.tabs.TabItem;
-import com.google.android.material.tabs.TabLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -25,40 +24,22 @@ public final class EditarEliminarPeliculaBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button EliminarPeliculasBtn;
+  public final Button btnActualizarPelicula;
 
   @NonNull
-  public final EditText ModificarPeliculaActoresText;
+  public final Button btnEliminarPelicula;
 
   @NonNull
-  public final EditText ModificarPeliculaDirectorText;
+  public final Button button12;
 
   @NonNull
-  public final EditText ModificarPeliculaEntradaAdultoMayorText;
+  public final Button button13;
 
   @NonNull
-  public final EditText ModificarPeliculaEntradaNiOText;
+  public final Button button14;
 
   @NonNull
-  public final EditText ModificarPeliculaGeneroText;
-
-  @NonNull
-  public final EditText ModificarPeliculaIdiomasText;
-
-  @NonNull
-  public final TabItem TabBillboard;
-
-  @NonNull
-  public final TabItem TabFoods;
-
-  @NonNull
-  public final TabItem TabMovies;
-
-  @NonNull
-  public final TabItem TabUsers;
-
-  @NonNull
-  public final Button actualizarPeliculasBtn;
+  public final Button button15;
 
   @NonNull
   public final EditText editTextAnnoPelicula;
@@ -82,7 +63,16 @@ public final class EditarEliminarPeliculaBinding implements ViewBinding {
   public final TextView locationTe11;
 
   @NonNull
-  public final TabLayout tabLayout;
+  public final Spinner spinnerActoresEdit;
+
+  @NonNull
+  public final Spinner spinnerDirectoresEdit;
+
+  @NonNull
+  public final Spinner spinnerGenerosEdit;
+
+  @NonNull
+  public final Spinner spinnerIdiomasEdit;
 
   @NonNull
   public final TextView textView14;
@@ -111,41 +101,25 @@ public final class EditarEliminarPeliculaBinding implements ViewBinding {
   @NonNull
   public final TextView textView22;
 
-  @NonNull
-  public final TextView textView23;
-
-  @NonNull
-  public final TextView textView24;
-
   private EditarEliminarPeliculaBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button EliminarPeliculasBtn, @NonNull EditText ModificarPeliculaActoresText,
-      @NonNull EditText ModificarPeliculaDirectorText,
-      @NonNull EditText ModificarPeliculaEntradaAdultoMayorText,
-      @NonNull EditText ModificarPeliculaEntradaNiOText,
-      @NonNull EditText ModificarPeliculaGeneroText, @NonNull EditText ModificarPeliculaIdiomasText,
-      @NonNull TabItem TabBillboard, @NonNull TabItem TabFoods, @NonNull TabItem TabMovies,
-      @NonNull TabItem TabUsers, @NonNull Button actualizarPeliculasBtn,
-      @NonNull EditText editTextAnnoPelicula, @NonNull EditText editTextDuracionPelicula,
-      @NonNull EditText editTextEdad, @NonNull EditText editTextPrecioEntrada,
-      @NonNull EditText editTextTituloPelicula, @NonNull ImageView imageView11,
-      @NonNull TextView locationTe11, @NonNull TabLayout tabLayout, @NonNull TextView textView14,
-      @NonNull TextView textView15, @NonNull TextView textView16, @NonNull TextView textView17,
-      @NonNull TextView textView18, @NonNull TextView textView19, @NonNull TextView textView20,
-      @NonNull TextView textView21, @NonNull TextView textView22, @NonNull TextView textView23,
-      @NonNull TextView textView24) {
+      @NonNull Button btnActualizarPelicula, @NonNull Button btnEliminarPelicula,
+      @NonNull Button button12, @NonNull Button button13, @NonNull Button button14,
+      @NonNull Button button15, @NonNull EditText editTextAnnoPelicula,
+      @NonNull EditText editTextDuracionPelicula, @NonNull EditText editTextEdad,
+      @NonNull EditText editTextPrecioEntrada, @NonNull EditText editTextTituloPelicula,
+      @NonNull ImageView imageView11, @NonNull TextView locationTe11,
+      @NonNull Spinner spinnerActoresEdit, @NonNull Spinner spinnerDirectoresEdit,
+      @NonNull Spinner spinnerGenerosEdit, @NonNull Spinner spinnerIdiomasEdit,
+      @NonNull TextView textView14, @NonNull TextView textView15, @NonNull TextView textView16,
+      @NonNull TextView textView17, @NonNull TextView textView18, @NonNull TextView textView19,
+      @NonNull TextView textView20, @NonNull TextView textView21, @NonNull TextView textView22) {
     this.rootView = rootView;
-    this.EliminarPeliculasBtn = EliminarPeliculasBtn;
-    this.ModificarPeliculaActoresText = ModificarPeliculaActoresText;
-    this.ModificarPeliculaDirectorText = ModificarPeliculaDirectorText;
-    this.ModificarPeliculaEntradaAdultoMayorText = ModificarPeliculaEntradaAdultoMayorText;
-    this.ModificarPeliculaEntradaNiOText = ModificarPeliculaEntradaNiOText;
-    this.ModificarPeliculaGeneroText = ModificarPeliculaGeneroText;
-    this.ModificarPeliculaIdiomasText = ModificarPeliculaIdiomasText;
-    this.TabBillboard = TabBillboard;
-    this.TabFoods = TabFoods;
-    this.TabMovies = TabMovies;
-    this.TabUsers = TabUsers;
-    this.actualizarPeliculasBtn = actualizarPeliculasBtn;
+    this.btnActualizarPelicula = btnActualizarPelicula;
+    this.btnEliminarPelicula = btnEliminarPelicula;
+    this.button12 = button12;
+    this.button13 = button13;
+    this.button14 = button14;
+    this.button15 = button15;
     this.editTextAnnoPelicula = editTextAnnoPelicula;
     this.editTextDuracionPelicula = editTextDuracionPelicula;
     this.editTextEdad = editTextEdad;
@@ -153,7 +127,10 @@ public final class EditarEliminarPeliculaBinding implements ViewBinding {
     this.editTextTituloPelicula = editTextTituloPelicula;
     this.imageView11 = imageView11;
     this.locationTe11 = locationTe11;
-    this.tabLayout = tabLayout;
+    this.spinnerActoresEdit = spinnerActoresEdit;
+    this.spinnerDirectoresEdit = spinnerDirectoresEdit;
+    this.spinnerGenerosEdit = spinnerGenerosEdit;
+    this.spinnerIdiomasEdit = spinnerIdiomasEdit;
     this.textView14 = textView14;
     this.textView15 = textView15;
     this.textView16 = textView16;
@@ -163,8 +140,6 @@ public final class EditarEliminarPeliculaBinding implements ViewBinding {
     this.textView20 = textView20;
     this.textView21 = textView21;
     this.textView22 = textView22;
-    this.textView23 = textView23;
-    this.textView24 = textView24;
   }
 
   @Override
@@ -194,75 +169,39 @@ public final class EditarEliminarPeliculaBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.Eliminar_Peliculas_btn;
-      Button EliminarPeliculasBtn = ViewBindings.findChildViewById(rootView, id);
-      if (EliminarPeliculasBtn == null) {
+      id = R.id.btnActualizarPelicula;
+      Button btnActualizarPelicula = ViewBindings.findChildViewById(rootView, id);
+      if (btnActualizarPelicula == null) {
         break missingId;
       }
 
-      id = R.id.Modificar_Pelicula_actores_text;
-      EditText ModificarPeliculaActoresText = ViewBindings.findChildViewById(rootView, id);
-      if (ModificarPeliculaActoresText == null) {
+      id = R.id.btnEliminarPelicula;
+      Button btnEliminarPelicula = ViewBindings.findChildViewById(rootView, id);
+      if (btnEliminarPelicula == null) {
         break missingId;
       }
 
-      id = R.id.Modificar_Pelicula_director_text;
-      EditText ModificarPeliculaDirectorText = ViewBindings.findChildViewById(rootView, id);
-      if (ModificarPeliculaDirectorText == null) {
+      id = R.id.button12;
+      Button button12 = ViewBindings.findChildViewById(rootView, id);
+      if (button12 == null) {
         break missingId;
       }
 
-      id = R.id.Modificar_Pelicula_entrada_adulto_mayor_text;
-      EditText ModificarPeliculaEntradaAdultoMayorText = ViewBindings.findChildViewById(rootView, id);
-      if (ModificarPeliculaEntradaAdultoMayorText == null) {
+      id = R.id.button13;
+      Button button13 = ViewBindings.findChildViewById(rootView, id);
+      if (button13 == null) {
         break missingId;
       }
 
-      id = R.id.Modificar_Pelicula_entrada_niño_text;
-      EditText ModificarPeliculaEntradaNiOText = ViewBindings.findChildViewById(rootView, id);
-      if (ModificarPeliculaEntradaNiOText == null) {
+      id = R.id.button14;
+      Button button14 = ViewBindings.findChildViewById(rootView, id);
+      if (button14 == null) {
         break missingId;
       }
 
-      id = R.id.Modificar_Pelicula_genero_text;
-      EditText ModificarPeliculaGeneroText = ViewBindings.findChildViewById(rootView, id);
-      if (ModificarPeliculaGeneroText == null) {
-        break missingId;
-      }
-
-      id = R.id.Modificar_Pelicula_idiomas_text;
-      EditText ModificarPeliculaIdiomasText = ViewBindings.findChildViewById(rootView, id);
-      if (ModificarPeliculaIdiomasText == null) {
-        break missingId;
-      }
-
-      id = R.id.TabBillboard;
-      TabItem TabBillboard = ViewBindings.findChildViewById(rootView, id);
-      if (TabBillboard == null) {
-        break missingId;
-      }
-
-      id = R.id.TabFoods;
-      TabItem TabFoods = ViewBindings.findChildViewById(rootView, id);
-      if (TabFoods == null) {
-        break missingId;
-      }
-
-      id = R.id.TabMovies;
-      TabItem TabMovies = ViewBindings.findChildViewById(rootView, id);
-      if (TabMovies == null) {
-        break missingId;
-      }
-
-      id = R.id.TabUsers;
-      TabItem TabUsers = ViewBindings.findChildViewById(rootView, id);
-      if (TabUsers == null) {
-        break missingId;
-      }
-
-      id = R.id.actualizar_Peliculas_btn;
-      Button actualizarPeliculasBtn = ViewBindings.findChildViewById(rootView, id);
-      if (actualizarPeliculasBtn == null) {
+      id = R.id.button15;
+      Button button15 = ViewBindings.findChildViewById(rootView, id);
+      if (button15 == null) {
         break missingId;
       }
 
@@ -308,9 +247,27 @@ public final class EditarEliminarPeliculaBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tabLayout;
-      TabLayout tabLayout = ViewBindings.findChildViewById(rootView, id);
-      if (tabLayout == null) {
+      id = R.id.spinnerActoresEdit;
+      Spinner spinnerActoresEdit = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerActoresEdit == null) {
+        break missingId;
+      }
+
+      id = R.id.spinnerDirectoresEdit;
+      Spinner spinnerDirectoresEdit = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerDirectoresEdit == null) {
+        break missingId;
+      }
+
+      id = R.id.spinnerGenerosEdit;
+      Spinner spinnerGenerosEdit = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerGenerosEdit == null) {
+        break missingId;
+      }
+
+      id = R.id.spinnerIdiomasEdit;
+      Spinner spinnerIdiomasEdit = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerIdiomasEdit == null) {
         break missingId;
       }
 
@@ -368,26 +325,12 @@ public final class EditarEliminarPeliculaBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView23;
-      TextView textView23 = ViewBindings.findChildViewById(rootView, id);
-      if (textView23 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView24;
-      TextView textView24 = ViewBindings.findChildViewById(rootView, id);
-      if (textView24 == null) {
-        break missingId;
-      }
-
-      return new EditarEliminarPeliculaBinding((ConstraintLayout) rootView, EliminarPeliculasBtn,
-          ModificarPeliculaActoresText, ModificarPeliculaDirectorText,
-          ModificarPeliculaEntradaAdultoMayorText, ModificarPeliculaEntradaNiOText,
-          ModificarPeliculaGeneroText, ModificarPeliculaIdiomasText, TabBillboard, TabFoods,
-          TabMovies, TabUsers, actualizarPeliculasBtn, editTextAnnoPelicula,
+      return new EditarEliminarPeliculaBinding((ConstraintLayout) rootView, btnActualizarPelicula,
+          btnEliminarPelicula, button12, button13, button14, button15, editTextAnnoPelicula,
           editTextDuracionPelicula, editTextEdad, editTextPrecioEntrada, editTextTituloPelicula,
-          imageView11, locationTe11, tabLayout, textView14, textView15, textView16, textView17,
-          textView18, textView19, textView20, textView21, textView22, textView23, textView24);
+          imageView11, locationTe11, spinnerActoresEdit, spinnerDirectoresEdit, spinnerGenerosEdit,
+          spinnerIdiomasEdit, textView14, textView15, textView16, textView17, textView18,
+          textView19, textView20, textView21, textView22);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

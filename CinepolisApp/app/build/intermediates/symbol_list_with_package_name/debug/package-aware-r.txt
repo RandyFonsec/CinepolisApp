@@ -2586,7 +2586,6 @@ id CedulaText
 id EdadText
 id Editar_Actualizar_btn_Alimento
 id Editar_Eliminar_btn_Alimento
-id Eliminar_Peliculas_btn
 id EmailLoginText
 id EmailText
 id EsquemaVacunacionSpinner
@@ -2597,12 +2596,6 @@ id FirstFragment
 id LoginButton
 id LoginToRegisterButton
 id META
-id Modificar_Pelicula_actores_text
-id Modificar_Pelicula_director_text
-id Modificar_Pelicula_entrada_adulto_mayor_text
-id Modificar_Pelicula_entrada_niño_text
-id Modificar_Pelicula_genero_text
-id Modificar_Pelicula_idiomas_text
 id NO_DEBUG
 id NombrePeliculaConfig
 id NombreText
@@ -2691,7 +2684,6 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
-id actualizar_Peliculas_btn
 id actualizar_Peliculas_btn2
 id add
 id alertTitle
@@ -2723,17 +2715,16 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-<<<<<<< HEAD
+id btnActualizarPelicula
 id btnAgregarPelicula
-=======
+id btnEliminarPelicula
+id btnGestionAgregarPelicula
 id btnSeleccionarPelicula
->>>>>>> origin/Randy2
 id button
 id button12
 id button13
 id button14
 id button15
-id button2
 id button4
 id button6
 id button7
@@ -2865,7 +2856,6 @@ id hideable
 id home
 id homeAsUp
 id honorRequest
-id horizontalScrollView
 id horizontalScrollView2
 id horizontalScrollView3
 id horizontalScrollView4
@@ -3089,9 +3079,13 @@ id spacer
 id special_effects_controller_view_tag
 id spinner
 id spinnerActores
+id spinnerActoresEdit
 id spinnerDirectores
+id spinnerDirectoresEdit
 id spinnerGeneros
+id spinnerGenerosEdit
 id spinnerIdiomas
+id spinnerIdiomasEdit
 id spline
 id split_action_bar
 id spread
@@ -3154,8 +3148,6 @@ id textView2
 id textView20
 id textView21
 id textView22
-id textView23
-id textView24
 id textView25
 id textView26
 id textView27
@@ -3334,7 +3326,6 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout editar_alimento
 layout editar_eliminar_cliente
-layout editar_eliminar_clientes
 layout editar_eliminar_pelicula
 layout fragment_gestor_alimento
 layout fragment_gestor_billboard
