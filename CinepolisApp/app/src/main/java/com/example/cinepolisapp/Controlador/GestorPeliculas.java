@@ -9,10 +9,9 @@ public class GestorPeliculas {
 
     public GestorPeliculas() {}
 
-    public Pelicula agregarPelicula(Pelicula pelicula) {
+    public boolean agregarPelicula(Pelicula pelicula) {
         Pelicula resultado = (Pelicula) PeliculaDAOImplementation.getInstance().create(pelicula);
-        // return resultado != null;
-        return resultado;
+        return resultado != null;
     }
 
     public boolean modificarPelicula(Pelicula pelicula) {
@@ -29,10 +28,13 @@ public class GestorPeliculas {
         List<Pelicula> peliculas = (List<Pelicula>) PeliculaDAOImplementation.getInstance().getPeliculasFromCartelera();
         return peliculas;
     }
+<<<<<<< HEAD
 
     public List<Pelicula> getPeliculas(){
         List<Pelicula> peliculas = (List<Pelicula>) PeliculaDAOImplementation.getInstance().getAll();
         return peliculas;
     }
+=======
+>>>>>>> parent of d299a89... Agregar película funcional
 }
 

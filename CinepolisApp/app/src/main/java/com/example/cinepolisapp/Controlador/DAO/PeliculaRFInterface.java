@@ -48,7 +48,4 @@ public interface PeliculaRFInterface {
 
     @GET("fetchPeliculaFromCartelera.php")
     public Call<List<Pelicula>> getPeliculasEnCartelera();
-
-    @GET("fetchMaxIdPelicula.php")
-    public Call<Integer> getMaxIdPelicula();
 }

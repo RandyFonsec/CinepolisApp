@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.135" />
 
     <Button
-        android:id="@+id/btnAgregarPelicula"
+        android:id="@+id/Agregar_Peliculas_btn"
         style="@style/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -115,7 +115,7 @@
                 android:text="Título" />
 
             <EditText
-                android:id="@+id/editTextTituloPelicula"
+                android:id="@+id/Modificar_Pelicula_titulo_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -128,10 +128,13 @@
                 android:layout_height="wrap_content"
                 android:text="Director" />
 
-            <Spinner
-                android:id="@+id/spinnerDirectores"
+            <EditText
+                android:id="@+id/Modificar_Pelicula_director_text"
                 android:layout_width="match_parent"
-                android:layout_height="38dp" />
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Director"
+                android:inputType="textPersonName" />
 
             <TextView
                 android:id="@+id/textView16"
@@ -139,10 +142,13 @@
                 android:layout_height="wrap_content"
                 android:text="Actores" />
 
-            <Spinner
-                android:id="@+id/spinnerActores"
+            <EditText
+                android:id="@+id/Modificar_Pelicula_actores_text"
                 android:layout_width="match_parent"
-                android:layout_height="38dp" />
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Actores"
+                android:inputType="textPersonName" />
 
             <TextView
                 android:id="@+id/textView17"
@@ -150,10 +156,13 @@
                 android:layout_height="wrap_content"
                 android:text="Idiomas" />
 
-            <Spinner
-                android:id="@+id/spinnerIdiomas"
+            <EditText
+                android:id="@+id/Modificar_Pelicula_idiomas_text"
                 android:layout_width="match_parent"
-                android:layout_height="38dp" />
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Idiomas"
+                android:inputType="textPersonName" />
 
             <TextView
                 android:id="@+id/textView18"
@@ -161,10 +170,13 @@
                 android:layout_height="wrap_content"
                 android:text="Género" />
 
-            <Spinner
-                android:id="@+id/spinnerGeneros"
+            <EditText
+                android:id="@+id/Modificar_Pelicula_genero_text"
                 android:layout_width="match_parent"
-                android:layout_height="38dp" />
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Género"
+                android:inputType="textPersonName" />
 
             <TextView
                 android:id="@+id/textView19"
@@ -173,7 +185,7 @@
                 android:text="Año" />
 
             <EditText
-                android:id="@+id/editTextAnnoPelicula"
+                android:id="@+id/Modificar_Pelicula_año_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -187,7 +199,7 @@
                 android:text="Duración" />
 
             <EditText
-                android:id="@+id/editTextDuracionPelicula"
+                android:id="@+id/Modificar_Pelicula_duracion_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -201,7 +213,7 @@
                 android:text="Edad" />
 
             <EditText
-                android:id="@+id/editTextEdad"
+                android:id="@+id/Modificar_Pelicula_edad_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -212,16 +224,43 @@
                 android:id="@+id/textView22"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Precio de entrada" />
+                android:text="Costo entrada regular" />
 
             <EditText
-                android:id="@+id/editTextPrecioEntrada"
+                android:id="@+id/Modificar_Pelicula_entrada_regular_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Precio de entrada"
+                android:hint="Costo entrada regular"
                 android:inputType="number" />
 
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Costo entrada niño" />
+
+            <EditText
+                android:id="@+id/Modificar_Pelicula_entrada_niño_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Costo entrada niño"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Costo entrada adulto mayor" />
+
+            <EditText
+                android:id="@+id/Modificar_Pelicula_entrada_adulto_mayor_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Costo entrada adulto mayor"
+                android:inputType="number" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

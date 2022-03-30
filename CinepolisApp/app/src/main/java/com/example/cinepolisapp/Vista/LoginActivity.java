@@ -1,6 +1,5 @@
 package com.example.cinepolisapp.Vista;
 
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -12,25 +11,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.cinepolisapp.Controlador.ControladorAplicacion;
 import com.example.cinepolisapp.Modelo.Cliente;
 import com.example.cinepolisapp.R;
-import com.example.cinepolisapp.Utils.Alerta;
 import com.example.cinepolisapp.Utils.LoadingDialog;
 
 public class LoginActivity extends AppCompatActivity {
-
     private Button btnInicio, btnRegistro;
-    private EditText eTCorreo, eTContrasenna;
-    private String title, message;
-
+    private EditText eTNombreUsuario, eTContrasenna;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.login);
             initUI();
-        }
 
+
+
+        }
         // TODO : Mostrar advertencias
         private void initUI(){
-            eTCorreo = findViewById(R.id.EmailLoginText);
+            eTNombreUsuario = findViewById(R.id.ApellidoText2);
             eTContrasenna = findViewById(R.id.PasswordLoginText);
             btnInicio = findViewById(R.id.LoginButton);
             btnInicio.setOnClickListener(new View.OnClickListener() {
@@ -40,32 +37,22 @@ public class LoginActivity extends AppCompatActivity {
                 }
             });
             btnRegistro = findViewById(R.id.LoginToRegisterButton);
-            btnRegistro.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Bundle bundle = new Bundle();
-                    Intent intent = new Intent(getApplicationContext(), RegisterActivity.class);
-                    intent.putExtras(bundle);
-                    startActivity(intent);
-                }
-            });
         }
 
         private void iniciarSesion(){
-            if(validarCampos()) {
+            if(validarCampos()){
                 comprobarCredenciales();
             }else{
-                Alerta.showAlert(LoginActivity.this, title, message);
+                System.out.println("Error debes llenar todo");
             }
         }
 
-        private boolean validarCampos() {
-            if (eTCorreo.getText().toString().isEmpty() ||
-                eTContrasenna.getText().toString().isEmpty()) {
-                title = "Error";
-                message = "Debe llenar todos los espacios solicitados";
+        private boolean validarCampos(){
+            if(eTNombreUsuario.getText().toString().isEmpty())
                 return false;
-            }
+            if(eTContrasenna.getText().toString().isEmpty())
+                return false;
+
             return true;
         }
 
@@ -78,22 +65,25 @@ public class LoginActivity extends AppCompatActivity {
                 }
                 @Override
                 protected Cliente doInBackground(String... strings) {
-                    String correo = eTCorreo.getText().toString();
+
+                    String nombre = eTNombreUsuario.getText().toString();
                     String contrasenna = eTContrasenna.getText().toString();
-                    Cliente cliente = ControladorAplicacion.getInstance().buscarCliente(correo, contrasenna);
+
+                    Cliente cliente = ControladorAplicacion.getInstance().buscarCliente(nombre, contrasenna);
+
                     return cliente;
                 }
                 @Override
                 protected void onPostExecute(Cliente result) {
                     ld.dismissDialog();
-                    if (result != null) {
-                        System.out.println("Inicio de sesión exitoso");
-                    } else {
-                        title = "Error";
-                        message = "Sus credenciales de inicio de sesión no son correctas";
-                        Alerta.showAlert(LoginActivity.this, title, message);
+                    if(result!=null){
+                        System.out.println("Bien son tus credenciales");
+                    }else{
+                        System.out.println("No son tus credenciales");
                     }
                 }
+
             }.execute();
+
         }
 }

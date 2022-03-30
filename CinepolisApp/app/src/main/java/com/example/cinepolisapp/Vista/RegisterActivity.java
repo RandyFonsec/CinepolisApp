@@ -10,6 +10,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.cinepolisapp.Controlador.ControladorAplicacion;
@@ -27,10 +28,6 @@ public class RegisterActivity extends AppCompatActivity {
             editTextCorreo, editTextEdad, editTextFechaNacimiento;
     private Spinner spinnerCantidadVacunas;
     private int year, month, day;
-    private String title, message;
-    private long numeroCedula;
-    private String nombre, primerApellido, segundoApellido, correoElectronico, contrasenna, fechaNacimiento;
-    private int edad, cantidadVacunas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,7 +65,7 @@ public class RegisterActivity extends AppCompatActivity {
         editTextCedula = findViewById(R.id.CedulaText);
         editTextNombre = findViewById(R.id.NombreText);
         editTextPrimerApellido = findViewById(R.id.ApellidoText1);
-        editTextSegundoApellido = findViewById(R.id.EmailLoginText);
+        editTextSegundoApellido = findViewById(R.id.ApellidoText2);
         editTextCorreo = findViewById(R.id.EmailText);
         editTextEdad = findViewById(R.id.EdadText);
         editTextFechaNacimiento = findViewById(R.id.FechaNacimientoText);
@@ -137,7 +134,7 @@ public class RegisterActivity extends AppCompatActivity {
         if (validateData()) {
             comprobarRegistro();
         } else {
-            Alerta.showAlert(RegisterActivity.this, title, message);
+            System.out.println("Datos incorrectos");
         }
     }
 
@@ -148,15 +145,12 @@ public class RegisterActivity extends AppCompatActivity {
             editTextSegundoApellido.getText().toString().isEmpty() ||
             editTextCorreo.getText().toString().isEmpty() ||
             editTextEdad.getText().toString().isEmpty()) {
-            title = "Error";
-            message = "Debe llenar todos los espacios solicitados";
             return false;
         }
         try {
             long numeroCedula = Long.parseLong(editTextCedula.getText().toString());
             int edad = Integer.parseInt(editTextEdad.getText().toString());
         } catch (Exception e) {
-            message = "La cédula y la edad deben ser valores numéricos";
             return false;
         }
         return true;
@@ -171,15 +165,15 @@ public class RegisterActivity extends AppCompatActivity {
             }
             @Override
             protected Boolean doInBackground(String... strings) {
-                numeroCedula = Long.parseLong(editTextCedula.getText().toString());
-                nombre = editTextNombre.getText().toString();
-                primerApellido = editTextPrimerApellido.getText().toString();
-                segundoApellido = editTextSegundoApellido.getText().toString();
-                correoElectronico = editTextCorreo.getText().toString();
-                edad = Integer.parseInt(editTextEdad.getText().toString());
-                contrasenna = generatePassword();
-                fechaNacimiento = getYear() + "/" + getMonth() + "/" + getDay();
-                cantidadVacunas = Integer.parseInt(spinnerCantidadVacunas.getSelectedItem().toString());
+                long numeroCedula = Long.parseLong(editTextCedula.getText().toString());
+                String nombre = editTextNombre.getText().toString();
+                String primerApellido = editTextPrimerApellido.getText().toString();
+                String segundoApellido = editTextSegundoApellido.getText().toString();
+                String correoElectronico = editTextCorreo.getText().toString();
+                int edad = Integer.parseInt(editTextEdad.getText().toString());
+                String contrasenna = generatePassword();
+                String fechaNacimiento = getYear() + "/" + getMonth() + "/" + getDay();
+                int cantidadVacunas = Integer.parseInt(spinnerCantidadVacunas.getSelectedItem().toString());
                 Cliente cliente = new Cliente();
                 cliente.setNumeroCedula(numeroCedula);
                 cliente.setNombre(nombre);
@@ -193,13 +187,9 @@ public class RegisterActivity extends AppCompatActivity {
                 Boolean registrado;
                 Cliente clientedb = ControladorAplicacion.getInstance().buscarCliente(numeroCedula);
                 if (clientedb == null) {
-                    registrado = ControladorAplicacion.getInstance().registrarCliente(cliente);
-                    title = "Éxito";
-                    message = "El usuario ha sido registrado exitosamente, su contraseña es : " + contrasenna;
+                     registrado = ControladorAplicacion.getInstance().registrarCliente(cliente);
                 } else {
                     registrado = false;
-                    title = "Error";
-                    message = "Ya existe un usuario registrado con el número de cédula suministrado";
                 }
                 return registrado;
             }
@@ -208,9 +198,9 @@ public class RegisterActivity extends AppCompatActivity {
             protected void onPostExecute(Boolean result) {
                 ld.dismissDialog();
                 if (result) {
-                    Alerta.showAlert(RegisterActivity.this, title, message);
+                    System.out.println("El cliente ha sido registrado exitosamente");
                 } else {
-                    Alerta.showAlert(RegisterActivity.this, title, message);
+                    System.out.println("Error al registrar el cliente");
                 }
             }
 
