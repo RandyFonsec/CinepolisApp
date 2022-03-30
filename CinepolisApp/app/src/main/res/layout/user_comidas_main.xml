@@ -52,6 +52,13 @@
                     android:orientation="vertical" />
             </HorizontalScrollView>
 
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="50"
+                android:background="?android:attr/listDivider" />
+
             <TextView
                 android:id="@+id/lblMenu"
                 android:layout_width="match_parent"
