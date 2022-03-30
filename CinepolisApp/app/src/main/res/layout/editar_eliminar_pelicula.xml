@@ -134,7 +134,7 @@
                 android:text="Título" />
 
             <EditText
-                android:id="@+id/Modificar_Pelicula_titulo_text"
+                android:id="@+id/editTextTituloPelicula"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -204,7 +204,7 @@
                 android:text="Año" />
 
             <EditText
-                android:id="@+id/Modificar_Pelicula_año_text"
+                android:id="@+id/editTextAnnoPelicula"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -218,7 +218,7 @@
                 android:text="Duración" />
 
             <EditText
-                android:id="@+id/Modificar_Pelicula_duracion_text"
+                android:id="@+id/editTextDuracionPelicula"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -232,7 +232,7 @@
                 android:text="Edad" />
 
             <EditText
-                android:id="@+id/Modificar_Pelicula_edad_text"
+                android:id="@+id/editTextEdad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -246,7 +246,7 @@
                 android:text="Costo entrada regular" />
 
             <EditText
-                android:id="@+id/Modificar_Pelicula_entrada_regular_text"
+                android:id="@+id/editTextPrecioEntrada"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"

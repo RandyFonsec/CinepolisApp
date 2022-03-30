@@ -29,34 +29,40 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#003DA5"
-                android:text="Usuario/correo"
-                android:textColor="@color/Amarillo_Cinepolis" />
+                android:text="Correo electrónico"
+                android:textColor="@color/Amarillo_Cinepolis"
+                android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/ApellidoText2"
+                android:id="@+id/EmailLoginText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#003DA5"
                 android:ems="10"
+                android:hint="Ingrese su correo electrónico"
                 android:importantForAutofill="no"
-                android:inputType="textPersonName"
+                android:inputType="textEmailAddress"
                 android:minHeight="48dp"
-                android:textColor="@color/Amarillo_Cinepolis" />
+                android:textColor="@color/Amarillo_Cinepolis"
+                android:textColorHint="@color/white" />
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Password"
-                android:textColor="@color/Amarillo_Cinepolis" />
+                android:text="Contraseña"
+                android:textColor="@color/Amarillo_Cinepolis"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/PasswordLoginText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:hint="Ingrese su contraseña"
                 android:inputType="textPassword"
                 android:minHeight="48dp"
+                android:textColorHint="@color/white"
                 tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>
     </ScrollView>
@@ -70,7 +76,7 @@
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.139" />
@@ -83,10 +89,9 @@
         android:text="Iniciar Sesión"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.711" />
+        app:layout_constraintVertical_bias="0.658" />
 
     <Button
         android:id="@+id/LoginToRegisterButton"
@@ -96,8 +101,10 @@
         android:text="Crear Cuenta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LoginButton" />
+        app:layout_constraintTop_toBottomOf="@+id/LoginButton"
+        app:layout_constraintVertical_bias="0.235" />
 
     <Button
         android:id="@+id/BackLogin"
@@ -110,17 +117,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.001" />
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bienvenido de vuelta"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.036"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.087" />
 </androidx.constraintlayout.widget.ConstraintLayout>

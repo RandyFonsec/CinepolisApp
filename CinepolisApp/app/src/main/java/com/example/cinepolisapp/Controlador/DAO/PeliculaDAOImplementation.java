@@ -10,7 +10,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class PeliculaDAOImplementation implements DAORetrofit, DAO,PeliculaEspecialInterface {
+public class PeliculaDAOImplementation implements DAORetrofit, DAO, PeliculaEspecialInterface {
 
     private static PeliculaDAOImplementation singletonInstancePelicula;
 
@@ -154,16 +154,29 @@ public class PeliculaDAOImplementation implements DAORetrofit, DAO,PeliculaEspec
         try {
             Response<List<Pelicula>> response = null;
             response = call.execute();
-            if(response.isSuccessful()){
+            if(response.isSuccessful()) {
                 respuesta = response.body();
             }
-
-
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
         return respuesta;
     }
+
+    @Override
+    public Integer obtenerUltimoIdPelicula() {
+        Call<Integer> call = retrofit.create(PeliculaRFInterface.class).getMaxIdPelicula();
+        Integer respuesta = null;
+        try {
+            Response<Integer> response = null;
+            response = call.execute();
+            if(response.isSuccessful()) {
+                respuesta = response.body();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return respuesta;
+    }
+
 }
