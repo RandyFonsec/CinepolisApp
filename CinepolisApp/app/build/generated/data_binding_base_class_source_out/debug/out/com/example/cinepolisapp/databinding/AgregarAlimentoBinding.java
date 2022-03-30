@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -15,6 +14,8 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.cinepolisapp.R;
+import com.google.android.material.tabs.TabItem;
+import com.google.android.material.tabs.TabLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -25,6 +26,18 @@ public final class AgregarAlimentoBinding implements ViewBinding {
 
   @NonNull
   public final Button AgregarBtn;
+
+  @NonNull
+  public final TabItem TabBillboard;
+
+  @NonNull
+  public final TabItem TabFoods;
+
+  @NonNull
+  public final TabItem TabMovies;
+
+  @NonNull
+  public final TabItem TabUsers;
 
   @NonNull
   public final EditText TextCantidadAgregar;
@@ -39,45 +52,33 @@ public final class AgregarAlimentoBinding implements ViewBinding {
   public final EditText TextTipoAlimentoAgregar;
 
   @NonNull
-  public final Button button12;
-
-  @NonNull
-  public final Button button13;
-
-  @NonNull
-  public final Button button14;
-
-  @NonNull
-  public final Button button15;
-
-  @NonNull
-  public final HorizontalScrollView horizontalScrollView2;
-
-  @NonNull
   public final ImageView imageView;
 
   @NonNull
   public final TextView locationTe8;
 
+  @NonNull
+  public final TabLayout tabLayout;
+
   private AgregarAlimentoBinding(@NonNull ConstraintLayout rootView, @NonNull Button AgregarBtn,
-      @NonNull EditText TextCantidadAgregar, @NonNull EditText TextNombreAgregar,
-      @NonNull EditText TextPrecioAgregar, @NonNull EditText TextTipoAlimentoAgregar,
-      @NonNull Button button12, @NonNull Button button13, @NonNull Button button14,
-      @NonNull Button button15, @NonNull HorizontalScrollView horizontalScrollView2,
-      @NonNull ImageView imageView, @NonNull TextView locationTe8) {
+      @NonNull TabItem TabBillboard, @NonNull TabItem TabFoods, @NonNull TabItem TabMovies,
+      @NonNull TabItem TabUsers, @NonNull EditText TextCantidadAgregar,
+      @NonNull EditText TextNombreAgregar, @NonNull EditText TextPrecioAgregar,
+      @NonNull EditText TextTipoAlimentoAgregar, @NonNull ImageView imageView,
+      @NonNull TextView locationTe8, @NonNull TabLayout tabLayout) {
     this.rootView = rootView;
     this.AgregarBtn = AgregarBtn;
+    this.TabBillboard = TabBillboard;
+    this.TabFoods = TabFoods;
+    this.TabMovies = TabMovies;
+    this.TabUsers = TabUsers;
     this.TextCantidadAgregar = TextCantidadAgregar;
     this.TextNombreAgregar = TextNombreAgregar;
     this.TextPrecioAgregar = TextPrecioAgregar;
     this.TextTipoAlimentoAgregar = TextTipoAlimentoAgregar;
-    this.button12 = button12;
-    this.button13 = button13;
-    this.button14 = button14;
-    this.button15 = button15;
-    this.horizontalScrollView2 = horizontalScrollView2;
     this.imageView = imageView;
     this.locationTe8 = locationTe8;
+    this.tabLayout = tabLayout;
   }
 
   @Override
@@ -113,6 +114,30 @@ public final class AgregarAlimentoBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.TabBillboard;
+      TabItem TabBillboard = ViewBindings.findChildViewById(rootView, id);
+      if (TabBillboard == null) {
+        break missingId;
+      }
+
+      id = R.id.TabFoods;
+      TabItem TabFoods = ViewBindings.findChildViewById(rootView, id);
+      if (TabFoods == null) {
+        break missingId;
+      }
+
+      id = R.id.TabMovies;
+      TabItem TabMovies = ViewBindings.findChildViewById(rootView, id);
+      if (TabMovies == null) {
+        break missingId;
+      }
+
+      id = R.id.TabUsers;
+      TabItem TabUsers = ViewBindings.findChildViewById(rootView, id);
+      if (TabUsers == null) {
+        break missingId;
+      }
+
       id = R.id.TextCantidadAgregar;
       EditText TextCantidadAgregar = ViewBindings.findChildViewById(rootView, id);
       if (TextCantidadAgregar == null) {
@@ -137,36 +162,6 @@ public final class AgregarAlimentoBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.button12;
-      Button button12 = ViewBindings.findChildViewById(rootView, id);
-      if (button12 == null) {
-        break missingId;
-      }
-
-      id = R.id.button13;
-      Button button13 = ViewBindings.findChildViewById(rootView, id);
-      if (button13 == null) {
-        break missingId;
-      }
-
-      id = R.id.button14;
-      Button button14 = ViewBindings.findChildViewById(rootView, id);
-      if (button14 == null) {
-        break missingId;
-      }
-
-      id = R.id.button15;
-      Button button15 = ViewBindings.findChildViewById(rootView, id);
-      if (button15 == null) {
-        break missingId;
-      }
-
-      id = R.id.horizontalScrollView2;
-      HorizontalScrollView horizontalScrollView2 = ViewBindings.findChildViewById(rootView, id);
-      if (horizontalScrollView2 == null) {
-        break missingId;
-      }
-
       id = R.id.imageView;
       ImageView imageView = ViewBindings.findChildViewById(rootView, id);
       if (imageView == null) {
@@ -179,9 +174,15 @@ public final class AgregarAlimentoBinding implements ViewBinding {
         break missingId;
       }
 
-      return new AgregarAlimentoBinding((ConstraintLayout) rootView, AgregarBtn,
-          TextCantidadAgregar, TextNombreAgregar, TextPrecioAgregar, TextTipoAlimentoAgregar,
-          button12, button13, button14, button15, horizontalScrollView2, imageView, locationTe8);
+      id = R.id.tabLayout;
+      TabLayout tabLayout = ViewBindings.findChildViewById(rootView, id);
+      if (tabLayout == null) {
+        break missingId;
+      }
+
+      return new AgregarAlimentoBinding((ConstraintLayout) rootView, AgregarBtn, TabBillboard,
+          TabFoods, TabMovies, TabUsers, TextCantidadAgregar, TextNombreAgregar, TextPrecioAgregar,
+          TextTipoAlimentoAgregar, imageView, locationTe8, tabLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -14,6 +14,8 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.cinepolisapp.R;
+import com.google.android.material.tabs.TabItem;
+import com.google.android.material.tabs.TabLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -29,6 +31,18 @@ public final class EditarAlimentoBinding implements ViewBinding {
   public final Button EditarEliminarBtnAlimento;
 
   @NonNull
+  public final TabItem TabBillboard;
+
+  @NonNull
+  public final TabItem TabFoods;
+
+  @NonNull
+  public final TabItem TabMovies;
+
+  @NonNull
+  public final TabItem TabUsers;
+
+  @NonNull
   public final EditText TextCantidadEditar;
 
   @NonNull
@@ -41,42 +55,35 @@ public final class EditarAlimentoBinding implements ViewBinding {
   public final EditText TextTipoAlimentoEditar;
 
   @NonNull
-  public final Button button12;
-
-  @NonNull
-  public final Button button13;
-
-  @NonNull
-  public final Button button14;
-
-  @NonNull
-  public final Button button15;
-
-  @NonNull
   public final ImageView imageView9;
 
   @NonNull
   public final TextView locationTe9;
 
+  @NonNull
+  public final TabLayout tabLayout;
+
   private EditarAlimentoBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button EditarActualizarBtnAlimento, @NonNull Button EditarEliminarBtnAlimento,
-      @NonNull EditText TextCantidadEditar, @NonNull EditText TextNombreEditar,
-      @NonNull EditText TextPrecioEditar, @NonNull EditText TextTipoAlimentoEditar,
-      @NonNull Button button12, @NonNull Button button13, @NonNull Button button14,
-      @NonNull Button button15, @NonNull ImageView imageView9, @NonNull TextView locationTe9) {
+      @NonNull TabItem TabBillboard, @NonNull TabItem TabFoods, @NonNull TabItem TabMovies,
+      @NonNull TabItem TabUsers, @NonNull EditText TextCantidadEditar,
+      @NonNull EditText TextNombreEditar, @NonNull EditText TextPrecioEditar,
+      @NonNull EditText TextTipoAlimentoEditar, @NonNull ImageView imageView9,
+      @NonNull TextView locationTe9, @NonNull TabLayout tabLayout) {
     this.rootView = rootView;
     this.EditarActualizarBtnAlimento = EditarActualizarBtnAlimento;
     this.EditarEliminarBtnAlimento = EditarEliminarBtnAlimento;
+    this.TabBillboard = TabBillboard;
+    this.TabFoods = TabFoods;
+    this.TabMovies = TabMovies;
+    this.TabUsers = TabUsers;
     this.TextCantidadEditar = TextCantidadEditar;
     this.TextNombreEditar = TextNombreEditar;
     this.TextPrecioEditar = TextPrecioEditar;
     this.TextTipoAlimentoEditar = TextTipoAlimentoEditar;
-    this.button12 = button12;
-    this.button13 = button13;
-    this.button14 = button14;
-    this.button15 = button15;
     this.imageView9 = imageView9;
     this.locationTe9 = locationTe9;
+    this.tabLayout = tabLayout;
   }
 
   @Override
@@ -118,6 +125,30 @@ public final class EditarAlimentoBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.TabBillboard;
+      TabItem TabBillboard = ViewBindings.findChildViewById(rootView, id);
+      if (TabBillboard == null) {
+        break missingId;
+      }
+
+      id = R.id.TabFoods;
+      TabItem TabFoods = ViewBindings.findChildViewById(rootView, id);
+      if (TabFoods == null) {
+        break missingId;
+      }
+
+      id = R.id.TabMovies;
+      TabItem TabMovies = ViewBindings.findChildViewById(rootView, id);
+      if (TabMovies == null) {
+        break missingId;
+      }
+
+      id = R.id.TabUsers;
+      TabItem TabUsers = ViewBindings.findChildViewById(rootView, id);
+      if (TabUsers == null) {
+        break missingId;
+      }
+
       id = R.id.TextCantidadEditar;
       EditText TextCantidadEditar = ViewBindings.findChildViewById(rootView, id);
       if (TextCantidadEditar == null) {
@@ -142,30 +173,6 @@ public final class EditarAlimentoBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.button12;
-      Button button12 = ViewBindings.findChildViewById(rootView, id);
-      if (button12 == null) {
-        break missingId;
-      }
-
-      id = R.id.button13;
-      Button button13 = ViewBindings.findChildViewById(rootView, id);
-      if (button13 == null) {
-        break missingId;
-      }
-
-      id = R.id.button14;
-      Button button14 = ViewBindings.findChildViewById(rootView, id);
-      if (button14 == null) {
-        break missingId;
-      }
-
-      id = R.id.button15;
-      Button button15 = ViewBindings.findChildViewById(rootView, id);
-      if (button15 == null) {
-        break missingId;
-      }
-
       id = R.id.imageView9;
       ImageView imageView9 = ViewBindings.findChildViewById(rootView, id);
       if (imageView9 == null) {
@@ -178,9 +185,16 @@ public final class EditarAlimentoBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tabLayout;
+      TabLayout tabLayout = ViewBindings.findChildViewById(rootView, id);
+      if (tabLayout == null) {
+        break missingId;
+      }
+
       return new EditarAlimentoBinding((ConstraintLayout) rootView, EditarActualizarBtnAlimento,
-          EditarEliminarBtnAlimento, TextCantidadEditar, TextNombreEditar, TextPrecioEditar,
-          TextTipoAlimentoEditar, button12, button13, button14, button15, imageView9, locationTe9);
+          EditarEliminarBtnAlimento, TabBillboard, TabFoods, TabMovies, TabUsers,
+          TextCantidadEditar, TextNombreEditar, TextPrecioEditar, TextTipoAlimentoEditar,
+          imageView9, locationTe9, tabLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

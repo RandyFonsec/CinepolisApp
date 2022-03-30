@@ -13,6 +13,8 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.cinepolisapp.R;
+import com.google.android.material.tabs.TabItem;
+import com.google.android.material.tabs.TabLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -22,16 +24,16 @@ public final class FragmentGestorPeliculasBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button button12;
+  public final TabItem TabBillboard;
 
   @NonNull
-  public final Button button13;
+  public final TabItem TabFoods;
 
   @NonNull
-  public final Button button14;
+  public final TabItem TabMovies;
 
   @NonNull
-  public final Button button15;
+  public final TabItem TabUsers;
 
   @NonNull
   public final Button button2;
@@ -45,19 +47,23 @@ public final class FragmentGestorPeliculasBinding implements ViewBinding {
   @NonNull
   public final TextView locationTe2;
 
+  @NonNull
+  public final TabLayout tabLayout;
+
   private FragmentGestorPeliculasBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button button12, @NonNull Button button13, @NonNull Button button14,
-      @NonNull Button button15, @NonNull Button button2, @NonNull Button button4,
-      @NonNull ImageView imageView7, @NonNull TextView locationTe2) {
+      @NonNull TabItem TabBillboard, @NonNull TabItem TabFoods, @NonNull TabItem TabMovies,
+      @NonNull TabItem TabUsers, @NonNull Button button2, @NonNull Button button4,
+      @NonNull ImageView imageView7, @NonNull TextView locationTe2, @NonNull TabLayout tabLayout) {
     this.rootView = rootView;
-    this.button12 = button12;
-    this.button13 = button13;
-    this.button14 = button14;
-    this.button15 = button15;
+    this.TabBillboard = TabBillboard;
+    this.TabFoods = TabFoods;
+    this.TabMovies = TabMovies;
+    this.TabUsers = TabUsers;
     this.button2 = button2;
     this.button4 = button4;
     this.imageView7 = imageView7;
     this.locationTe2 = locationTe2;
+    this.tabLayout = tabLayout;
   }
 
   @Override
@@ -87,27 +93,27 @@ public final class FragmentGestorPeliculasBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button12;
-      Button button12 = ViewBindings.findChildViewById(rootView, id);
-      if (button12 == null) {
+      id = R.id.TabBillboard;
+      TabItem TabBillboard = ViewBindings.findChildViewById(rootView, id);
+      if (TabBillboard == null) {
         break missingId;
       }
 
-      id = R.id.button13;
-      Button button13 = ViewBindings.findChildViewById(rootView, id);
-      if (button13 == null) {
+      id = R.id.TabFoods;
+      TabItem TabFoods = ViewBindings.findChildViewById(rootView, id);
+      if (TabFoods == null) {
         break missingId;
       }
 
-      id = R.id.button14;
-      Button button14 = ViewBindings.findChildViewById(rootView, id);
-      if (button14 == null) {
+      id = R.id.TabMovies;
+      TabItem TabMovies = ViewBindings.findChildViewById(rootView, id);
+      if (TabMovies == null) {
         break missingId;
       }
 
-      id = R.id.button15;
-      Button button15 = ViewBindings.findChildViewById(rootView, id);
-      if (button15 == null) {
+      id = R.id.TabUsers;
+      TabItem TabUsers = ViewBindings.findChildViewById(rootView, id);
+      if (TabUsers == null) {
         break missingId;
       }
 
@@ -135,8 +141,14 @@ public final class FragmentGestorPeliculasBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentGestorPeliculasBinding((ConstraintLayout) rootView, button12, button13,
-          button14, button15, button2, button4, imageView7, locationTe2);
+      id = R.id.tabLayout;
+      TabLayout tabLayout = ViewBindings.findChildViewById(rootView, id);
+      if (tabLayout == null) {
+        break missingId;
+      }
+
+      return new FragmentGestorPeliculasBinding((ConstraintLayout) rootView, TabBillboard, TabFoods,
+          TabMovies, TabUsers, button2, button4, imageView7, locationTe2, tabLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

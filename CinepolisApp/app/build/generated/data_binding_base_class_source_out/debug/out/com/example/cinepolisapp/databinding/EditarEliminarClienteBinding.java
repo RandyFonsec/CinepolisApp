@@ -6,10 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -18,6 +15,8 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.cinepolisapp.R;
+import com.google.android.material.tabs.TabItem;
+import com.google.android.material.tabs.TabLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -27,19 +26,19 @@ public final class EditarEliminarClienteBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final TabItem TabBillboard;
+
+  @NonNull
+  public final TabItem TabFoods;
+
+  @NonNull
+  public final TabItem TabMovies;
+
+  @NonNull
+  public final TabItem TabUsers;
+
+  @NonNull
   public final Button actualizarPeliculasBtn2;
-
-  @NonNull
-  public final Button button12;
-
-  @NonNull
-  public final Button button13;
-
-  @NonNull
-  public final Button button14;
-
-  @NonNull
-  public final Button button15;
 
   @NonNull
   public final EditText editTextDate;
@@ -66,22 +65,16 @@ public final class EditarEliminarClienteBinding implements ViewBinding {
   public final Button eliminarPeliculasBtn;
 
   @NonNull
-  public final HorizontalScrollView horizontalScrollView4;
-
-  @NonNull
   public final ImageView imageView12;
-
-  @NonNull
-  public final LinearLayout linearLayout;
 
   @NonNull
   public final TextView locationTe12;
 
   @NonNull
-  public final ScrollView scrollView3;
+  public final Spinner spinner;
 
   @NonNull
-  public final Spinner spinner;
+  public final TabLayout tabLayout;
 
   @NonNull
   public final TextView textView25;
@@ -108,23 +101,22 @@ public final class EditarEliminarClienteBinding implements ViewBinding {
   public final TextView textView32;
 
   private EditarEliminarClienteBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button actualizarPeliculasBtn2, @NonNull Button button12, @NonNull Button button13,
-      @NonNull Button button14, @NonNull Button button15, @NonNull EditText editTextDate,
-      @NonNull EditText editTextNumber, @NonNull EditText editTextNumber2,
-      @NonNull EditText editTextTextEmailAddress, @NonNull EditText editTextTextPersonName,
-      @NonNull EditText editTextTextPersonName2, @NonNull EditText editTextTextPersonName3,
-      @NonNull Button eliminarPeliculasBtn, @NonNull HorizontalScrollView horizontalScrollView4,
-      @NonNull ImageView imageView12, @NonNull LinearLayout linearLayout,
-      @NonNull TextView locationTe12, @NonNull ScrollView scrollView3, @NonNull Spinner spinner,
-      @NonNull TextView textView25, @NonNull TextView textView26, @NonNull TextView textView27,
-      @NonNull TextView textView28, @NonNull TextView textView29, @NonNull TextView textView30,
-      @NonNull TextView textView31, @NonNull TextView textView32) {
+      @NonNull TabItem TabBillboard, @NonNull TabItem TabFoods, @NonNull TabItem TabMovies,
+      @NonNull TabItem TabUsers, @NonNull Button actualizarPeliculasBtn2,
+      @NonNull EditText editTextDate, @NonNull EditText editTextNumber,
+      @NonNull EditText editTextNumber2, @NonNull EditText editTextTextEmailAddress,
+      @NonNull EditText editTextTextPersonName, @NonNull EditText editTextTextPersonName2,
+      @NonNull EditText editTextTextPersonName3, @NonNull Button eliminarPeliculasBtn,
+      @NonNull ImageView imageView12, @NonNull TextView locationTe12, @NonNull Spinner spinner,
+      @NonNull TabLayout tabLayout, @NonNull TextView textView25, @NonNull TextView textView26,
+      @NonNull TextView textView27, @NonNull TextView textView28, @NonNull TextView textView29,
+      @NonNull TextView textView30, @NonNull TextView textView31, @NonNull TextView textView32) {
     this.rootView = rootView;
+    this.TabBillboard = TabBillboard;
+    this.TabFoods = TabFoods;
+    this.TabMovies = TabMovies;
+    this.TabUsers = TabUsers;
     this.actualizarPeliculasBtn2 = actualizarPeliculasBtn2;
-    this.button12 = button12;
-    this.button13 = button13;
-    this.button14 = button14;
-    this.button15 = button15;
     this.editTextDate = editTextDate;
     this.editTextNumber = editTextNumber;
     this.editTextNumber2 = editTextNumber2;
@@ -133,12 +125,10 @@ public final class EditarEliminarClienteBinding implements ViewBinding {
     this.editTextTextPersonName2 = editTextTextPersonName2;
     this.editTextTextPersonName3 = editTextTextPersonName3;
     this.eliminarPeliculasBtn = eliminarPeliculasBtn;
-    this.horizontalScrollView4 = horizontalScrollView4;
     this.imageView12 = imageView12;
-    this.linearLayout = linearLayout;
     this.locationTe12 = locationTe12;
-    this.scrollView3 = scrollView3;
     this.spinner = spinner;
+    this.tabLayout = tabLayout;
     this.textView25 = textView25;
     this.textView26 = textView26;
     this.textView27 = textView27;
@@ -176,33 +166,33 @@ public final class EditarEliminarClienteBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.TabBillboard;
+      TabItem TabBillboard = ViewBindings.findChildViewById(rootView, id);
+      if (TabBillboard == null) {
+        break missingId;
+      }
+
+      id = R.id.TabFoods;
+      TabItem TabFoods = ViewBindings.findChildViewById(rootView, id);
+      if (TabFoods == null) {
+        break missingId;
+      }
+
+      id = R.id.TabMovies;
+      TabItem TabMovies = ViewBindings.findChildViewById(rootView, id);
+      if (TabMovies == null) {
+        break missingId;
+      }
+
+      id = R.id.TabUsers;
+      TabItem TabUsers = ViewBindings.findChildViewById(rootView, id);
+      if (TabUsers == null) {
+        break missingId;
+      }
+
       id = R.id.actualizar_Peliculas_btn2;
       Button actualizarPeliculasBtn2 = ViewBindings.findChildViewById(rootView, id);
       if (actualizarPeliculasBtn2 == null) {
-        break missingId;
-      }
-
-      id = R.id.button12;
-      Button button12 = ViewBindings.findChildViewById(rootView, id);
-      if (button12 == null) {
-        break missingId;
-      }
-
-      id = R.id.button13;
-      Button button13 = ViewBindings.findChildViewById(rootView, id);
-      if (button13 == null) {
-        break missingId;
-      }
-
-      id = R.id.button14;
-      Button button14 = ViewBindings.findChildViewById(rootView, id);
-      if (button14 == null) {
-        break missingId;
-      }
-
-      id = R.id.button15;
-      Button button15 = ViewBindings.findChildViewById(rootView, id);
-      if (button15 == null) {
         break missingId;
       }
 
@@ -254,21 +244,9 @@ public final class EditarEliminarClienteBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.horizontalScrollView4;
-      HorizontalScrollView horizontalScrollView4 = ViewBindings.findChildViewById(rootView, id);
-      if (horizontalScrollView4 == null) {
-        break missingId;
-      }
-
       id = R.id.imageView12;
       ImageView imageView12 = ViewBindings.findChildViewById(rootView, id);
       if (imageView12 == null) {
-        break missingId;
-      }
-
-      id = R.id.linearLayout;
-      LinearLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout == null) {
         break missingId;
       }
 
@@ -278,15 +256,15 @@ public final class EditarEliminarClienteBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.scrollView3;
-      ScrollView scrollView3 = ViewBindings.findChildViewById(rootView, id);
-      if (scrollView3 == null) {
-        break missingId;
-      }
-
       id = R.id.spinner;
       Spinner spinner = ViewBindings.findChildViewById(rootView, id);
       if (spinner == null) {
+        break missingId;
+      }
+
+      id = R.id.tabLayout;
+      TabLayout tabLayout = ViewBindings.findChildViewById(rootView, id);
+      if (tabLayout == null) {
         break missingId;
       }
 
@@ -338,12 +316,12 @@ public final class EditarEliminarClienteBinding implements ViewBinding {
         break missingId;
       }
 
-      return new EditarEliminarClienteBinding((ConstraintLayout) rootView, actualizarPeliculasBtn2,
-          button12, button13, button14, button15, editTextDate, editTextNumber, editTextNumber2,
-          editTextTextEmailAddress, editTextTextPersonName, editTextTextPersonName2,
-          editTextTextPersonName3, eliminarPeliculasBtn, horizontalScrollView4, imageView12,
-          linearLayout, locationTe12, scrollView3, spinner, textView25, textView26, textView27,
-          textView28, textView29, textView30, textView31, textView32);
+      return new EditarEliminarClienteBinding((ConstraintLayout) rootView, TabBillboard, TabFoods,
+          TabMovies, TabUsers, actualizarPeliculasBtn2, editTextDate, editTextNumber,
+          editTextNumber2, editTextTextEmailAddress, editTextTextPersonName,
+          editTextTextPersonName2, editTextTextPersonName3, eliminarPeliculasBtn, imageView12,
+          locationTe12, spinner, tabLayout, textView25, textView26, textView27, textView28,
+          textView29, textView30, textView31, textView32);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

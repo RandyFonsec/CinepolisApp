@@ -21,7 +21,11 @@
         android:testOnly="true"
         android:theme="@style/Theme.CinepolisApp" >
         <activity
+<<<<<<< HEAD
+            android:name="com.example.cinepolisapp.Vista.AddMovieActivity"
+=======
             android:name="com.example.cinepolisapp.Vista.HomeAdminActivity"
+>>>>>>> Randy
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.CinepolisApp.NoActionBar" >
@@ -31,6 +35,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
+        <activity android:name="com.example.cinepolisapp.Vista.RegisterActivity" />
+=======
         <activity android:name="com.example.cinepolisapp.Vista.BillboardAdminActivity" />
         <activity android:name="com.example.cinepolisapp.Vista.UsersAdminActivity" />
         <activity android:name="com.example.cinepolisapp.Vista.AlimentoAdminActivity" />
@@ -38,6 +45,7 @@
         <activity android:name="com.example.cinepolisapp.Vista.EditarEliminarClienteActivity" />
         <activity android:name="com.example.cinepolisapp.Vista.ListaPeliculasActivity" />
         <activity android:name="com.example.cinepolisapp.Vista.ConfigFuncionActivity" />
+>>>>>>> Randy
 
         <provider
             android:name="androidx.startup.InitializationProvider"
