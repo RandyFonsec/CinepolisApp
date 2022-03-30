@@ -5,20 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <SearchView
-        android:id="@+id/searchFood"
-        android:layout_width="376dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="19dp"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title6">
-
-    </SearchView>
-
     <ImageView
         android:id="@+id/title6"
         android:layout_width="412dp"
@@ -34,9 +20,12 @@
         android:id="@+id/scrollView5"
         android:layout_width="411dp"
         android:layout_height="521dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchFood">
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -389,6 +378,7 @@
     </ScrollView>
 
     <HorizontalScrollView
+        android:id="@+id/horizontalScrollView11"
         android:layout_width="wrap_content"
         android:layout_height="47dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -430,5 +420,32 @@
 
         </LinearLayout>
     </HorizontalScrollView>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="253dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title6"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Buscar"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView5"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName4"
+        app:layout_constraintTop_toBottomOf="@+id/title6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

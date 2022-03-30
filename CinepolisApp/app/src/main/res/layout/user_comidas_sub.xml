@@ -5,7 +5,205 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/title7"
+        android:layout_width="412dp"
+        android:layout_height="84dp"
+        android:background="@color/Amarillo_Cinepolis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo_cinepolis" />
+
+    <TextView
+        android:id="@+id/lblSubMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="306dp"
+        android:text="SubMenu"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title7" />
+
+    <ScrollView
+        android:layout_width="411dp"
+        android:layout_height="548dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSubMenu">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgFood1"
+                android:layout_width="283dp"
+                android:layout_height="144dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="65dp"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+            <TextView
+                android:id="@+id/lblFoodName1"
+                android:layout_width="200dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="105dp"
+                android:layout_marginBottom="5dp"
+                android:text="Food name 1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/lblFoodPrice1"
+                android:layout_width="200dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="105dp"
+                android:layout_marginBottom="15dp"
+                android:text="$ 0000"
+                android:textAlignment="center" />
+
+            <View
+                android:id="@+id/Fooddivider1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="?android:attr/listDivider" />
+
+            <ImageView
+                android:id="@+id/imgFood2"
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="65dp"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+            <TextView
+                android:id="@+id/lblFoodName2"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="105dp"
+                android:layout_marginBottom="5dp"
+                android:text="Food name 1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/lblFoodPrice2"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="105dp"
+                android:layout_marginBottom="15dp"
+                android:text="$ 0000"
+                android:textAlignment="center" />
+
+            <View
+                android:id="@+id/fooddivider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="?android:attr/listDivider" />
+
+            <ImageView
+                android:id="@+id/imgFood3"
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="65dp"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+            <TextView
+                android:id="@+id/lblFoodName3"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="105dp"
+                android:layout_marginBottom="5dp"
+                android:text="Food name 1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/lblFoodPrice3"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="105dp"
+                android:layout_marginBottom="15dp"
+                android:text="$ 0000"
+                android:textAlignment="center" />
+
+            <View
+                android:id="@+id/fooddivider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="?android:attr/listDivider" />
+
+            <ImageView
+                android:id="@+id/imgFood4"
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="65dp"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+            <TextView
+                android:id="@+id/lblFoodName4"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="105dp"
+                android:layout_marginBottom="5dp"
+                android:text="Food name 1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/lblFoodPrice4"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="105dp"
+                android:layout_marginBottom="15dp"
+                android:text="$ 0000"
+                android:textAlignment="center" />
+
+            <View
+                android:id="@+id/fooddivider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="?android:attr/listDivider" />
+
+        </LinearLayout>
+    </ScrollView>
+
     <HorizontalScrollView
+        android:id="@+id/horizontalScrollView10"
         android:layout_width="wrap_content"
         android:layout_height="47dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,179 +246,4 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <ImageView
-        android:id="@+id/title7"
-        android:layout_width="412dp"
-        android:layout_height="84dp"
-        android:background="@color/Amarillo_Cinepolis"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logo_cinepolis" />
-
-    <ScrollView
-        android:layout_width="411dp"
-        android:layout_height="548dp"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="136dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/imgFood1"
-                    android:layout_width="283dp"
-                    android:layout_height="144dp"
-                    app:srcCompat="@android:drawable/ic_menu_gallery"
-                    tools:layout_editor_absoluteX="62dp"
-                    tools:layout_editor_absoluteY="16dp" />
-
-                <TextView
-                    android:id="@+id/lblFoodPrice1"
-                    android:layout_width="200dp"
-                    android:layout_height="22dp"
-                    android:text="$ 0000"
-                    android:textAlignment="center"
-                    tools:layout_editor_absoluteX="106dp"
-                    tools:layout_editor_absoluteY="198dp" />
-
-                <View
-                    android:id="@+id/Fooddivider1"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="?android:attr/listDivider"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_editor_absoluteY="231dp" />
-
-                <TextView
-                    android:id="@+id/lblFoodName2"
-                    android:layout_width="200dp"
-                    android:layout_height="22dp"
-                    android:text="Food name 2"
-                    android:textAlignment="center"
-                    tools:layout_editor_absoluteX="106dp"
-                    tools:layout_editor_absoluteY="398dp" />
-
-                <ImageView
-                    android:id="@+id/imgFood2"
-                    android:layout_width="283dp"
-                    android:layout_height="144dp"
-                    app:srcCompat="@android:drawable/ic_menu_gallery"
-                    tools:layout_editor_absoluteX="62dp"
-                    tools:layout_editor_absoluteY="244dp" />
-
-                <View
-                    android:id="@+id/fooddivider2"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="?android:attr/listDivider"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_editor_absoluteY="459dp" />
-
-                <TextView
-                    android:id="@+id/lblFoodPrice2"
-                    android:layout_width="200dp"
-                    android:layout_height="22dp"
-                    android:text="$ 0000"
-                    android:textAlignment="center"
-                    tools:layout_editor_absoluteX="106dp"
-                    tools:layout_editor_absoluteY="426dp" />
-
-                <ImageView
-                    android:id="@+id/imgFood3"
-                    android:layout_width="283dp"
-                    android:layout_height="144dp"
-                    app:srcCompat="@android:drawable/ic_menu_gallery"
-                    tools:layout_editor_absoluteX="62dp"
-                    tools:layout_editor_absoluteY="479dp" />
-
-                <View
-                    android:id="@+id/fooddivider3"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="?android:attr/listDivider"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_editor_absoluteY="694dp" />
-
-                <TextView
-                    android:id="@+id/lblFoodPrice3"
-                    android:layout_width="200dp"
-                    android:layout_height="22dp"
-                    android:text="$ 0000"
-                    android:textAlignment="center"
-                    tools:layout_editor_absoluteX="106dp"
-                    tools:layout_editor_absoluteY="661dp" />
-
-                <TextView
-                    android:id="@+id/lblFoodName3"
-                    android:layout_width="200dp"
-                    android:layout_height="22dp"
-                    android:text="Food name 3"
-                    android:textAlignment="center"
-                    tools:layout_editor_absoluteX="106dp"
-                    tools:layout_editor_absoluteY="633dp" />
-
-                <ImageView
-                    android:id="@+id/imgFood5"
-                    android:layout_width="283dp"
-                    android:layout_height="144dp"
-                    app:srcCompat="@android:drawable/ic_menu_gallery"
-                    tools:layout_editor_absoluteX="62dp"
-                    tools:layout_editor_absoluteY="709dp" />
-
-                <TextView
-                    android:id="@+id/lblFoodPrice5"
-                    android:layout_width="200dp"
-                    android:layout_height="22dp"
-                    android:text="$ 0000"
-                    android:textAlignment="center"
-                    tools:layout_editor_absoluteX="106dp"
-                    tools:layout_editor_absoluteY="892dp" />
-
-                <View
-                    android:id="@+id/fooddivider5"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="?android:attr/listDivider"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_editor_absoluteY="925dp" />
-
-                <TextView
-                    android:id="@+id/lblFoodName5"
-                    android:layout_width="200dp"
-                    android:layout_height="22dp"
-                    android:text="Food name 4"
-                    android:textAlignment="center"
-                    tools:layout_editor_absoluteX="106dp"
-                    tools:layout_editor_absoluteY="864dp" />
-
-                <TextView
-                    android:id="@+id/lblFoodName1"
-                    android:layout_width="200dp"
-                    android:layout_height="22dp"
-                    android:text="Food name 1"
-                    android:textAlignment="center"
-                    tools:layout_editor_absoluteX="106dp"
-                    tools:layout_editor_absoluteY="170dp" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </LinearLayout>
-    </ScrollView>
-
-    <TextView
-        android:id="@+id/lblSubMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SubMenu"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="99dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
