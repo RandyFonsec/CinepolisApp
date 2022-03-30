@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.cinepolisapp.Controlador.DAO.AlimentoDAOImplementation;
 import com.example.cinepolisapp.Controlador.DAO.ClienteDAOImpl;
 import com.example.cinepolisapp.Controlador.DAO.PeliculaDAOImplementation;
+import com.example.cinepolisapp.Controlador.DAO.UtilDAOImplementation;
+import com.example.cinepolisapp.Modelo.Actor;
 import com.example.cinepolisapp.Modelo.Alimento;
 
 import com.example.cinepolisapp.Controlador.ControladorAplicacion;
@@ -15,6 +17,9 @@ import com.example.cinepolisapp.Controlador.DAO.PeliculaDAOImplementation;
 import com.example.cinepolisapp.Modelo.Asiento;
 
 import com.example.cinepolisapp.Modelo.Cliente;
+import com.example.cinepolisapp.Modelo.Director;
+import com.example.cinepolisapp.Modelo.Genero;
+import com.example.cinepolisapp.Modelo.Idioma;
 import com.example.cinepolisapp.Modelo.Pelicula;
 import com.example.cinepolisapp.R;
 import com.example.cinepolisapp.Utils.Auxiliares;
@@ -26,10 +31,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_gestor_alimento);
+        probarUtils();
+        /*setContentView(R.layout.fragment_gestor_alimento);
         Alerta.showAlert(MainActivity.this, "Hola","Esto es una alerta");
-        TabLayout t ;
-        t.
+        TabLayout t ;*/
 /*
         Spinner spinner = findViewById(R.id.EsquemaVacunacionSpinner);
         ArrayList<Integer> arrayList = new ArrayList<>();
@@ -51,8 +56,67 @@ public class MainActivity extends AppCompatActivity {
 
 
         //probarAlimentos();*/
+        probarUtils();
 
 
+    }
+
+    public void probarUtils() {
+        new AsyncTask<String, String, Integer>() {
+            @Override
+            protected Integer doInBackground(String... strings) {
+                /*
+                UtilDAOImplementation i = UtilDAOImplementation.getInstance();
+                List<Director> dirs = i.getAllDirectors();
+                for (Director dir: dirs) {
+                    System.out.println(dir.toString());
+                }
+                return dirs;*/
+
+                /*UtilDAOImplementation i = UtilDAOImplementation.getInstance();
+                List<Idioma> idioms = i.getAllIdiomas();
+                for (Idioma idiom: idioms) {
+                    System.out.println(idiom.toString());
+                }
+                return idioms;*/
+
+                /*UtilDAOImplementation i = UtilDAOImplementation.getInstance();
+                List<Actor> actors = i.getAllActores();
+                for (Actor actor: actors) {
+                    System.out.println(actor.toString());
+                }
+                return actors;*/
+
+                /*UtilDAOImplementation i = UtilDAOImplementation.getInstance();
+                List<Genero> generos = i.getAllGeneros();
+                for (Genero genero : generos) {
+                    System.out.println(genero.toString());
+                }
+                return generos;*/
+
+                PeliculaDAOImplementation i = PeliculaDAOImplementation.getInstance();
+                Integer id = i.obtenerUltimoIdPelicula();
+                System.out.println("Id: " + id);
+                return id;
+
+            }
+            @Override
+            protected void onPostExecute(Integer result) {
+                if(result != null) {
+                    //idT.setText(result.getId());
+                    //eM.setText(result.getEmail());
+                    //System.out.println(result.getTitulo());
+                    System.out.println("POSTEXECUTE");
+                }
+                else{
+                }
+
+            }
+            @Override
+            protected void onPreExecute(){
+                Toast.makeText(getApplicationContext(),"Iniciando consulta",Toast.LENGTH_SHORT).show();
+            }
+        }.execute();
     }
 
     public void probarAlimentos() {
