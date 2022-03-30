@@ -188,64 +188,73 @@
 
                     <Button
                         android:id="@+id/a1"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         android:visibility="invisible" />
 
                     <Button
                         android:id="@+id/a2"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a3"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a4"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/aX"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         android:visibility="invisible" />
 
                     <Button
                         android:id="@+id/a5"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a6"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a7"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a8"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         android:visibility="invisible" />
 
@@ -257,64 +266,73 @@
 
                     <Button
                         android:id="@+id/a9"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a10"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a11"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a12"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/aX2"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         android:visibility="invisible" />
 
                     <Button
                         android:id="@+id/a13"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a14"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a15"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a16"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
                 </TableRow>
@@ -325,64 +343,73 @@
 
                     <Button
                         android:id="@+id/a17"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a18"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a19"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a20"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/aX3"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         android:visibility="invisible" />
 
                     <Button
                         android:id="@+id/a21"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a22"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a23"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a24"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
                 </TableRow>
@@ -393,64 +420,73 @@
 
                     <Button
                         android:id="@+id/a25"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a26"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a27"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a28"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/aX4"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         android:visibility="invisible" />
 
                     <Button
                         android:id="@+id/a29"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a30"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a31"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a32"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
                 </TableRow>
@@ -461,64 +497,73 @@
 
                     <Button
                         android:id="@+id/a33"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a34"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a35"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a36"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/aX5"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         android:visibility="invisible" />
 
                     <Button
                         android:id="@+id/a37"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a38"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a39"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a40"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         tools:ignore="TouchTargetSizeCheck" />
                 </TableRow>
@@ -529,57 +574,66 @@
 
                     <Button
                         android:id="@+id/a41"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o" />
 
                     <Button
                         android:id="@+id/a42"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o" />
 
                     <Button
                         android:id="@+id/a43"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o" />
 
                     <Button
                         android:id="@+id/a44"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o" />
 
                     <Button
                         android:id="@+id/aX6"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         android:visibility="invisible" />
 
                     <Button
                         android:id="@+id/a45"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o" />
 
                     <Button
                         android:id="@+id/a46"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o" />
 
                     <Button
                         android:id="@+id/a47"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o" />
 
                     <Button
                         android:id="@+id/a48"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o" />
                 </TableRow>
 
@@ -589,57 +643,67 @@
 
                     <Button
                         android:id="@+id/a49"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o" />
 
                     <Button
                         android:id="@+id/a50"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o" />
 
                     <Button
                         android:id="@+id/a51"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o" />
 
                     <Button
                         android:id="@+id/a52"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o" />
 
                     <Button
                         android:id="@+id/aX7"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         android:visibility="invisible" />
 
                     <Button
                         android:id="@+id/a53"
-                        android:layout_width="40"
-                        android:layout_height="40"
-                        android:text="o" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
+                        android:text="o"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/a54"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o" />
 
                     <Button
                         android:id="@+id/a55"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o" />
 
                     <Button
                         android:id="@+id/a56"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o" />
                 </TableRow>
 
@@ -649,58 +713,67 @@
 
                     <Button
                         android:id="@+id/a57"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         android:visibility="invisible" />
 
                     <Button
                         android:id="@+id/a58"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o" />
 
                     <Button
                         android:id="@+id/a59"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o" />
 
                     <Button
                         android:id="@+id/a60"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o" />
 
                     <Button
                         android:id="@+id/aX8"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         android:visibility="invisible" />
 
                     <Button
                         android:id="@+id/a61"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o" />
 
                     <Button
                         android:id="@+id/a62"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o" />
 
                     <Button
                         android:id="@+id/a63"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o" />
 
                     <Button
                         android:id="@+id/a64"
-                        android:layout_width="40"
-                        android:layout_height="40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
                         android:text="o"
                         android:visibility="invisible" />
                 </TableRow>
@@ -765,8 +838,8 @@
 
     <Button
         android:id="@+id/btnLibre"
-        android:layout_width="40"
-        android:layout_height="40"
+        android:layout_width="43dp"
+        android:layout_height="46dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="63dp"
         android:layout_marginEnd="5dp"
@@ -794,12 +867,12 @@
 
     <Button
         android:id="@+id/btnSelecc"
-        android:layout_width="40"
-        android:layout_height="40"
+        android:layout_width="44dp"
+        android:layout_height="46dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginBottom="14dp"
+        android:layout_marginBottom="7dp"
         android:text="o"
         app:layout_constraintBottom_toTopOf="@+id/lblTiquetes"
         app:layout_constraintEnd_toStartOf="@+id/lblSelecc"
@@ -823,8 +896,8 @@
 
     <Button
         android:id="@+id/btnOcupado"
-        android:layout_width="40"
-        android:layout_height="40"
+        android:layout_width="40dp"
+        android:layout_height="47dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="5dp"
