@@ -1,6 +1,7 @@
 package com.example.cinepolisapp.Controlador.DAO;
 
 import com.example.cinepolisapp.Modelo.Asiento;
+import com.example.cinepolisapp.Modelo.Horario;
 
 import java.util.List;
 
@@ -12,4 +13,7 @@ public interface UtilRFInterface {
 
     @GET("fetchAsientosDeFuncion.php")
     public Call<List<Asiento>> getAsientosFuncion(@Query("idFuncion") int idFuncion);
+
+    @GET("fetchHorariosDisponibles.php")
+    public Call<List<Horario>> getHorariosDisponibles(@Query("fecha") String fecha, @Query("idSala") int idSala);
 }

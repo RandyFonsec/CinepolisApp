@@ -111,7 +111,7 @@
             android:ems="10"
             android:gravity="center"
             android:hint="DD/MM/AAAA"
-            android:inputType="date"
+            android:inputType="text"
             android:minHeight="48dp" />
 
         <Spinner

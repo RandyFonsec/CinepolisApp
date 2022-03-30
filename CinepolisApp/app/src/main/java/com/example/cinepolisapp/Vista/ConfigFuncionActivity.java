@@ -43,6 +43,6 @@ public class ConfigFuncionActivity extends AppCompatActivity {
 
         btnAsignar = findViewById(R.id.Asignar_Config_Funcion_btn);
 
-        
+
     }
 }
