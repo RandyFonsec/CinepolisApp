@@ -2,8 +2,6 @@ com/example/cinepolisapp/databinding/ActivityMain2Binding.java
  com.example.cinepolisapp.databinding.ActivityMain2Binding
 com/example/cinepolisapp/Controlador/DAO/ClienteDAOImpl.java
  com.example.cinepolisapp.Controlador.DAO.ClienteDAOImpl
-com/example/cinepolisapp/databinding/ViewUsuarioBinding.java
- com.example.cinepolisapp.databinding.ViewUsuarioBinding
 com/example/cinepolisapp/Utils/RetrofitSingleton.java
  com.example.cinepolisapp.Utils.RetrofitSingleton
 com/example/cinepolisapp/databinding/RegisterBinding.java

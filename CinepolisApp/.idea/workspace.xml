@@ -38,6 +38,7 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/user_comida_buy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/user_comida_buy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/user_comidas_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/user_comidas_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/user_comidas_sub.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/user_comidas_sub.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_usuario.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
