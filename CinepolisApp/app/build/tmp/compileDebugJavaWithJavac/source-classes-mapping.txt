@@ -21,8 +21,8 @@ com/example/cinepolisapp/databinding/RegisterBinding.java
 com/example/cinepolisapp/Vista/UsersAdminActivity.java
  com.example.cinepolisapp.Vista.UsersAdminActivity
  com.example.cinepolisapp.Vista.UsersAdminActivity$1
-com/example/cinepolisapp/databinding/ViewGestorBinding.java
- com.example.cinepolisapp.databinding.ViewGestorBinding
+com/example/cinepolisapp/Vista/ConfigFuncionActivity.java
+ com.example.cinepolisapp.Vista.ConfigFuncionActivity
 com/example/cinepolisapp/databinding/FragmentGestorBillboardBinding.java
  com.example.cinepolisapp.databinding.FragmentGestorBillboardBinding
 com/example/cinepolisapp/databinding/EditarEliminarClienteBinding.java
@@ -35,14 +35,10 @@ com/example/cinepolisapp/Utils/LoadingDialog.java
  com.example.cinepolisapp.Utils.LoadingDialog
 com/example/cinepolisapp/databinding/FragmentGestorAlimentoBinding.java
  com.example.cinepolisapp.databinding.FragmentGestorAlimentoBinding
-<<<<<<< HEAD
-com/example/cinepolisapp/Vista/BillboardAdminActivity.java
- com.example.cinepolisapp.Vista.BillboardAdminActivity
- com.example.cinepolisapp.Vista.BillboardAdminActivity$1
-=======
-com/example/cinepolisapp/BuildConfig.java
- com.example.cinepolisapp.BuildConfig
->>>>>>> KendallC
+com/example/cinepolisapp/Vista/ListaPeliculasActivity.java
+ com.example.cinepolisapp.Vista.ListaPeliculasActivity
+ com.example.cinepolisapp.Vista.ListaPeliculasActivity$1
+ com.example.cinepolisapp.Vista.ListaPeliculasActivity$2
 com/example/cinepolisapp/Controlador/DAO/DAO.java
  com.example.cinepolisapp.Controlador.DAO.DAO
 com/example/cinepolisapp/Controlador/GestorAsientos.java
@@ -74,19 +70,22 @@ com/example/cinepolisapp/Vista/EditarEliminarClienteActivity.java
  com.example.cinepolisapp.Vista.EditarEliminarClienteActivity$2
  com.example.cinepolisapp.Vista.EditarEliminarClienteActivity$3
  com.example.cinepolisapp.Vista.EditarEliminarClienteActivity$4
-<<<<<<< HEAD
-com/example/cinepolisapp/BuildConfig.java
- com.example.cinepolisapp.BuildConfig
-=======
-com/example/cinepolisapp/Modelo/Id.java
- com.example.cinepolisapp.Modelo.Id
+com/example/cinepolisapp/Vista/EditDeletePelicula.java
+ com.example.cinepolisapp.Vista.EditDeletePelicula
+ com.example.cinepolisapp.Vista.EditDeletePelicula$1
+ com.example.cinepolisapp.Vista.EditDeletePelicula$2
+ com.example.cinepolisapp.Vista.EditDeletePelicula$3
+ com.example.cinepolisapp.Vista.EditDeletePelicula$4
+ com.example.cinepolisapp.Vista.EditDeletePelicula$5
+ com.example.cinepolisapp.Vista.EditDeletePelicula$6
+ com.example.cinepolisapp.Vista.EditDeletePelicula$7
+ com.example.cinepolisapp.Vista.EditDeletePelicula$8
 com/example/cinepolisapp/Vista/GestorPeliculasActivity.java
  com.example.cinepolisapp.Vista.GestorPeliculasActivity
  com.example.cinepolisapp.Vista.GestorPeliculasActivity$1
  com.example.cinepolisapp.Vista.GestorPeliculasActivity$2
 com/example/cinepolisapp/Controlador/DAO/AsientosDAOImplementation.java
  com.example.cinepolisapp.Controlador.DAO.AsientosDAOImplementation
->>>>>>> KendallC
 com/example/cinepolisapp/Controlador/GestorPeliculas.java
  com.example.cinepolisapp.Controlador.GestorPeliculas
 com/example/cinepolisapp/Vista/TestActivity.java
@@ -119,17 +118,14 @@ com/example/cinepolisapp/Vista/ListaClientesActivity.java
  com.example.cinepolisapp.Vista.ListaClientesActivity
  com.example.cinepolisapp.Vista.ListaClientesActivity$1
  com.example.cinepolisapp.Vista.ListaClientesActivity$2
+com/example/cinepolisapp/Modelo/Horario.java
+ com.example.cinepolisapp.Modelo.Horario
 com/example/cinepolisapp/databinding/ActivityMainBinding.java
  com.example.cinepolisapp.databinding.ActivityMainBinding
-<<<<<<< HEAD
-com/example/cinepolisapp/databinding/ItemListClientesBinding.java
- com.example.cinepolisapp.databinding.ItemListClientesBinding
-=======
 com/example/cinepolisapp/Controlador/DAO/UtilRFInterface.java
  com.example.cinepolisapp.Controlador.DAO.UtilRFInterface
 com/example/cinepolisapp/Modelo/Idioma.java
  com.example.cinepolisapp.Modelo.Idioma
->>>>>>> KendallC
 com/example/cinepolisapp/databinding/LoginBinding.java
  com.example.cinepolisapp.databinding.LoginBinding
 com/example/cinepolisapp/Controlador/ControladorAplicacion.java
@@ -180,12 +176,6 @@ com/example/cinepolisapp/Vista/RegisterActivity.java
  com.example.cinepolisapp.Vista.RegisterActivity$4
 com/example/cinepolisapp/databinding/EditarAlimentoBinding.java
  com.example.cinepolisapp.databinding.EditarAlimentoBinding
-<<<<<<< HEAD
-com/example/cinepolisapp/Controlador/DAO/AsientosDAOImplementation.java
- com.example.cinepolisapp.Controlador.DAO.AsientosDAOImplementation
-com/example/cinepolisapp/Vista/ConfigFuncionActivity.java
- com.example.cinepolisapp.Vista.ConfigFuncionActivity
-=======
 com/example/cinepolisapp/databinding/ItemListClientesBinding.java
  com.example.cinepolisapp.databinding.ItemListClientesBinding
 com/example/cinepolisapp/Vista/BillboardAdminActivity.java
@@ -201,25 +191,7 @@ com/example/cinepolisapp/Vista/AddMovieActivity.java
  com.example.cinepolisapp.Vista.AddMovieActivity$4
  com.example.cinepolisapp.Vista.AddMovieActivity$5
  com.example.cinepolisapp.Vista.AddMovieActivity$6
->>>>>>> KendallC
-com/example/cinepolisapp/Vista/ListaPeliculasActivity.java
- com.example.cinepolisapp.Vista.ListaPeliculasActivity
- com.example.cinepolisapp.Vista.ListaPeliculasActivity$1
- com.example.cinepolisapp.Vista.ListaPeliculasActivity$2
-<<<<<<< HEAD
-com/example/cinepolisapp/Modelo/Horario.java
- com.example.cinepolisapp.Modelo.Horario
-com/example/cinepolisapp/Controlador/DAO/UtilRFInterface.java
- com.example.cinepolisapp.Controlador.DAO.UtilRFInterface
-=======
-com/example/cinepolisapp/Vista/EditDeletePelicula.java
- com.example.cinepolisapp.Vista.EditDeletePelicula
- com.example.cinepolisapp.Vista.EditDeletePelicula$1
- com.example.cinepolisapp.Vista.EditDeletePelicula$2
- com.example.cinepolisapp.Vista.EditDeletePelicula$3
- com.example.cinepolisapp.Vista.EditDeletePelicula$4
- com.example.cinepolisapp.Vista.EditDeletePelicula$5
- com.example.cinepolisapp.Vista.EditDeletePelicula$6
- com.example.cinepolisapp.Vista.EditDeletePelicula$7
- com.example.cinepolisapp.Vista.EditDeletePelicula$8
->>>>>>> KendallC
+com/example/cinepolisapp/Modelo/Id.java
+ com.example.cinepolisapp.Modelo.Id
+com/example/cinepolisapp/BuildConfig.java
+ com.example.cinepolisapp.BuildConfig

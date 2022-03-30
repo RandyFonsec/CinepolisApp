@@ -3078,19 +3078,16 @@ id south
 id spacer
 id special_effects_controller_view_tag
 id spinner
-<<<<<<< HEAD
-id spinnerHorario
-id spinnerSala
-=======
 id spinnerActores
 id spinnerActoresEdit
 id spinnerDirectores
 id spinnerDirectoresEdit
 id spinnerGeneros
 id spinnerGenerosEdit
+id spinnerHorario
 id spinnerIdiomas
 id spinnerIdiomasEdit
->>>>>>> KendallC
+id spinnerSala
 id spline
 id split_action_bar
 id spread

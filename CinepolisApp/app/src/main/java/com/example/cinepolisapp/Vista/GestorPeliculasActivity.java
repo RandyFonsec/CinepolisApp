@@ -29,6 +29,7 @@ public class GestorPeliculasActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Bundle bundle = new Bundle();
                 Intent intent = new Intent(getApplicationContext(), ListaPeliculasActivity.class);
+                intent.putExtra("bandera", 1);
                 intent.putExtras(bundle);
                 startActivity(intent);
                 finish();

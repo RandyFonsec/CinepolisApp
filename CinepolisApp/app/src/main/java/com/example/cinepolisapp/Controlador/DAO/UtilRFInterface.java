@@ -2,13 +2,10 @@ package com.example.cinepolisapp.Controlador.DAO;
 
 import com.example.cinepolisapp.Modelo.Actor;
 import com.example.cinepolisapp.Modelo.Asiento;
-<<<<<<< HEAD
 import com.example.cinepolisapp.Modelo.Horario;
-=======
 import com.example.cinepolisapp.Modelo.Director;
 import com.example.cinepolisapp.Modelo.Genero;
 import com.example.cinepolisapp.Modelo.Idioma;
->>>>>>> KendallC
 
 import java.util.List;
 
@@ -24,10 +21,9 @@ public interface UtilRFInterface {
     @GET("fetchAsientosDeFuncion.php")
     public Call<List<Asiento>> getAsientosFuncion(@Query("idFuncion") int idFuncion);
 
-<<<<<<< HEAD
     @GET("fetchHorariosDisponibles.php")
     public Call<List<Horario>> getHorariosDisponibles(@Query("fecha") String fecha, @Query("idSala") int idSala);
-=======
+
     @GET("fetchAllDirectores.php")
     public Call<List<Director>> getAllDirectores();
 
@@ -55,5 +51,4 @@ public interface UtilRFInterface {
     public Call<Integer> insertIdiomaXPelicula(@Field("idPelicula") int idPelicula,
                                          @Field("idIdioma") int idIdioma);
 
->>>>>>> KendallC
 }
