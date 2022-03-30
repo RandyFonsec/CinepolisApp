@@ -26,10 +26,7 @@ public class Idioma {
 
     @Override
     public String toString() {
-        return "Idioma{" +
-                "idIdioma=" + idIdioma +
-                ", nombreIdioma='" + nombreIdioma + '\'' +
-                '}';
+        return nombreIdioma;
     }
 
 }

@@ -35,11 +35,7 @@ public class Actor {
 
     @Override
     public String toString() {
-        return "Actor{" +
-                "idActor=" + idActor +
-                ", nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                '}';
+        return nombre + " " + apellido;
     }
 
 }
