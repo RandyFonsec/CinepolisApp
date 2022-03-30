@@ -14,10 +14,9 @@ com/example/cinepolisapp/Utils/RetrofitSingleton.java
  com.example.cinepolisapp.Utils.RetrofitSingleton
 com/example/cinepolisapp/databinding/RegisterBinding.java
  com.example.cinepolisapp.databinding.RegisterBinding
-com/example/cinepolisapp/Vista/ListaPeliculasActivity.java
- com.example.cinepolisapp.Vista.ListaPeliculasActivity
- com.example.cinepolisapp.Vista.ListaPeliculasActivity$1
- com.example.cinepolisapp.Vista.ListaPeliculasActivity$2
+com/example/cinepolisapp/Vista/UsersAdminActivity.java
+ com.example.cinepolisapp.Vista.UsersAdminActivity
+ com.example.cinepolisapp.Vista.UsersAdminActivity$1
 com/example/cinepolisapp/Vista/ConfigFuncionActivity.java
  com.example.cinepolisapp.Vista.ConfigFuncionActivity
 com/example/cinepolisapp/databinding/FragmentGestorBillboardBinding.java
@@ -32,8 +31,10 @@ com/example/cinepolisapp/Utils/LoadingDialog.java
  com.example.cinepolisapp.Utils.LoadingDialog
 com/example/cinepolisapp/databinding/FragmentGestorAlimentoBinding.java
  com.example.cinepolisapp.databinding.FragmentGestorAlimentoBinding
-com/example/cinepolisapp/databinding/ViewGestorBinding.java
- com.example.cinepolisapp.databinding.ViewGestorBinding
+com/example/cinepolisapp/Vista/ListaPeliculasActivity.java
+ com.example.cinepolisapp.Vista.ListaPeliculasActivity
+ com.example.cinepolisapp.Vista.ListaPeliculasActivity$1
+ com.example.cinepolisapp.Vista.ListaPeliculasActivity$2
 com/example/cinepolisapp/Controlador/DAO/DAO.java
  com.example.cinepolisapp.Controlador.DAO.DAO
 com/example/cinepolisapp/Controlador/GestorAsientos.java
@@ -92,9 +93,10 @@ com/example/cinepolisapp/databinding/AgregarPeliculaBinding.java
  com.example.cinepolisapp.databinding.AgregarPeliculaBinding
 com/example/cinepolisapp/Modelo/Asiento.java
  com.example.cinepolisapp.Modelo.Asiento
-com/example/cinepolisapp/Vista/BillboardAdminActivity.java
- com.example.cinepolisapp.Vista.BillboardAdminActivity
- com.example.cinepolisapp.Vista.BillboardAdminActivity$1
+com/example/cinepolisapp/Vista/ListaClientesActivity.java
+ com.example.cinepolisapp.Vista.ListaClientesActivity
+ com.example.cinepolisapp.Vista.ListaClientesActivity$1
+ com.example.cinepolisapp.Vista.ListaClientesActivity$2
 com/example/cinepolisapp/databinding/ActivityMainBinding.java
  com.example.cinepolisapp.databinding.ActivityMainBinding
 com/example/cinepolisapp/Controlador/DAO/UtilRFInterface.java
@@ -145,12 +147,10 @@ com/example/cinepolisapp/databinding/EditarAlimentoBinding.java
  com.example.cinepolisapp.databinding.EditarAlimentoBinding
 com/example/cinepolisapp/databinding/ItemListClientesBinding.java
  com.example.cinepolisapp.databinding.ItemListClientesBinding
+com/example/cinepolisapp/Vista/BillboardAdminActivity.java
+ com.example.cinepolisapp.Vista.BillboardAdminActivity
+ com.example.cinepolisapp.Vista.BillboardAdminActivity$1
+com/example/cinepolisapp/databinding/ViewGestorBinding.java
+ com.example.cinepolisapp.databinding.ViewGestorBinding
 com/example/cinepolisapp/BuildConfig.java
  com.example.cinepolisapp.BuildConfig
-com/example/cinepolisapp/Vista/UsersAdminActivity.java
- com.example.cinepolisapp.Vista.UsersAdminActivity
- com.example.cinepolisapp.Vista.UsersAdminActivity$1
-com/example/cinepolisapp/Vista/ListaClientesActivity.java
- com.example.cinepolisapp.Vista.ListaClientesActivity
- com.example.cinepolisapp.Vista.ListaClientesActivity$1
- com.example.cinepolisapp.Vista.ListaClientesActivity$2
