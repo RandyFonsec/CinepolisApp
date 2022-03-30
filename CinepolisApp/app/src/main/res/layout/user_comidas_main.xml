@@ -9,8 +9,13 @@
         android:id="@+id/searchFood"
         android:layout_width="376dp"
         android:layout_height="51dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="97dp">
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title6">
 
     </SearchView>
 
@@ -26,10 +31,12 @@
         app:srcCompat="@drawable/logo_cinepolis" />
 
     <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="517dp"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="167dp">
+        android:id="@+id/scrollView5"
+        android:layout_width="411dp"
+        android:layout_height="521dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchFood">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -45,16 +52,27 @@
                     android:id="@+id/lblCombos"
                     android:layout_width="134dp"
                     android:layout_height="33dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="4dp"
                     android:layout_weight="50"
                     android:text="Combos"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_editor_absoluteY="16dp" />
+                    app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView8"
+                    app:layout_constraintEnd_toStartOf="@+id/btnOtrosCombos"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
 
                 <HorizontalScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_editor_absoluteY="53dp">
+                    android:id="@+id/horizontalScrollView8"
+                    android:layout_width="412dp"
+                    android:layout_height="210dp"
+                    android:layout_marginBottom="7dp"
+                    app:layout_constraintBottom_toTopOf="@+id/divider2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnOtrosCombos">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -67,81 +85,115 @@
 
                             <ImageView
                                 android:id="@+id/imgCombo1"
-                                android:layout_width="202dp"
-                                android:layout_height="116dp"
-                                app:srcCompat="@android:drawable/ic_menu_gallery"
-                                tools:layout_editor_absoluteX="11dp"
-                                tools:layout_editor_absoluteY="13dp" />
+                                android:layout_width="200dp"
+                                android:layout_height="115dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                app:layout_constraintBottom_toTopOf="@+id/lblComboName1"
+                                app:layout_constraintEnd_toStartOf="@+id/imgCombo2"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@android:drawable/ic_menu_gallery" />
 
                             <TextView
                                 android:id="@+id/lblComboName1"
                                 android:layout_width="200dp"
                                 android:layout_height="22dp"
+                                android:layout_marginStart="10dp"
                                 android:text="Food name 1"
                                 android:textAlignment="center"
-                                tools:layout_editor_absoluteX="10dp"
-                                tools:layout_editor_absoluteY="139dp" />
+                                app:layout_constraintBottom_toTopOf="@+id/lblComboPrice1"
+                                app:layout_constraintEnd_toStartOf="@+id/lblComboName2"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imgCombo1" />
 
                             <TextView
                                 android:id="@+id/lblComboPrice1"
                                 android:layout_width="200dp"
                                 android:layout_height="22dp"
+                                android:layout_marginStart="10dp"
                                 android:text="$ 0000"
                                 android:textAlignment="center"
-                                tools:layout_editor_absoluteX="10dp"
-                                tools:layout_editor_absoluteY="167dp" />
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/lblComboPrice2"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/lblComboName1" />
 
                             <ImageView
                                 android:id="@+id/imgCombo2"
-                                android:layout_width="202dp"
-                                android:layout_height="116dp"
-                                app:srcCompat="@android:drawable/ic_menu_gallery"
-                                tools:layout_editor_absoluteX="240dp"
-                                tools:layout_editor_absoluteY="13dp" />
+                                android:layout_width="200dp"
+                                android:layout_height="115dp"
+                                android:layout_marginStart="236dp"
+                                android:layout_marginTop="5dp"
+                                app:layout_constraintBottom_toTopOf="@+id/lblComboName1"
+                                app:layout_constraintEnd_toStartOf="@+id/imgCombo3"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@android:drawable/ic_menu_gallery" />
 
                             <TextView
                                 android:id="@+id/lblComboName2"
                                 android:layout_width="200dp"
                                 android:layout_height="22dp"
-                                android:text="Food name 2"
+                                android:layout_marginStart="240dp"
+                                android:text="Food name 1"
                                 android:textAlignment="center"
-                                tools:layout_editor_absoluteX="241dp"
-                                tools:layout_editor_absoluteY="138dp" />
+                                app:layout_constraintBottom_toTopOf="@+id/lblComboPrice1"
+                                app:layout_constraintEnd_toStartOf="@+id/lblComboName3"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imgCombo1"
+                                app:layout_constraintVertical_bias="0.428" />
 
                             <TextView
                                 android:id="@+id/lblComboPrice2"
                                 android:layout_width="200dp"
                                 android:layout_height="22dp"
+                                android:layout_marginStart="230dp"
+                                android:layout_marginTop="1dp"
                                 android:text="$ 0000"
                                 android:textAlignment="center"
-                                tools:layout_editor_absoluteX="241dp"
-                                tools:layout_editor_absoluteY="167dp" />
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/lblComboPrice3"
+                                app:layout_constraintHorizontal_bias="0.633"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/lblComboName1"
+                                app:layout_constraintVertical_bias="0.473" />
 
                             <ImageView
                                 android:id="@+id/imgCombo3"
-                                android:layout_width="202dp"
-                                android:layout_height="116dp"
-                                app:srcCompat="@android:drawable/ic_menu_gallery"
-                                tools:layout_editor_absoluteX="476dp"
-                                tools:layout_editor_absoluteY="13dp" />
+                                android:layout_width="200dp"
+                                android:layout_height="115dp"
+                                android:layout_marginStart="456dp"
+                                android:layout_marginTop="5dp"
+                                app:layout_constraintBottom_toTopOf="@+id/lblComboName1"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@android:drawable/ic_menu_gallery" />
 
                             <TextView
                                 android:id="@+id/lblComboName3"
                                 android:layout_width="200dp"
                                 android:layout_height="22dp"
-                                android:text="Food name 3"
+                                android:layout_marginStart="456dp"
+                                android:text="Food name 1"
                                 android:textAlignment="center"
-                                tools:layout_editor_absoluteX="477dp"
-                                tools:layout_editor_absoluteY="138dp" />
+                                app:layout_constraintBottom_toTopOf="@+id/lblComboPrice1"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imgCombo1"
+                                app:layout_constraintVertical_bias="0.421" />
 
                             <TextView
                                 android:id="@+id/lblComboPrice3"
                                 android:layout_width="200dp"
                                 android:layout_height="22dp"
+                                android:layout_marginStart="456dp"
+                                android:layout_marginTop="1dp"
                                 android:text="$ 0000"
                                 android:textAlignment="center"
-                                tools:layout_editor_absoluteX="477dp"
-                                tools:layout_editor_absoluteY="167dp" />
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/lblComboName1"
+                                app:layout_constraintVertical_bias="0.473" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -152,28 +204,41 @@
                     android:id="@+id/divider2"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
+                    android:layout_marginTop="6dp"
                     android:layout_weight="50"
                     android:background="?android:attr/listDivider"
-                    tools:layout_editor_absoluteY="250dp" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView8" />
 
                 <TextView
                     android:id="@+id/lblMenu"
                     android:layout_width="115dp"
                     android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="10dp"
                     android:text="Menu"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_editor_absoluteY="285dp" />
+                    app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView9"
+                    app:layout_constraintEnd_toStartOf="@+id/btnOtrosMenus"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider2" />
 
                 <HorizontalScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="220"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_editor_absoluteY="325dp">
+                    android:id="@+id/horizontalScrollView9"
+                    android:layout_width="416dp"
+                    android:layout_height="210dp"
+                    android:layout_marginBottom="7dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnOtrosMenus">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:orientation="vertical" >
+                        android:orientation="vertical">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
@@ -183,79 +248,108 @@
                                 android:id="@+id/imgMenu1"
                                 android:layout_width="202dp"
                                 android:layout_height="116dp"
-                                app:srcCompat="@android:drawable/ic_menu_gallery"
-                                tools:layout_editor_absoluteX="11dp"
-                                tools:layout_editor_absoluteY="13dp" />
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="20dp"
+                                app:layout_constraintBottom_toTopOf="@+id/lblMenuName1"
+                                app:layout_constraintEnd_toStartOf="@+id/imgMenu2"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@android:drawable/ic_menu_gallery" />
 
                             <TextView
                                 android:id="@+id/lblMenuName1"
                                 android:layout_width="200dp"
                                 android:layout_height="22dp"
+                                android:layout_marginStart="12dp"
                                 android:text="Food name 1"
                                 android:textAlignment="center"
-                                tools:layout_editor_absoluteX="10dp"
-                                tools:layout_editor_absoluteY="139dp" />
+                                app:layout_constraintBottom_toTopOf="@+id/lblMenuPrice1"
+                                app:layout_constraintEnd_toStartOf="@+id/lblMenuName2"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imgMenu1" />
 
                             <TextView
                                 android:id="@+id/lblMenuPrice1"
                                 android:layout_width="200dp"
                                 android:layout_height="22dp"
+                                android:layout_marginStart="10dp"
                                 android:text="$ 0000"
                                 android:textAlignment="center"
-                                tools:layout_editor_absoluteX="10dp"
-                                tools:layout_editor_absoluteY="167dp" />
-
-                            <ImageView
-                                android:id="@+id/imgMenu2"
-                                android:layout_width="202dp"
-                                android:layout_height="116dp"
-                                app:srcCompat="@android:drawable/ic_menu_gallery"
-                                tools:layout_editor_absoluteX="240dp"
-                                tools:layout_editor_absoluteY="13dp" />
-
-                            <TextView
-                                android:id="@+id/lblMenuName2"
-                                android:layout_width="200dp"
-                                android:layout_height="22dp"
-                                android:text="Food name 2"
-                                android:textAlignment="center"
-                                tools:layout_editor_absoluteX="239dp"
-                                tools:layout_editor_absoluteY="138dp" />
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/lblMenuPrice2"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/lblMenuName1" />
 
                             <TextView
                                 android:id="@+id/lblMenuPrice2"
                                 android:layout_width="200dp"
                                 android:layout_height="22dp"
+                                android:layout_marginStart="232dp"
                                 android:text="$ 0000"
                                 android:textAlignment="center"
-                                tools:layout_editor_absoluteX="239dp"
-                                tools:layout_editor_absoluteY="167dp" />
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/lblMenuName1"
+                                app:layout_constraintVertical_bias="0.478" />
+
+                            <ImageView
+                                android:id="@+id/imgMenu2"
+                                android:layout_width="202dp"
+                                android:layout_height="116dp"
+                                android:layout_marginStart="232dp"
+                                android:layout_marginTop="5dp"
+                                app:layout_constraintBottom_toTopOf="@+id/lblMenuName1"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+                            <TextView
+                                android:id="@+id/lblMenuName2"
+                                android:layout_width="200dp"
+                                android:layout_height="22dp"
+                                android:layout_marginStart="20dp"
+                                android:text="Food name 1"
+                                android:textAlignment="center"
+                                app:layout_constraintBottom_toTopOf="@+id/lblMenuPrice1"
+                                app:layout_constraintStart_toEndOf="@+id/lblMenuName1"
+                                app:layout_constraintTop_toBottomOf="@+id/imgMenu1" />
 
                             <ImageView
                                 android:id="@+id/imgMenu3"
                                 android:layout_width="202dp"
                                 android:layout_height="116dp"
-                                app:srcCompat="@android:drawable/ic_menu_gallery"
-                                tools:layout_editor_absoluteX="476dp"
-                                tools:layout_editor_absoluteY="13dp" />
+                                android:layout_marginStart="460dp"
+                                android:layout_marginTop="5dp"
+                                app:layout_constraintBottom_toTopOf="@+id/lblMenuName1"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@android:drawable/ic_menu_gallery" />
 
                             <TextView
                                 android:id="@+id/lblMenuName3"
                                 android:layout_width="200dp"
                                 android:layout_height="22dp"
-                                android:text="Food name 3"
+                                android:layout_marginStart="248dp"
+                                android:text="Food name 1"
                                 android:textAlignment="center"
-                                tools:layout_editor_absoluteX="477dp"
-                                tools:layout_editor_absoluteY="138dp" />
+                                app:layout_constraintBottom_toTopOf="@+id/lblMenuPrice1"
+                                app:layout_constraintStart_toEndOf="@+id/lblMenuName1"
+                                app:layout_constraintTop_toBottomOf="@+id/imgMenu1" />
 
                             <TextView
                                 android:id="@+id/lblMenuPrice3"
                                 android:layout_width="200dp"
                                 android:layout_height="22dp"
+                                android:layout_marginStart="456dp"
                                 android:text="$ 0000"
                                 android:textAlignment="center"
-                                tools:layout_editor_absoluteX="477dp"
-                                tools:layout_editor_absoluteY="167dp" />
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/lblMenuName1"
+                                app:layout_constraintVertical_bias="0.478" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -266,17 +360,29 @@
                     android:id="@+id/btnOtrosCombos"
                     android:layout_width="88dp"
                     android:layout_height="43dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="100dp"
                     android:text="otros"
-                    tools:layout_editor_absoluteX="160dp"
-                    tools:layout_editor_absoluteY="10dp" />
+                    app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/lblCombos"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <Button
                     android:id="@+id/btnOtrosMenus"
                     android:layout_width="88dp"
                     android:layout_height="43dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="100dp"
                     android:text="otros"
-                    tools:layout_editor_absoluteX="160dp"
-                    tools:layout_editor_absoluteY="285dp" />
+                    app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/lblMenu"
+                    app:layout_constraintTop_toBottomOf="@+id/divider2"
+                    tools:ignore="TouchTargetSizeCheck" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
