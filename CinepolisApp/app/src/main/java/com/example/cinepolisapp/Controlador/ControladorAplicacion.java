@@ -99,9 +99,7 @@ public class ControladorAplicacion {
         return gestorClientes.modificarCliente(cliente);
     }
 
-    public List<Pelicula> getPeliculas(){
-        return gestorPeliculas.getPeliculas();
-    }
+
 
 
 }

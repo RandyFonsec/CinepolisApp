@@ -1,8 +1,6 @@
 package com.example.cinepolisapp.Modelo;
 
-import java.io.Serializable;
-
-public class Pelicula implements Serializable {
+public class Pelicula {
 
     private int idPelicula;
     private String titulo;

@@ -33,8 +33,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.138" />
 
+    <ScrollView
+        android:id="@+id/ScrollPeliculasDisponiblesGestion"
+        android:layout_width="416dp"
+        android:layout_height="490dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
     <HorizontalScrollView
-        android:id="@+id/horizontalScrollView5"
         android:layout_width="wrap_content"
         android:layout_height="47dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -46,21 +62,21 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button12"
+                android:id="@+id/btnCartelera"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Usuarios" />
 
             <Button
-                android:id="@+id/button13"
+                android:id="@+id/btnComidas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Comida" />
 
             <Button
-                android:id="@+id/button14"
+                android:id="@+id/btnCarrito"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -74,16 +90,4 @@
                 android:text="Peliculas" />
         </LinearLayout>
     </HorizontalScrollView>
-
-    <ListView
-        android:id="@+id/listViewPeliculas"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/location_te6" />
 </androidx.constraintlayout.widget.ConstraintLayout>

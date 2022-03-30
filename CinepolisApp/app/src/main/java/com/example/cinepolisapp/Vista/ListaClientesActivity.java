@@ -15,7 +15,6 @@ import com.example.cinepolisapp.Modelo.Cliente;
 import com.example.cinepolisapp.R;
 import com.example.cinepolisapp.Utils.Auxiliares;
 import com.example.cinepolisapp.Utils.ListaClientesAdapter;
-import com.example.cinepolisapp.Utils.LoadingDialog;
 
 import java.util.ArrayList;
 
@@ -29,17 +28,14 @@ public class ListaClientesActivity extends AppCompatActivity {
         cargarLista();
 
     }
-
     private void initUI(){
 
     }
-
     public void cargarLista() {
-        LoadingDialog ld = new LoadingDialog(ListaClientesActivity.this);
         new AsyncTask<String, String, ArrayList<Cliente>>() {
             @Override
             protected void onPreExecute() {
-                ld.startDialog();
+
             }
 
             @Override
@@ -49,7 +45,7 @@ public class ListaClientesActivity extends AppCompatActivity {
 
             @Override
             protected void onPostExecute(ArrayList<Cliente> result) {
-                ld.dismissDialog();
+
                 mostrar(result);
 
             }
@@ -58,7 +54,7 @@ public class ListaClientesActivity extends AppCompatActivity {
 
     }
 
-    public void mostrar(ArrayList<Cliente> clientes){
+    public void mostrar(ArrayList<Cliente> clientes ){
         ListView listClientes = findViewById(R.id.listaClientes);
         listClientes.setAdapter(new ListaClientesAdapter(this, clientes));
 
