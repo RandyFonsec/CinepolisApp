@@ -30,9 +30,9 @@ public class GestorPeliculas {
         return peliculas;
     }
 
-    public int obtenerUltimoIdPelicula() {
-        int id = PeliculaDAOImplementation.getInstance().obtenerUltimoIdPelicula();
-        return id;
+    public List<Pelicula> getPeliculas(){
+        List<Pelicula> peliculas = (List<Pelicula>) PeliculaDAOImplementation.getInstance().getAll();
+        return peliculas;
     }
-
 }
+

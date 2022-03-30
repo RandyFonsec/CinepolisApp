@@ -1,14 +1,6 @@
 package com.example.cinepolisapp.Vista;
 
-import android.content.Context;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.Spinner;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -30,11 +22,8 @@ import com.example.cinepolisapp.Modelo.Genero;
 import com.example.cinepolisapp.Modelo.Idioma;
 import com.example.cinepolisapp.Modelo.Pelicula;
 import com.example.cinepolisapp.R;
-import com.example.cinepolisapp.Utils.Alerta;
-import com.google.android.material.tabs.TabLayout;
+import com.example.cinepolisapp.Utils.Auxiliares;
 
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -156,25 +145,10 @@ public class MainActivity extends AppCompatActivity {
                 //for (Pelicula pelicula : peliculas)
                 //    System.out.println(pelicula.toString());
                 //return peliculas;
+        setContentView(R.layout.fragment_gestor_peliculas);
+
+        Auxiliares.asignarBotonesInferiores(this);
 
 
-            }
-            @Override
-            protected void onPostExecute(Alimento result) {
-                if(result != null) {
-                    //idT.setText(result.getId());
-                    //eM.setText(result.getEmail());
-                    //System.out.println(result.getTitulo());
-                    System.out.println("POSTEXECUTE");
-                }
-                else{
-                }
-
-            }
-            @Override
-            protected void onPreExecute(){
-                Toast.makeText(getApplicationContext(),"Iniciando consulta",Toast.LENGTH_SHORT).show();
-            }
-        }.execute();
-    }
         }
+}
