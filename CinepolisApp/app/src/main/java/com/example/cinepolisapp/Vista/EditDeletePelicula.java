@@ -245,16 +245,17 @@ public class EditDeletePelicula extends AppCompatActivity {
                 Idioma idioma = (Idioma) spinnerIdiomas.getSelectedItem();
                 Genero genero = (Genero) spinnerGeneros.getSelectedItem();
 
-                Pelicula pelicula = new Pelicula();
-                pelicula.setTitulo(titulo);
-                pelicula.setAnnoPublicacion(anno);
-                pelicula.setDuracion(duracion);
-                pelicula.setEdadRequerida(edad);
-                pelicula.setPrecioEntrada(precioEntrada);
-                pelicula.setIdDirector(director.getIdDirector());
+                Pelicula peliculaAct = new Pelicula();
+                peliculaAct.setIdPelicula(pelicula.getIdPelicula());
+                peliculaAct.setTitulo(titulo);
+                peliculaAct.setAnnoPublicacion(anno);
+                peliculaAct.setDuracion(duracion);
+                peliculaAct.setEdadRequerida(edad);
+                peliculaAct.setPrecioEntrada(precioEntrada);
+                peliculaAct.setIdDirector(director.getIdDirector());
 
                 Pelicula actualizada;
-                actualizada = ControladorAplicacion.getInstance().modificarPelicula(pelicula);
+                actualizada = ControladorAplicacion.getInstance().modificarPelicula(peliculaAct);
 
                 if (actualizada != null) {
                     int actorXPelicula = ControladorAplicacion.getInstance().agregarActorXPelicula(

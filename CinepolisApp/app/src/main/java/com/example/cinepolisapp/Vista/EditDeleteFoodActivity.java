@@ -135,15 +135,15 @@ public class EditDeleteFoodActivity extends AppCompatActivity {
                 double precio = Double.parseDouble(editTextPrecioAlimento.getText().toString());
                 TipoAlimento tipoAlimento = (TipoAlimento) spinnerTiposAlimento.getSelectedItem();
 
-                Alimento alimento = new Alimento();
-                alimento.setNombre(nombre);
-                alimento.setCantidadDisponible(cantidad);
-                alimento.setPrecio(precio);
-                alimento.setEliminado(0);
-                alimento.setIdTipoAlimento(tipoAlimento.getIdTipoAlimento());
+                Alimento alimentoAct = new Alimento();
+                alimentoAct.setIdAlimento(alimento.getIdAlimento());
+                alimentoAct.setNombre(nombre);
+                alimentoAct.setCantidadDisponible(cantidad);
+                alimentoAct.setPrecio(precio);
+                alimentoAct.setIdTipoAlimento(tipoAlimento.getIdTipoAlimento());
 
                 Boolean actualizado;
-                actualizado = ControladorAplicacion.getInstance().modificarAlimento(alimento);
+                actualizado = ControladorAplicacion.getInstance().modificarAlimento(alimentoAct);
                 return actualizado;
             }
 
