@@ -20,6 +20,7 @@ import com.example.cinepolisapp.Modelo.Pelicula;
 import com.example.cinepolisapp.Modelo.TipoAlimento;
 import com.example.cinepolisapp.R;
 import com.example.cinepolisapp.Utils.Alerta;
+import com.example.cinepolisapp.Utils.Auxiliares;
 import com.example.cinepolisapp.Utils.LoadingDialog;
 
 import java.util.ArrayList;
@@ -35,6 +36,7 @@ public class AddFoodActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.agregar_alimento);
+        Auxiliares.asignarBotonesInferiores(this);
         initUI();
         fillTypeFoodSpinner();
     }

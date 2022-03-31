@@ -21,7 +21,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.CinepolisApp" >
         <activity
-            android:name="com.example.cinepolisapp.Vista.GestorPeliculasActivity"
+            android:name="com.example.cinepolisapp.Vista.LoginActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.CinepolisApp.NoActionBar" >
@@ -43,6 +43,8 @@
         <activity android:name="com.example.cinepolisapp.Vista.AddFoodActivity" />
         <activity android:name="com.example.cinepolisapp.Vista.EditDeleteFoodActivity" />
         <activity android:name="com.example.cinepolisapp.Vista.ListaAlimentosActivity" />
+        <activity android:name="com.example.cinepolisapp.Vista.GestorPeliculasActivity" />
+        <activity android:name="com.example.cinepolisapp.Vista.RegisterActivity" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
