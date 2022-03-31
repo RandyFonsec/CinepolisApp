@@ -14,9 +14,6 @@ public interface UtilInterface<T> {
     Object insertGenreXMovie(Object idPelicula, Object idGenero);
     Object insertIdiomXMovie(Object idPelicula, Object idIdioma);
     List<T> getHorariosDisponibles(Object idSala, Object fecha);
-    Object insertActorXMovie(Object idPelicula, Object idActor);
-    Object insertGenreXMovie(Object idPelicula, Object idGenero);
-    Object insertIdiomXMovie(Object idPelicula, Object idIdioma);
     Object insertFuncion(Object idHorario, Object idSala, Object idPelicula, Object fecha);
 
 }

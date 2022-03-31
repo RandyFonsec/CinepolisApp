@@ -115,7 +115,6 @@ public class ControladorAplicacion {
     public List<Genero> obtenerGeneros() { return gestorUtils.obtenerGeneros(); }
 
 
-    public List<Genero> obtenerGeneros() { return gestorUtils.obtenerGeneros(); }
 
     public int agregarActorXPelicula(int idPelicula, int idActor) {
         return gestorUtils.agregarActorXPelicula(idPelicula, idActor);

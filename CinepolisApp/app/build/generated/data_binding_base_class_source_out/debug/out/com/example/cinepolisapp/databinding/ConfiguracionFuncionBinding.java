@@ -6,7 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -32,9 +34,6 @@ public final class ConfiguracionFuncionBinding implements ViewBinding {
   public final EditText NombrePeliculaConfig;
 
   @NonNull
-  public final EditText TiempoConfig;
-
-  @NonNull
   public final Button button12;
 
   @NonNull
@@ -47,27 +46,40 @@ public final class ConfiguracionFuncionBinding implements ViewBinding {
   public final Button button15;
 
   @NonNull
+  public final HorizontalScrollView horizontalScrollView7;
+
+  @NonNull
   public final ImageView imageView3;
 
   @NonNull
   public final TextView locationTe7;
 
+  @NonNull
+  public final Spinner spinnerHorario;
+
+  @NonNull
+  public final Spinner spinnerSala;
+
   private ConfiguracionFuncionBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button AsignarConfigFuncionBtn, @NonNull EditText FechaConfig,
-      @NonNull EditText NombrePeliculaConfig, @NonNull EditText TiempoConfig,
-      @NonNull Button button12, @NonNull Button button13, @NonNull Button button14,
-      @NonNull Button button15, @NonNull ImageView imageView3, @NonNull TextView locationTe7) {
+      @NonNull EditText NombrePeliculaConfig, @NonNull Button button12, @NonNull Button button13,
+      @NonNull Button button14, @NonNull Button button15,
+      @NonNull HorizontalScrollView horizontalScrollView7, @NonNull ImageView imageView3,
+      @NonNull TextView locationTe7, @NonNull Spinner spinnerHorario,
+      @NonNull Spinner spinnerSala) {
     this.rootView = rootView;
     this.AsignarConfigFuncionBtn = AsignarConfigFuncionBtn;
     this.FechaConfig = FechaConfig;
     this.NombrePeliculaConfig = NombrePeliculaConfig;
-    this.TiempoConfig = TiempoConfig;
     this.button12 = button12;
     this.button13 = button13;
     this.button14 = button14;
     this.button15 = button15;
+    this.horizontalScrollView7 = horizontalScrollView7;
     this.imageView3 = imageView3;
     this.locationTe7 = locationTe7;
+    this.spinnerHorario = spinnerHorario;
+    this.spinnerSala = spinnerSala;
   }
 
   @Override
@@ -115,12 +127,6 @@ public final class ConfiguracionFuncionBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.TiempoConfig;
-      EditText TiempoConfig = ViewBindings.findChildViewById(rootView, id);
-      if (TiempoConfig == null) {
-        break missingId;
-      }
-
       id = R.id.button12;
       Button button12 = ViewBindings.findChildViewById(rootView, id);
       if (button12 == null) {
@@ -145,6 +151,12 @@ public final class ConfiguracionFuncionBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.horizontalScrollView7;
+      HorizontalScrollView horizontalScrollView7 = ViewBindings.findChildViewById(rootView, id);
+      if (horizontalScrollView7 == null) {
+        break missingId;
+      }
+
       id = R.id.imageView3;
       ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
       if (imageView3 == null) {
@@ -157,9 +169,21 @@ public final class ConfiguracionFuncionBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.spinnerHorario;
+      Spinner spinnerHorario = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerHorario == null) {
+        break missingId;
+      }
+
+      id = R.id.spinnerSala;
+      Spinner spinnerSala = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerSala == null) {
+        break missingId;
+      }
+
       return new ConfiguracionFuncionBinding((ConstraintLayout) rootView, AsignarConfigFuncionBtn,
-          FechaConfig, NombrePeliculaConfig, TiempoConfig, button12, button13, button14, button15,
-          imageView3, locationTe7);
+          FechaConfig, NombrePeliculaConfig, button12, button13, button14, button15,
+          horizontalScrollView7, imageView3, locationTe7, spinnerHorario, spinnerSala);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

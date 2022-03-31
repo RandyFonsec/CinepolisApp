@@ -12,13 +12,24 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="baf4cb0e-8e71-462d-bee0-588aa6b359a1" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="baf4cb0e-8e71-462d-bee0-588aa6b359a1" name="Default Changelist" comment="Agregar película funcional" />
+>>>>>>> Randy2
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[LGM70092a4df00]" />
+<<<<<<< HEAD
+=======
+=======
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[R58N91C1MAE]" />
+>>>>>>> KendallC
+>>>>>>> Randy2
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -27,8 +38,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+<<<<<<< HEAD
         <option value="Interface" />
         <option value="layoutResourceFile" />
+=======
+<<<<<<< HEAD
+=======
+        <option value="Interface" />
+>>>>>>> KendallC
+>>>>>>> Randy2
         <option value="Class" />
       </list>
     </option>
@@ -62,15 +80,28 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+<<<<<<< HEAD
     <property name="android-custom-viewC:/Users/kenda/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.4.1/f9e48179ea0c6ac0080a277b9383f74523f56aa2/appcompat-1.4.1-sources.jar!/androidx/appcompat/widget/AppCompatSpinner.java_AppCompatSpinner_DIMENSIONS" value="1080&#10;1920" />
     <property name="android-custom-viewC:/Users/kenda/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.4.1/f9e48179ea0c6ac0080a277b9383f74523f56aa2/appcompat-1.4.1-sources.jar!/androidx/appcompat/widget/AppCompatSpinner.java_SELECTED" value="AppCompatSpinner" />
+=======
+>>>>>>> Randy2
     <property name="android-custom-viewC:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/java/com/example/cinepolisapp/MyView.java_MyView_DIMENSIONS" value="1080&#10;1920" />
     <property name="android-custom-viewC:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/java/com/example/cinepolisapp/MyView.java_SELECTED" value="MyView" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+<<<<<<< HEAD
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
+=======
+<<<<<<< HEAD
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+=======
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+>>>>>>> KendallC
+>>>>>>> Randy2
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager">
