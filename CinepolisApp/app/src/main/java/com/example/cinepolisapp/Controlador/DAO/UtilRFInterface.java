@@ -5,6 +5,7 @@ import com.example.cinepolisapp.Modelo.Asiento;
 import com.example.cinepolisapp.Modelo.Director;
 import com.example.cinepolisapp.Modelo.Genero;
 import com.example.cinepolisapp.Modelo.Idioma;
+import com.example.cinepolisapp.Modelo.TipoAlimento;
 
 import java.util.List;
 
@@ -31,6 +32,9 @@ public interface UtilRFInterface {
 
     @GET("fetchAllGeneros.php")
     public Call<List<Genero>> getAllGeneros();
+
+    @GET("fetchAllTypesFood.php")
+    public Call<List<TipoAlimento>> getAllTypesFood();
 
     @FormUrlEncoded
     @POST("saveActorXPelicula.php")

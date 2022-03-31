@@ -15,7 +15,7 @@
 11-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:7:5-36:19
+13-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:7:5-39:19
 14        android:allowBackup="true"
 14-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -34,8 +34,8 @@
 22-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:13:9-50
 23        <activity
 23-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:15:9-25:20
-24            android:name="com.example.cinepolisapp.Vista.HomeAdminActivity"
-24-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:16:13-52
+24            android:name="com.example.cinepolisapp.Vista.GestorPeliculasActivity"
+24-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:16:13-58
 25            android:exported="true"
 25-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:17:13-36
 26            android:label="@string/app_name"
@@ -59,65 +59,71 @@
 35        <activity android:name="com.example.cinepolisapp.Vista.UsersAdminActivity" />
 35-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:27:9-62
 35-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:27:19-59
-36        <activity android:name="com.example.cinepolisapp.Vista.GestorPeliculasActivity" />
-36-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:28:9-67
-36-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:28:19-64
-37        <activity android:name="com.example.cinepolisapp.Vista.AlimentoAdminActivity" />
-37-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:29:9-65
-37-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:29:19-62
-38        <activity android:name="com.example.cinepolisapp.Vista.EditDeletePelicula" />
-38-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:30:9-62
-38-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:30:19-59
-39        <activity android:name="com.example.cinepolisapp.Vista.ListaClientesActivity" />
-39-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:31:9-65
-39-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:31:19-62
-40        <activity android:name="com.example.cinepolisapp.Vista.EditarEliminarClienteActivity" />
-40-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:32:9-73
-40-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:32:19-70
-41        <activity android:name="com.example.cinepolisapp.Vista.ListaPeliculasActivity" />
-41-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:33:9-66
-41-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:33:19-63
-42        <activity android:name="com.example.cinepolisapp.Vista.ConfigFuncionActivity" />
-42-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:34:9-65
-42-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:34:19-62
-43        <activity android:name="com.example.cinepolisapp.Vista.AddMovieActivity" />
-43-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:35:9-60
-43-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:35:19-57
-44
-45        <provider
-45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-46            android:name="androidx.startup.InitializationProvider"
-46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-47            android:authorities="com.example.cinepolisapp.androidx-startup"
-47-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
-48            android:exported="false" >
-48-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
-49            <meta-data
-49-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-50                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
-51                android:value="androidx.startup" />
-51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
-52            <meta-data
-52-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\kenda\.gradle\caches\transforms-3\c761cbdefd74fb3955bd84ec83922caa\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-53                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-53-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\kenda\.gradle\caches\transforms-3\c761cbdefd74fb3955bd84ec83922caa\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-54                android:value="androidx.startup" />
-54-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\kenda\.gradle\caches\transforms-3\c761cbdefd74fb3955bd84ec83922caa\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-55        </provider>
-56
-57        <uses-library
-57-->[androidx.window:window:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
-58            android:name="androidx.window.extensions"
-58-->[androidx.window:window:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
-59            android:required="false" />
-59-->[androidx.window:window:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
-60        <uses-library
-60-->[androidx.window:window:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
-61            android:name="androidx.window.sidecar"
-61-->[androidx.window:window:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
-62            android:required="false" />
-62-->[androidx.window:window:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
-63    </application>
-64
-65</manifest>
+36        <activity android:name="com.example.cinepolisapp.Vista.AlimentoAdminActivity" />
+36-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:28:9-65
+36-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:28:19-62
+37        <activity android:name="com.example.cinepolisapp.Vista.EditDeletePelicula" />
+37-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:29:9-62
+37-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:29:19-59
+38        <activity android:name="com.example.cinepolisapp.Vista.ListaClientesActivity" />
+38-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:30:9-65
+38-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:30:19-62
+39        <activity android:name="com.example.cinepolisapp.Vista.EditarEliminarClienteActivity" />
+39-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:31:9-73
+39-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:31:19-70
+40        <activity android:name="com.example.cinepolisapp.Vista.ListaPeliculasActivity" />
+40-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:32:9-66
+40-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:32:19-63
+41        <activity android:name="com.example.cinepolisapp.Vista.ConfigFuncionActivity" />
+41-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:33:9-65
+41-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:33:19-62
+42        <activity android:name="com.example.cinepolisapp.Vista.AddMovieActivity" />
+42-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:34:9-60
+42-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:34:19-57
+43        <activity android:name="com.example.cinepolisapp.Vista.AddFoodActivity" />
+43-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:35:9-59
+43-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:35:19-56
+44        <activity android:name="com.example.cinepolisapp.Vista.EditDeleteFoodActivity" />
+44-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:36:9-66
+44-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:36:19-63
+45        <activity android:name="com.example.cinepolisapp.Vista.ListaAlimentosActivity" />
+45-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:37:9-66
+45-->C:\Users\kenda\Documents\GitHub\CinepolisApp\CinepolisApp\app\src\main\AndroidManifest.xml:37:19-63
+46
+47        <provider
+47-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+48            android:name="androidx.startup.InitializationProvider"
+48-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+49            android:authorities="com.example.cinepolisapp.androidx-startup"
+49-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+50            android:exported="false" >
+50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+51            <meta-data
+51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+52                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+53                android:value="androidx.startup" />
+53-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\883c8571d9900e72cce7dfb06c6e0c4b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+54            <meta-data
+54-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\kenda\.gradle\caches\transforms-3\c761cbdefd74fb3955bd84ec83922caa\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+55                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+55-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\kenda\.gradle\caches\transforms-3\c761cbdefd74fb3955bd84ec83922caa\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+56                android:value="androidx.startup" />
+56-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\kenda\.gradle\caches\transforms-3\c761cbdefd74fb3955bd84ec83922caa\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+57        </provider>
+58
+59        <uses-library
+59-->[androidx.window:window:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+60            android:name="androidx.window.extensions"
+60-->[androidx.window:window:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+61            android:required="false" />
+61-->[androidx.window:window:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+62        <uses-library
+62-->[androidx.window:window:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+63            android:name="androidx.window.sidecar"
+63-->[androidx.window:window:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+64            android:required="false" />
+64-->[androidx.window:window:1.0.0] C:\Users\kenda\.gradle\caches\transforms-3\d4d3e111f893a618d6afd12317a7effd\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+65    </application>
+66
+67</manifest>

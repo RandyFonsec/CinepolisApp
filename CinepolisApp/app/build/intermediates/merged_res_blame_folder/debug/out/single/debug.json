@@ -32,6 +32,10 @@
         "source": "C:\\Users\\kenda\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\kenda\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\merged_res\\debug\\layout_item_list_alimentos.xml.flat",
+        "source": "C:\\Users\\kenda\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\item_list_alimentos.xml"
+    },
+    {
         "merged": "C:\\Users\\kenda\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\merged_res\\debug\\navigation_nav_graph.xml.flat",
         "source": "C:\\Users\\kenda\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\navigation\\nav_graph.xml"
     },
@@ -74,6 +78,10 @@
     {
         "merged": "C:\\Users\\kenda\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\kenda\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\kenda\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_lista_alimentos.xml.flat",
+        "source": "C:\\Users\\kenda\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\src\\main\\res\\layout\\activity_lista_alimentos.xml"
     },
     {
         "merged": "C:\\Users\\kenda\\Documents\\GitHub\\CinepolisApp\\CinepolisApp\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",

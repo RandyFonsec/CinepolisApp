@@ -5,6 +5,7 @@ import com.example.cinepolisapp.Modelo.Actor;
 import com.example.cinepolisapp.Modelo.Director;
 import com.example.cinepolisapp.Modelo.Genero;
 import com.example.cinepolisapp.Modelo.Idioma;
+import com.example.cinepolisapp.Modelo.TipoAlimento;
 
 import java.lang.reflect.AccessibleObject;
 import java.util.List;
@@ -48,6 +49,11 @@ public class GestorUtils {
     public int agregarIdiomaXPelicula(int idPelicula, int idIdioma) {
         Integer resultado = (Integer) UtilDAOImplementation.getInstance().insertIdiomXMovie(idPelicula, idIdioma);
         return resultado.intValue();
+    }
+
+    public List<TipoAlimento> obtenerTiposAlimento() {
+        List<TipoAlimento> tiposAlimento = UtilDAOImplementation.getInstance().getAllTypesFood();
+        return tiposAlimento;
     }
 
 }

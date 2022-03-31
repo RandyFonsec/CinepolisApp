@@ -2574,7 +2574,6 @@ drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
-id Agregar_btn
 id ApellidoText1
 id Asignar_Config_Funcion_btn
 id BOTTOM_END
@@ -2584,8 +2583,6 @@ id BackRegister
 id CTRL
 id CedulaText
 id EdadText
-id Editar_Actualizar_btn_Alimento
-id Editar_Eliminar_btn_Alimento
 id EmailLoginText
 id EmailText
 id EsquemaVacunacionSpinner
@@ -2622,8 +2619,6 @@ id TextNombreAgregar
 id TextNombreEditar
 id TextPrecioAgregar
 id TextPrecioEditar
-id TextTipoAlimentoAgregar
-id TextTipoAlimentoEditar
 id TiempoConfig
 id accelerate
 id accessibility_action_clickable_span
@@ -2715,8 +2710,11 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnActualizarAlimento
 id btnActualizarPelicula
+id btnAgregarAlimento
 id btnAgregarPelicula
+id btnEliminarAlimento
 id btnEliminarPelicula
 id btnGestionAgregarPelicula
 id btnSeleccionarPelicula
@@ -2904,6 +2902,7 @@ id linearLayout
 id listMode
 id listViewPeliculas
 id list_item
+id listaAlimentos
 id listaClientes
 id locale
 id location_te
@@ -3082,10 +3081,12 @@ id spinnerActores
 id spinnerActoresEdit
 id spinnerDirectores
 id spinnerDirectoresEdit
+id spinnerEditTipoAlimento
 id spinnerGeneros
 id spinnerGenerosEdit
 id spinnerIdiomas
 id spinnerIdiomasEdit
+id spinnerTipoAlimento
 id spline
 id split_action_bar
 id spread
@@ -3164,6 +3165,7 @@ id textView6
 id textView7
 id textView8
 id textView9
+id textViewAlimentos
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3189,11 +3191,14 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvCantidadAlimento
 id tvCedulaLista
 id tvCorreoLista
 id tvDuracionPelicula
+id tvNombreAlimento
 id tvNombreLista
 id tvNombrePelicula
+id tvPrecioAlimento
 id unchecked
 id uniform
 id unlabeled
@@ -3302,6 +3307,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_lista_alimentos
 layout activity_lista_clientes
 layout activity_main
 layout activity_main2
@@ -3331,6 +3337,7 @@ layout fragment_gestor_alimento
 layout fragment_gestor_billboard
 layout fragment_gestor_peliculas
 layout fragment_gestor_users
+layout item_list_alimentos
 layout item_list_clientes
 layout item_list_peliculas
 layout loading_box

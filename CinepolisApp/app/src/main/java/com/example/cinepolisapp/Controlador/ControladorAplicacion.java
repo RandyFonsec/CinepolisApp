@@ -8,6 +8,7 @@ import com.example.cinepolisapp.Modelo.Director;
 import com.example.cinepolisapp.Modelo.Genero;
 import com.example.cinepolisapp.Modelo.Idioma;
 import com.example.cinepolisapp.Modelo.Pelicula;
+import com.example.cinepolisapp.Modelo.TipoAlimento;
 
 import java.util.List;
 
@@ -132,6 +133,10 @@ public class ControladorAplicacion {
 
     public List<Pelicula> getPeliculas(){
         return gestorPeliculas.getPeliculas();
+    }
+
+    public List<TipoAlimento> obtenerTiposAlimento() {
+        return gestorUtils.obtenerTiposAlimento();
     }
 
 

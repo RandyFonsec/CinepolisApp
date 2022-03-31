@@ -6,6 +6,7 @@ import com.example.cinepolisapp.Modelo.Director;
 import com.example.cinepolisapp.Modelo.Genero;
 import com.example.cinepolisapp.Modelo.Idioma;
 import com.example.cinepolisapp.Modelo.Pelicula;
+import com.example.cinepolisapp.Modelo.TipoAlimento;
 
 import java.io.IOException;
 import java.util.List;
@@ -79,6 +80,22 @@ public class UtilDAOImplementation implements DAORetrofit, UtilInterface {
         List<Genero> respuesta = null;
         try {
             Response<List<Genero>> response = null;
+            response = call.execute();
+            if(response.isSuccessful()) {
+                respuesta = response.body();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return respuesta;
+    }
+
+    @Override
+    public List getAllTypesFood() {
+        Call<List<TipoAlimento>> call = retrofit.create(UtilRFInterface.class).getAllTypesFood();
+        List<TipoAlimento> respuesta = null;
+        try {
+            Response<List<TipoAlimento>> response = null;
             response = call.execute();
             if(response.isSuccessful()) {
                 respuesta = response.body();

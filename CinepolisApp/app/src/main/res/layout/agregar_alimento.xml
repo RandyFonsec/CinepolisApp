@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/Agregar_btn"
+        android:id="@+id/btnAgregarAlimento"
         style="@style/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,10 +34,10 @@
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.433" />
+        app:layout_constraintVertical_bias="0.32" />
 
     <TextView
         android:id="@+id/location_te8"
@@ -66,9 +66,10 @@
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/TextCantidadAgregar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextNombreAgregar" />
+        app:layout_constraintTop_toBottomOf="@+id/TextNombreAgregar"
+        app:layout_constraintVertical_bias="0.442" />
 
     <EditText
         android:id="@+id/TextCantidadAgregar"
@@ -80,24 +81,10 @@
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65" />
-
-    <EditText
-        android:id="@+id/TextTipoAlimentoAgregar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Tipo"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/TextNombreAgregar"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/location_te8" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.515" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -151,4 +138,14 @@
                 android:text="Peliculas" />
         </LinearLayout>
     </HorizontalScrollView>
+
+    <Spinner
+        android:id="@+id/spinnerTipoAlimento"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAgregarAlimento"
+        app:layout_constraintTop_toBottomOf="@+id/TextCantidadAgregar"
+        app:layout_constraintVertical_bias="0.035"
+        tools:layout_editor_absoluteX="0dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

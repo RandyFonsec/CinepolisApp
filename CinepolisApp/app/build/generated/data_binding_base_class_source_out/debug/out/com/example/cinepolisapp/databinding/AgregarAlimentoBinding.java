@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,9 +25,6 @@ public final class AgregarAlimentoBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button AgregarBtn;
-
-  @NonNull
   public final EditText TextCantidadAgregar;
 
   @NonNull
@@ -36,7 +34,7 @@ public final class AgregarAlimentoBinding implements ViewBinding {
   public final EditText TextPrecioAgregar;
 
   @NonNull
-  public final EditText TextTipoAlimentoAgregar;
+  public final Button btnAgregarAlimento;
 
   @NonNull
   public final Button button12;
@@ -59,18 +57,21 @@ public final class AgregarAlimentoBinding implements ViewBinding {
   @NonNull
   public final TextView locationTe8;
 
-  private AgregarAlimentoBinding(@NonNull ConstraintLayout rootView, @NonNull Button AgregarBtn,
+  @NonNull
+  public final Spinner spinnerTipoAlimento;
+
+  private AgregarAlimentoBinding(@NonNull ConstraintLayout rootView,
       @NonNull EditText TextCantidadAgregar, @NonNull EditText TextNombreAgregar,
-      @NonNull EditText TextPrecioAgregar, @NonNull EditText TextTipoAlimentoAgregar,
+      @NonNull EditText TextPrecioAgregar, @NonNull Button btnAgregarAlimento,
       @NonNull Button button12, @NonNull Button button13, @NonNull Button button14,
       @NonNull Button button15, @NonNull HorizontalScrollView horizontalScrollView2,
-      @NonNull ImageView imageView, @NonNull TextView locationTe8) {
+      @NonNull ImageView imageView, @NonNull TextView locationTe8,
+      @NonNull Spinner spinnerTipoAlimento) {
     this.rootView = rootView;
-    this.AgregarBtn = AgregarBtn;
     this.TextCantidadAgregar = TextCantidadAgregar;
     this.TextNombreAgregar = TextNombreAgregar;
     this.TextPrecioAgregar = TextPrecioAgregar;
-    this.TextTipoAlimentoAgregar = TextTipoAlimentoAgregar;
+    this.btnAgregarAlimento = btnAgregarAlimento;
     this.button12 = button12;
     this.button13 = button13;
     this.button14 = button14;
@@ -78,6 +79,7 @@ public final class AgregarAlimentoBinding implements ViewBinding {
     this.horizontalScrollView2 = horizontalScrollView2;
     this.imageView = imageView;
     this.locationTe8 = locationTe8;
+    this.spinnerTipoAlimento = spinnerTipoAlimento;
   }
 
   @Override
@@ -107,12 +109,6 @@ public final class AgregarAlimentoBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.Agregar_btn;
-      Button AgregarBtn = ViewBindings.findChildViewById(rootView, id);
-      if (AgregarBtn == null) {
-        break missingId;
-      }
-
       id = R.id.TextCantidadAgregar;
       EditText TextCantidadAgregar = ViewBindings.findChildViewById(rootView, id);
       if (TextCantidadAgregar == null) {
@@ -131,9 +127,9 @@ public final class AgregarAlimentoBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.TextTipoAlimentoAgregar;
-      EditText TextTipoAlimentoAgregar = ViewBindings.findChildViewById(rootView, id);
-      if (TextTipoAlimentoAgregar == null) {
+      id = R.id.btnAgregarAlimento;
+      Button btnAgregarAlimento = ViewBindings.findChildViewById(rootView, id);
+      if (btnAgregarAlimento == null) {
         break missingId;
       }
 
@@ -179,9 +175,15 @@ public final class AgregarAlimentoBinding implements ViewBinding {
         break missingId;
       }
 
-      return new AgregarAlimentoBinding((ConstraintLayout) rootView, AgregarBtn,
-          TextCantidadAgregar, TextNombreAgregar, TextPrecioAgregar, TextTipoAlimentoAgregar,
-          button12, button13, button14, button15, horizontalScrollView2, imageView, locationTe8);
+      id = R.id.spinnerTipoAlimento;
+      Spinner spinnerTipoAlimento = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerTipoAlimento == null) {
+        break missingId;
+      }
+
+      return new AgregarAlimentoBinding((ConstraintLayout) rootView, TextCantidadAgregar,
+          TextNombreAgregar, TextPrecioAgregar, btnAgregarAlimento, button12, button13, button14,
+          button15, horizontalScrollView2, imageView, locationTe8, spinnerTipoAlimento);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,12 +24,6 @@ public final class EditarAlimentoBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button EditarActualizarBtnAlimento;
-
-  @NonNull
-  public final Button EditarEliminarBtnAlimento;
-
-  @NonNull
   public final EditText TextCantidadEditar;
 
   @NonNull
@@ -38,7 +33,10 @@ public final class EditarAlimentoBinding implements ViewBinding {
   public final EditText TextPrecioEditar;
 
   @NonNull
-  public final EditText TextTipoAlimentoEditar;
+  public final Button btnActualizarAlimento;
+
+  @NonNull
+  public final Button btnEliminarAlimento;
 
   @NonNull
   public final Button button12;
@@ -58,25 +56,28 @@ public final class EditarAlimentoBinding implements ViewBinding {
   @NonNull
   public final TextView locationTe9;
 
+  @NonNull
+  public final Spinner spinnerEditTipoAlimento;
+
   private EditarAlimentoBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button EditarActualizarBtnAlimento, @NonNull Button EditarEliminarBtnAlimento,
       @NonNull EditText TextCantidadEditar, @NonNull EditText TextNombreEditar,
-      @NonNull EditText TextPrecioEditar, @NonNull EditText TextTipoAlimentoEditar,
-      @NonNull Button button12, @NonNull Button button13, @NonNull Button button14,
-      @NonNull Button button15, @NonNull ImageView imageView9, @NonNull TextView locationTe9) {
+      @NonNull EditText TextPrecioEditar, @NonNull Button btnActualizarAlimento,
+      @NonNull Button btnEliminarAlimento, @NonNull Button button12, @NonNull Button button13,
+      @NonNull Button button14, @NonNull Button button15, @NonNull ImageView imageView9,
+      @NonNull TextView locationTe9, @NonNull Spinner spinnerEditTipoAlimento) {
     this.rootView = rootView;
-    this.EditarActualizarBtnAlimento = EditarActualizarBtnAlimento;
-    this.EditarEliminarBtnAlimento = EditarEliminarBtnAlimento;
     this.TextCantidadEditar = TextCantidadEditar;
     this.TextNombreEditar = TextNombreEditar;
     this.TextPrecioEditar = TextPrecioEditar;
-    this.TextTipoAlimentoEditar = TextTipoAlimentoEditar;
+    this.btnActualizarAlimento = btnActualizarAlimento;
+    this.btnEliminarAlimento = btnEliminarAlimento;
     this.button12 = button12;
     this.button13 = button13;
     this.button14 = button14;
     this.button15 = button15;
     this.imageView9 = imageView9;
     this.locationTe9 = locationTe9;
+    this.spinnerEditTipoAlimento = spinnerEditTipoAlimento;
   }
 
   @Override
@@ -106,18 +107,6 @@ public final class EditarAlimentoBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.Editar_Actualizar_btn_Alimento;
-      Button EditarActualizarBtnAlimento = ViewBindings.findChildViewById(rootView, id);
-      if (EditarActualizarBtnAlimento == null) {
-        break missingId;
-      }
-
-      id = R.id.Editar_Eliminar_btn_Alimento;
-      Button EditarEliminarBtnAlimento = ViewBindings.findChildViewById(rootView, id);
-      if (EditarEliminarBtnAlimento == null) {
-        break missingId;
-      }
-
       id = R.id.TextCantidadEditar;
       EditText TextCantidadEditar = ViewBindings.findChildViewById(rootView, id);
       if (TextCantidadEditar == null) {
@@ -136,9 +125,15 @@ public final class EditarAlimentoBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.TextTipoAlimentoEditar;
-      EditText TextTipoAlimentoEditar = ViewBindings.findChildViewById(rootView, id);
-      if (TextTipoAlimentoEditar == null) {
+      id = R.id.btnActualizarAlimento;
+      Button btnActualizarAlimento = ViewBindings.findChildViewById(rootView, id);
+      if (btnActualizarAlimento == null) {
+        break missingId;
+      }
+
+      id = R.id.btnEliminarAlimento;
+      Button btnEliminarAlimento = ViewBindings.findChildViewById(rootView, id);
+      if (btnEliminarAlimento == null) {
         break missingId;
       }
 
@@ -178,9 +173,15 @@ public final class EditarAlimentoBinding implements ViewBinding {
         break missingId;
       }
 
-      return new EditarAlimentoBinding((ConstraintLayout) rootView, EditarActualizarBtnAlimento,
-          EditarEliminarBtnAlimento, TextCantidadEditar, TextNombreEditar, TextPrecioEditar,
-          TextTipoAlimentoEditar, button12, button13, button14, button15, imageView9, locationTe9);
+      id = R.id.spinnerEditTipoAlimento;
+      Spinner spinnerEditTipoAlimento = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerEditTipoAlimento == null) {
+        break missingId;
+      }
+
+      return new EditarAlimentoBinding((ConstraintLayout) rootView, TextCantidadEditar,
+          TextNombreEditar, TextPrecioEditar, btnActualizarAlimento, btnEliminarAlimento, button12,
+          button13, button14, button15, imageView9, locationTe9, spinnerEditTipoAlimento);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

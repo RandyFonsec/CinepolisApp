@@ -28,6 +28,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="layoutResourceFile" />
         <option value="Class" />
       </list>
     </option>
@@ -56,6 +57,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android-custom-viewC:/Users/kenda/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.4.1/f9e48179ea0c6ac0080a277b9383f74523f56aa2/appcompat-1.4.1-sources.jar!/androidx/appcompat/widget/AppCompatSpinner.java_AppCompatSpinner_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewC:/Users/kenda/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.4.1/f9e48179ea0c6ac0080a277b9383f74523f56aa2/appcompat-1.4.1-sources.jar!/androidx/appcompat/widget/AppCompatSpinner.java_SELECTED" value="AppCompatSpinner" />
     <property name="android-custom-viewC:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/java/com/example/cinepolisapp/MyView.java_MyView_DIMENSIONS" value="1080&#10;1920" />
     <property name="android-custom-viewC:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/java/com/example/cinepolisapp/MyView.java_SELECTED" value="MyView" />
     <property name="dart.analysis.tool.window.visible" value="false" />

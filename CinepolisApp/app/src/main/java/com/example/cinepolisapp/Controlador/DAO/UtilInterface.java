@@ -8,6 +8,7 @@ public interface UtilInterface<T> {
     List<T> getAllIdiomas();
     List<T> getAllActores();
     List<T> getAllGeneros();
+    List<T> getAllTypesFood();
     Object insertActorXMovie(Object idPelicula, Object idActor);
     Object insertGenreXMovie(Object idPelicula, Object idGenero);
     Object insertIdiomXMovie(Object idPelicula, Object idIdioma);

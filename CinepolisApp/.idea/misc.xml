@@ -12,8 +12,11 @@
         <entry key="..\:/Users/Randy/Documents/AndroidStudioProjects/CinepolisApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Randy/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/activity_main.xml" value="0.17346014492753623" />
         <entry key="..\:/Users/kenda/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_item.xml" value="0.1" />
+        <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/activity_lista_alimentos.xml" value="0.2006340579710145" />
         <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/activity_lista_clientes.xml" value="0.2006340579710145" />
+        <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/agregar_alimento.xml" value="0.25" />
         <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/agregar_pelicula.xml" value="0.25" />
+        <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/editar_alimento.xml" value="0.2006340579710145" />
         <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/editar_eliminar_cliente.xml" value="0.16983695652173914" />
         <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/editar_eliminar_clientes.xml" value="0.16983695652173914" />
         <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/editar_eliminar_pelicula.xml" value="0.16983695652173914" />
@@ -21,6 +24,7 @@
         <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/fragment_gestor_billboard.xml" value="0.16" />
         <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/fragment_gestor_peliculas.xml" value="0.2006340579710145" />
         <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/fragment_gestor_users.xml" value="0.2006340579710145" />
+        <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/item_list_alimentos.xml" value="0.2006340579710145" />
         <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/item_list_clientes.xml" value="0.2006340579710145" />
         <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/item_list_peliculas.xml" value="0.2006340579710145" />
         <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/login.xml" value="0.25" />
