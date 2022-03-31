@@ -16,7 +16,7 @@
         app:srcCompat="@drawable/logo_cinepolis" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btnSeleccionarPelicula"
         android:layout_width="202dp"
         android:layout_height="103dp"
         android:text="@string/seleccionar_pel_culas"

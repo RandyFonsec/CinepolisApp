@@ -13,17 +13,18 @@ import com.example.cinepolisapp.Utils.Auxiliares;
 import com.google.android.material.tabs.TabLayout;
 
 public class UsersAdminActivity extends AppCompatActivity {
+
     private Button cargarClientes;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_gestor_users);
         Auxiliares.asignarBotonesInferiores(this);
         initUI();
-
     }
 
     private void initUI(){
-        cargarClientes =findViewById(R.id.button6);
+        cargarClientes = findViewById(R.id.button6);
         cargarClientes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

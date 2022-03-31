@@ -1,9 +1,14 @@
 package com.example.cinepolisapp.Controlador;
 
+import com.example.cinepolisapp.Modelo.Actor;
 import com.example.cinepolisapp.Modelo.Alimento;
 import com.example.cinepolisapp.Modelo.Asiento;
 import com.example.cinepolisapp.Modelo.Cliente;
+import com.example.cinepolisapp.Modelo.Director;
+import com.example.cinepolisapp.Modelo.Genero;
+import com.example.cinepolisapp.Modelo.Idioma;
 import com.example.cinepolisapp.Modelo.Pelicula;
+import com.example.cinepolisapp.Modelo.TipoAlimento;
 
 import java.util.List;
 
@@ -15,6 +20,7 @@ public class ControladorAplicacion {
     private GestorAlimentos gestorAlimentos;
     private GestorCartelera gestorCartelera;
     private GestorAsientos gestorAsientos;
+    private GestorUtils gestorUtils;
 
     private ControladorAplicacion() {
         gestorClientes = new GestorClientes();
@@ -22,6 +28,7 @@ public class ControladorAplicacion {
         gestorAlimentos = new GestorAlimentos();
         gestorCartelera = new GestorCartelera();
         gestorAsientos = new GestorAsientos();
+        gestorUtils = new GestorUtils();
     }
 
     public static ControladorAplicacion getInstance() {
@@ -42,11 +49,11 @@ public class ControladorAplicacion {
         return gestorClientes.buscarCliente(numeroCedula);
     }
 
-    public boolean agregarPelicula(Pelicula pelicula) {
+    public Pelicula agregarPelicula(Pelicula pelicula) {
         return gestorPeliculas.agregarPelicula(pelicula);
     }
 
-    public boolean modificarPelicula(Pelicula pelicula) {
+    public Pelicula modificarPelicula(Pelicula pelicula) {
         return gestorPeliculas.modificarPelicula(pelicula);
     }
 
@@ -88,11 +95,49 @@ public class ControladorAplicacion {
 
     public List<Asiento> getAsientosDeFuncion(int idFuncion){
         return gestorAsientos.getAsientosDeFuncion(idFuncion);
+    }
 
+    public List obtenerDirectores() {
+        return gestorUtils.obtenerDirectores();
+    }
+
+    public List<Idioma> obtenerIdiomas() {
+        return gestorUtils.obtenerIdiomas();
+    }
+
+    public List<Actor> obtenerActores() {
+        return gestorUtils.obtenerActores();
+    }
+
+    public List<Genero> obtenerGeneros() { return gestorUtils.obtenerGeneros(); }
+
+    public int agregarActorXPelicula(int idPelicula, int idActor) {
+        return gestorUtils.agregarActorXPelicula(idPelicula, idActor);
+    }
+
+    public int agregarGeneroXPelicula(int idPelicula, int idGenero) {
+        return gestorUtils.agregarGeneroXPelicula(idPelicula, idGenero);
+    }
+
+    public int agregarIdiomaXPelicula(int idPelicula, int idIdioma) {
+        return gestorUtils.agregarIdiomaXPelicula(idPelicula, idIdioma);
     }
 
     public List<Cliente> getClientes(){
         return gestorClientes.getClientes();
     }
+
+    public boolean actualizarCliente(Cliente cliente){
+        return gestorClientes.modificarCliente(cliente);
+    }
+
+    public List<Pelicula> getPeliculas(){
+        return gestorPeliculas.getPeliculas();
+    }
+
+    public List<TipoAlimento> obtenerTiposAlimento() {
+        return gestorUtils.obtenerTiposAlimento();
+    }
+
 
 }

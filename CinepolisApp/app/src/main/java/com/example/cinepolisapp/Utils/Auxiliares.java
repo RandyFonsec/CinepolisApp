@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.cinepolisapp.R;
 import com.example.cinepolisapp.Vista.AlimentoAdminActivity;
 import com.example.cinepolisapp.Vista.BillboardAdminActivity;
+import com.example.cinepolisapp.Vista.GestorPeliculasActivity;
 import com.example.cinepolisapp.Vista.HomeAdminActivity;
 import com.example.cinepolisapp.Vista.UsersAdminActivity;
 
@@ -52,7 +53,7 @@ public class Auxiliares {
             @Override
             public void onClick(View view) {
                 Bundle bundle = new Bundle();
-                Intent intent = new Intent(appCompat, HomeAdminActivity.class);
+                Intent intent = new Intent(appCompat, GestorPeliculasActivity.class);
                 intent.putExtras(bundle);
                 appCompat.startActivity(intent);
                 appCompat.finish();

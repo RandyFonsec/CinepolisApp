@@ -1,5 +1,6 @@
 package com.example.cinepolisapp.Vista;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -14,11 +15,11 @@ import com.example.cinepolisapp.Modelo.Cliente;
 import com.example.cinepolisapp.R;
 import com.example.cinepolisapp.Utils.Auxiliares;
 import com.example.cinepolisapp.Utils.ListaClientesAdapter;
+import com.example.cinepolisapp.Utils.LoadingDialog;
 
 import java.util.ArrayList;
 
 public class ListaClientesActivity extends AppCompatActivity {
-    private Button cargarClientes;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_clientes);
@@ -27,14 +28,17 @@ public class ListaClientesActivity extends AppCompatActivity {
         cargarLista();
 
     }
+
     private void initUI(){
 
     }
+
     public void cargarLista() {
+        LoadingDialog ld = new LoadingDialog(ListaClientesActivity.this);
         new AsyncTask<String, String, ArrayList<Cliente>>() {
             @Override
             protected void onPreExecute() {
-
+                ld.startDialog();
             }
 
             @Override
@@ -44,7 +48,7 @@ public class ListaClientesActivity extends AppCompatActivity {
 
             @Override
             protected void onPostExecute(ArrayList<Cliente> result) {
-
+                ld.dismissDialog();
                 mostrar(result);
 
             }
@@ -53,15 +57,20 @@ public class ListaClientesActivity extends AppCompatActivity {
 
     }
 
-    public void mostrar(ArrayList<Cliente> clientes ){
+    public void mostrar(ArrayList<Cliente> clientes){
         ListView listClientes = findViewById(R.id.listaClientes);
         listClientes.setAdapter(new ListaClientesAdapter(this, clientes));
 
         listClientes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Cliente c = clientes.get(i);
-                System.out.println(c);
+                Cliente cliente = clientes.get(i);
+                Bundle bundle = new Bundle();
+                Intent intent = new Intent(getApplicationContext(), EditarEliminarClienteActivity.class);
+                bundle.putSerializable("Cliente",cliente);
+                intent.putExtras(bundle);
+                startActivity(intent);
+                finish();
             }
         });
     }

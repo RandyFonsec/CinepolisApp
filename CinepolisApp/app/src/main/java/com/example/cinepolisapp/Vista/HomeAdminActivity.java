@@ -17,7 +17,6 @@ public class HomeAdminActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_gestor_peliculas);
         Auxiliares.asignarBotonesInferiores(this);
-
-
     }
+
 }
