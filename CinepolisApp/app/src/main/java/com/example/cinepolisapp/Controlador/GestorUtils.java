@@ -6,7 +6,10 @@ import com.example.cinepolisapp.Modelo.Director;
 import com.example.cinepolisapp.Modelo.Genero;
 import com.example.cinepolisapp.Modelo.Idioma;
 import com.example.cinepolisapp.Modelo.TipoAlimento;
-
+import com.example.cinepolisapp.Modelo.Funcion;
+import com.example.cinepolisapp.Modelo.Genero;
+import com.example.cinepolisapp.Modelo.Horario;
+import com.example.cinepolisapp.Modelo.Idioma;
 import java.lang.reflect.AccessibleObject;
 import java.util.List;
 
@@ -56,4 +59,13 @@ public class GestorUtils {
         return tiposAlimento;
     }
 
+    public List<Horario> getHorariosDisponibles(int idSala, String fecha){
+        List<Horario> horarios = (List<Horario>) UtilDAOImplementation.getInstance().getHorariosDisponibles(idSala, fecha );
+        return horarios;
+    }
+
+    public Funcion insertFuncion(int idHorario, int idSala, int idPelicula, String fecha){
+        Funcion funcion = (Funcion) UtilDAOImplementation.getInstance().insertFuncion(idHorario, idSala, idPelicula, fecha);
+        return funcion;
+    }
 }

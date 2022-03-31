@@ -16,8 +16,10 @@ import com.example.cinepolisapp.Utils.Alerta;
 import com.example.cinepolisapp.Utils.LoadingDialog;
 
 public class LoginActivity extends AppCompatActivity {
+
     private final String userAdmin = "admin";
     private final String userContra = "admin";
+
     private Button btnInicio, btnRegistro;
     private EditText eTCorreo, eTContrasenna;
     private String title, message;
@@ -54,10 +56,13 @@ public class LoginActivity extends AppCompatActivity {
 
         private void iniciarSesion(){
             if(validarCampos()) {
+
                 if(eTCorreo.getText().toString().equals(userAdmin) && eTContrasenna.getText().toString().equals(userContra))
                     iniciarAdmin();
                 else
                     comprobarCredenciales();
+
+                comprobarCredenciales();
             }else{
                 Alerta.showAlert(LoginActivity.this, title, message);
             }
@@ -70,7 +75,9 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private boolean validarCampos() {
+
+        private boolean validarCampos() {
+
             if (eTCorreo.getText().toString().isEmpty() ||
                 eTContrasenna.getText().toString().isEmpty()) {
                 title = "Error";

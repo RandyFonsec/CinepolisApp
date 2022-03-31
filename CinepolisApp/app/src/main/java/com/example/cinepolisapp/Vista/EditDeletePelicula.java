@@ -257,6 +257,7 @@ public class EditDeletePelicula extends AppCompatActivity {
                 Pelicula actualizada;
                 actualizada = ControladorAplicacion.getInstance().modificarPelicula(peliculaAct);
 
+
                 if (actualizada != null) {
                     int actorXPelicula = ControladorAplicacion.getInstance().agregarActorXPelicula(
                             actualizada.getIdPelicula(),

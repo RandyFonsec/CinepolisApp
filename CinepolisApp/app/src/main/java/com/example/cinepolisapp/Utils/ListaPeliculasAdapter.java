@@ -46,8 +46,8 @@ public class ListaPeliculasAdapter extends BaseAdapter {
         TextView tVNombrePelicula, tvDuracionPelicula;
         tVNombrePelicula = view.findViewById(R.id.tvNombrePelicula);
         tvDuracionPelicula = view.findViewById(R.id.tvDuracionPelicula);
-        String info = "Año publicación: "+String.valueOf(item.getDuracion())+" Duración:"+String.valueOf(item.getAnnoPublicacion());
-        tVNombrePelicula.setText(item.getTitulo());
+        String info = "Año publicación: "+String.valueOf(item.getAnnoPublicacion())+" Duración: "+String.valueOf(item.getDuracion());
+        tVNombrePelicula.setText("\t\t"+item.getTitulo());
         tvDuracionPelicula.setText(info);
 
 

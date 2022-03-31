@@ -18,7 +18,9 @@ import com.example.cinepolisapp.Modelo.Idioma;
 import com.example.cinepolisapp.Modelo.Pelicula;
 import com.example.cinepolisapp.R;
 import com.example.cinepolisapp.Utils.Alerta;
+
 import com.example.cinepolisapp.Utils.Auxiliares;
+
 import com.example.cinepolisapp.Utils.LoadingDialog;
 
 import java.util.ArrayList;
@@ -35,7 +37,9 @@ public class AddMovieActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.agregar_pelicula);
+
         Auxiliares.asignarBotonesInferiores(this);
+
         initUI();
         fillSpinners();
     }

@@ -3,10 +3,18 @@ package com.example.cinepolisapp.Controlador.DAO;
 import com.example.cinepolisapp.Modelo.Actor;
 import com.example.cinepolisapp.Modelo.Alimento;
 import com.example.cinepolisapp.Modelo.Director;
+
 import com.example.cinepolisapp.Modelo.Genero;
 import com.example.cinepolisapp.Modelo.Idioma;
 import com.example.cinepolisapp.Modelo.Pelicula;
 import com.example.cinepolisapp.Modelo.TipoAlimento;
+
+import com.example.cinepolisapp.Modelo.Funcion;
+import com.example.cinepolisapp.Modelo.Genero;
+import com.example.cinepolisapp.Modelo.Horario;
+import com.example.cinepolisapp.Modelo.Idioma;
+import com.example.cinepolisapp.Modelo.Pelicula;
+
 
 import java.io.IOException;
 import java.util.List;
@@ -159,7 +167,44 @@ public class UtilDAOImplementation implements DAORetrofit, UtilInterface {
         }
         return respuesta;
     }
+    @Override
+    public List<Horario> getHorariosDisponibles(Object idSala, Object horario){
+        Call<List<Horario>> call = retrofit.create(UtilRFInterface.class).getHorariosDisponibles(
+                (String)horario,
+                (int)idSala);
+        List<Horario> respuesta = null;
+        try {
+            Response<List<Horario>> response = null;
+            response = call.execute();
+            if(response.isSuccessful()){
+                respuesta = response.body();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return respuesta;
 
+    }
+
+    @Override
+    public Object insertFuncion(Object idHorario, Object idSala, Object idPelicula, Object fecha){
+        Call<Funcion> call = retrofit.create(UtilRFInterface.class).insertFuncion(
+                (int)idHorario,
+                (int)idSala,
+                (int)idPelicula,
+                (String) fecha);
+        Funcion respuesta = null;
+        try {
+            Response<Funcion> response = null;
+            response = call.execute();
+            if(response.isSuccessful()){
+                respuesta = response.body();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return respuesta;
+    }
     @Override
     public Object create(Object object) {
         return null;

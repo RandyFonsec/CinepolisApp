@@ -22,7 +22,8 @@ import com.example.cinepolisapp.Utils.LoadingDialog;
 import java.util.ArrayList;
 
 public class ListaPeliculasActivity extends AppCompatActivity {
-    private int bandera;
+
+    int bandera ;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.peliculas_disponibles);
@@ -30,6 +31,7 @@ public class ListaPeliculasActivity extends AppCompatActivity {
         Bundle parametros = this.getIntent().getExtras();
         if(parametros != null){
             this.bandera = parametros.getInt("bandera");
+
         }
         initUI();
         cargarLista();
@@ -73,15 +75,17 @@ public class ListaPeliculasActivity extends AppCompatActivity {
                 Pelicula pelicula = peliculas.get(i);
                 Bundle bundle = new Bundle();
                 Intent intent;
-                if(bandera == 1)
+
+                if(bandera==1)
                     intent = new Intent(getApplicationContext(), EditDeletePelicula.class);
                 else
                     intent = new Intent(getApplicationContext(), ConfigFuncionActivity.class);
+
                 bundle.putSerializable("Pelicula",pelicula);
                 intent.putExtras(bundle);
                 startActivity(intent);
                 finish();
-                //overridePendingTransition(0, 0);
+                overridePendingTransition(0, 0);
             }
         });
     }
