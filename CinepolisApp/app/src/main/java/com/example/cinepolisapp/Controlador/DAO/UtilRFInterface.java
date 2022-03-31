@@ -2,6 +2,7 @@ package com.example.cinepolisapp.Controlador.DAO;
 
 import com.example.cinepolisapp.Modelo.Actor;
 import com.example.cinepolisapp.Modelo.Asiento;
+import com.example.cinepolisapp.Modelo.Funcion;
 import com.example.cinepolisapp.Modelo.Horario;
 import com.example.cinepolisapp.Modelo.Director;
 import com.example.cinepolisapp.Modelo.Genero;
@@ -50,5 +51,12 @@ public interface UtilRFInterface {
     @POST("saveIdiomaXPelicula.php")
     public Call<Integer> insertIdiomaXPelicula(@Field("idPelicula") int idPelicula,
                                          @Field("idIdioma") int idIdioma);
+
+    @FormUrlEncoded
+    @POST("saveFuncion.php")
+    public Call<Funcion> insertFuncion(@Field("idHorario") int idHorario,
+                                       @Field("idSala") int idSala,
+                                       @Field("idPelicula") int idPelicula,
+                                       @Field("fecha") String fecha);
 
 }

@@ -122,6 +122,7 @@
             android:layout_marginBottom="15dp"
             android:gravity="center"
             android:minHeight="48dp"
+            android:prompt="@string/Elige1"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <Spinner
@@ -131,7 +132,9 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"
             android:gravity="center"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:prompt="@string/Elige2"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/Asignar_Config_Funcion_btn"

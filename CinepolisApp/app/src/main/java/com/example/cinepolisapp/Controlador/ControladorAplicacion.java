@@ -5,7 +5,9 @@ import com.example.cinepolisapp.Modelo.Alimento;
 import com.example.cinepolisapp.Modelo.Asiento;
 import com.example.cinepolisapp.Modelo.Cliente;
 import com.example.cinepolisapp.Modelo.Director;
+import com.example.cinepolisapp.Modelo.Funcion;
 import com.example.cinepolisapp.Modelo.Genero;
+import com.example.cinepolisapp.Modelo.Horario;
 import com.example.cinepolisapp.Modelo.Idioma;
 import com.example.cinepolisapp.Modelo.Pelicula;
 
@@ -134,5 +136,13 @@ public class ControladorAplicacion {
         return gestorPeliculas.getPeliculas();
     }
 
+    public List<Horario> getHorariosDisponibles(int idSala, String fecha){
+        return gestorUtils.getHorariosDisponibles(idSala, fecha);
+    }
+
+    public Funcion insertFuncion(int idHorario, int idSala, int idPelicula, String fecha){
+        return gestorUtils.insertFuncion(idHorario, idSala, idPelicula, fecha);
+
+    }
 
 }

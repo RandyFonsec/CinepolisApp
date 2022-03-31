@@ -18,11 +18,18 @@ com/example/cinepolisapp/Utils/RetrofitSingleton.java
  com.example.cinepolisapp.Utils.RetrofitSingleton
 com/example/cinepolisapp/databinding/RegisterBinding.java
  com.example.cinepolisapp.databinding.RegisterBinding
+com/example/cinepolisapp/Modelo/Funcion.java
+ com.example.cinepolisapp.Modelo.Funcion
 com/example/cinepolisapp/Vista/UsersAdminActivity.java
  com.example.cinepolisapp.Vista.UsersAdminActivity
  com.example.cinepolisapp.Vista.UsersAdminActivity$1
 com/example/cinepolisapp/Vista/ConfigFuncionActivity.java
  com.example.cinepolisapp.Vista.ConfigFuncionActivity
+ com.example.cinepolisapp.Vista.ConfigFuncionActivity$1
+ com.example.cinepolisapp.Vista.ConfigFuncionActivity$2
+ com.example.cinepolisapp.Vista.ConfigFuncionActivity$3
+ com.example.cinepolisapp.Vista.ConfigFuncionActivity$4
+ com.example.cinepolisapp.Vista.ConfigFuncionActivity$5
 com/example/cinepolisapp/databinding/FragmentGestorBillboardBinding.java
  com.example.cinepolisapp.databinding.FragmentGestorBillboardBinding
 com/example/cinepolisapp/databinding/EditarEliminarClienteBinding.java
@@ -62,6 +69,7 @@ com/example/cinepolisapp/Vista/MainActivity.java
  com.example.cinepolisapp.Vista.MainActivity$2
 com/example/cinepolisapp/Vista/HomeAdminActivity.java
  com.example.cinepolisapp.Vista.HomeAdminActivity
+ com.example.cinepolisapp.Vista.HomeAdminActivity$1
 com/example/cinepolisapp/Controlador/GestorCartelera.java
  com.example.cinepolisapp.Controlador.GestorCartelera
 com/example/cinepolisapp/Vista/EditarEliminarClienteActivity.java

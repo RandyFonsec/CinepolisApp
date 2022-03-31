@@ -8,8 +8,10 @@ public interface UtilInterface<T> {
     List<T> getAllIdiomas();
     List<T> getAllActores();
     List<T> getAllGeneros();
+    List<T> getHorariosDisponibles(Object idSala, Object fecha);
     Object insertActorXMovie(Object idPelicula, Object idActor);
     Object insertGenreXMovie(Object idPelicula, Object idGenero);
     Object insertIdiomXMovie(Object idPelicula, Object idIdioma);
+    Object insertFuncion(Object idHorario, Object idSala, Object idPelicula, Object fecha);
 
 }

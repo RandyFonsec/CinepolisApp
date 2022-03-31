@@ -11,7 +11,6 @@
         <entry key="..\:/Uni/AP/CinepolisApp/app/src/main/res/menu/menu_main.xml" value="0.4041666666666667" />
         <entry key="..\:/Users/Randy/Documents/AndroidStudioProjects/CinepolisApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Randy/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/activity_main.xml" value="0.17346014492753623" />
-<<<<<<< HEAD
         <entry key="..\:/Users/Randy/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/activity_main2.xml" value="0.2" />
         <entry key="..\:/Users/Randy/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/activity_test.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Randy/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/agregar_alimento.xml" value="0.152" />
@@ -36,7 +35,7 @@
         <entry key="..\:/Users/Randy/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/user_comidas_main.xml" value="0.2" />
         <entry key="..\:/Users/Randy/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/view_gestor.xml" value="0.14427083333333332" />
         <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/login.xml" value="0.18297101449275363" />
-=======
+
         <entry key="..\:/Users/kenda/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_item.xml" value="0.1" />
         <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/activity_lista_clientes.xml" value="0.2006340579710145" />
         <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/agregar_pelicula.xml" value="0.25" />
@@ -51,7 +50,7 @@
         <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/item_list_peliculas.xml" value="0.2006340579710145" />
         <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/login.xml" value="0.25" />
         <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/peliculas_disponibles.xml" value="0.2006340579710145" />
->>>>>>> KendallC
+
         <entry key="..\:/Users/kenda/Documents/GitHub/CinepolisApp/CinepolisApp/app/src/main/res/layout/register.xml" value="0.25" />
       </map>
     </option>

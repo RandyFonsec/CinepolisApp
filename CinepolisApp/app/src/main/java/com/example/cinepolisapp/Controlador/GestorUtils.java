@@ -3,7 +3,9 @@ package com.example.cinepolisapp.Controlador;
 import com.example.cinepolisapp.Controlador.DAO.UtilDAOImplementation;
 import com.example.cinepolisapp.Modelo.Actor;
 import com.example.cinepolisapp.Modelo.Director;
+import com.example.cinepolisapp.Modelo.Funcion;
 import com.example.cinepolisapp.Modelo.Genero;
+import com.example.cinepolisapp.Modelo.Horario;
 import com.example.cinepolisapp.Modelo.Idioma;
 
 import java.lang.reflect.AccessibleObject;
@@ -50,4 +52,13 @@ public class GestorUtils {
         return resultado.intValue();
     }
 
+    public List<Horario> getHorariosDisponibles(int idSala, String fecha){
+        List<Horario> horarios = (List<Horario>) UtilDAOImplementation.getInstance().getHorariosDisponibles(idSala, fecha );
+        return horarios;
+    }
+
+    public Funcion insertFuncion(int idHorario, int idSala, int idPelicula, String fecha){
+        Funcion funcion = (Funcion) UtilDAOImplementation.getInstance().insertFuncion(idHorario, idSala, idPelicula, fecha);
+        return funcion;
+    }
 }
